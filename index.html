@@ -11,14 +11,90 @@
     <h2>Group 9: Julia, Kaja, Simon, Zsanett</h2>
     <a href="https://github.com/zsadamina/CCL4">GitHub Repository</a>
 
-    <h2>Final Mockups</h2>
-    <p>stuff and things we want to do</p>
-
     <h2>System Design</h2>
     <img src="Documentation/systemdesign.png" width="900"/>
 
     <h2>System Infrastructure</h2>
-    <img src="Documentation/classdiagram.png" height="780" width="1449"/>
+    <img src="Documentation/classdiagram.png" width="900"/>
 
-</body>
+    <h2>Final Mockups</h2>
+    <h3>Story</h3>
+    <p> In the game the player finds themselves in an IKEA warehouse, where they are met with their stuffed
+        </br> animal companion, Björn. He tells the player that they can escape by building furniture out of parts
+        </br> they find in the store. This starts the quick tutorial to show the players the controls work.
+        </br> Afterward, the player walks through to the level entrance, and find themselves in an IKEA store,
+        </br> which is maze-like. The player goes through rooms to find furniture pieces, pick them up, and take
+        </br> them to the end of the maze to build. The employees stop them by either stealing furniture back,
+        </br> or trapping them in conversation and draining their energy.
+    </p>
+
+    <h3>Synopsis</h3>
+    <p>You fell asleep in an IKEA...reading a manual, it seems. The lawnchair was strangely comfortable. There is a
+        </br> stuffed bear talking to you, telling you his name is Björn, and he will help you find your way out.
+        </br> To get out of here, Björn tells you, you need to make your way through the store and find furniture parts.
+        </br> Once you reassemble all the broken furniture, you can find your way out!
+        </br> Watch out, some employees might not like you tampering with the furniture or looking too confused.
+        </br> Something feels off...are you sure you woke up?
+    </p>
+
+    <h3>Features (MVP)</h3>
+    <ul>
+        <li>Scenes: Main Menu, Warehouse (Tutorial), Level</li>
+        <li>Procedurally generated maze as the level</li>
+        <li>2 types of enemies (employees)</li>
+        <li>Companion with animations & voicelines</li>
+        <li>Basic Audio</li>
+        <li>Furniture Pickup & Building</li>
+    </ul>
+
+    <h3>Motivation</h3>
+    <p>We want to create a VR game that is a procedurally generated 'dungeon' - but want to make it eerie as well as </br>
+        fun. It should be a simplistic game that has a nostalgic PS1 style and just be a fun way to explore VR.
+    </p>
+
+    <h3>Modeling</h3>
+    <p>We want to have a low-poly, nostalgic style that reminds of old PS1 games. Moodboards for this and the furniture:</p>
+    <img src="Documentation/modelingstyle_moodboard.jpg" width="900"/>
+    <img src="Documentation/furniture.jpg" width="900"/>
+
+    <p>Characters</p>
+    <p>We have Björn (the companion, the bear) for which we use the Djungelskog plushy from IKEA as a reference,
+        </br> as he is meant to be a stuffed animal come to life in game.</p>
+    <img src="Documentation/djungelskog.jpg" width="900"/>
+
+    <p>Our two employees (enemies) are the 'stealer' and the 'yapper' - the stealer takes furniture pieces back from the
+        </br> player if they are hit. He is fast, slim and quippy. The 'yapper' is a conversaionalist (service industry style),
+        </br> she traps the player in social norms aka the conversation and drains the player's energy (health).</p>
+    <img src="Documentation/character_moodboard.jpg"  width="900"/>
+
+
+    <h3>Audio</h3>
+    <p> Our plan is to create an eerie and slightly intimidating sound environment. Not full horror—just enough for the
+        player to feel the size and emptiness of the building, especially at the start in the warehouse. We want them
+        to be aware that something feels a bit off, but not scared or overwhelmed.
+        </br> As the game goes on, players will find comfort in their companion character, who has a calming and friendly
+        sound design. This contrast helps the player feel more grounded and safe over time.
+        </br> We’re also using sound to give personality to the employees in the building. Their voices, movements, and little
+        audio cues will help players tell them apart and understand their behavior better.
+        And when it comes to collecting and arranging furniture parts, there will be soft and reassuring sounds. These
+        moments should feel clear and satisfying, giving the player a small sense of peace and progress.
+        </br> Overall, sound plays an important role in setting the mood of our game and in guiding the player—from feeling
+        alone and alert to feeling more at ease when doing the right things.
+    </p>
+
+    <h3>Room Plans</h3>
+    <p>These are the sketches for the basic room plans we have, 2 types of each type of room, which will all be
+    </br> prefabs that repeat themselves in the maze. </p>
+
+
+    <img src="Documentation/livingroom.jpg" width="900"/>
+    <img src="Documentation/kitchen.jpg" width="900"/>
+    <img src="Documentation/kidsroom.jpg" width="900"/>
+    <img src="Documentation/bedroom.jpg" width="900"/>
+    <img src="Documentation/office.jpg"  width="900"/>
+
+    <p>Warehouse (Tutorial) Sketch</p>
+    <img src="Documentation/warehouse.jpg" width="900"/>
+
+    </body>
 </html>
