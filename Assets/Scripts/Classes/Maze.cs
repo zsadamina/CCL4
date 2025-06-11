@@ -32,7 +32,7 @@ namespace Classes
             {
                 for (int j = 0; j < Columns; j++)
                 {
-                    Cells[i, j] = new Room(RoomType.Hallway, i, j);
+                    Cells[i, j] = new Room(RoomType.Hallway, 1, j,i);
                 }
             }
 
@@ -119,5 +119,57 @@ namespace Classes
                 }
             }
         }
+            // method to print the maze in ASCII art
+    public string PrintMaze()
+    {
+        // create a string builder to hold the output
+        var output = new System.Text.StringBuilder();
+
+        // add the top boundary of the maze
+        output.AppendLine("+" + string.Concat(Enumerable.Repeat("---+", Columns)));
+
+        // iterating through all the rows in the maze
+        for (int i = 0; i < Rows; i++)
+        {
+            // create the lines for the current row
+            var line1 = "|"; // the first line of the cell, containing the left wall and the cell content
+            var line2 = "+"; // the second line of the cell, containing the bottom wall
+
+            // iterating through all the columns in the maze
+            for (int j = 0; j < Columns; j++)
+            {
+                // get the current cell
+                var cell = Cells[i, j];
+
+                // determine if the cell is the player's position or the finish point
+                // isFinish also checks if there is a player in the maze, by checking if playerCol is not null, to not render when generating
+
+                bool isFinish = i == Rows - 1 && j == Columns - 1;
+
+                // Decide what goes in the cell.
+                string cellContent = isFinish ? " X " : cell.CellContent;
+
+                line1 += cellContent;
+
+                // if the cell is the last column, we add the right wall
+                if (j == Columns - 1)
+                {
+                    line1 += "|";
+                }
+                // if the cell is not in the last column, we add the left wall if it exists
+                else
+                {
+                    line1 += cell.LeftWall ? "|" : " ";
+                }
+                // if the cell has a bottom wall, we add it to the second line, otherwise we add a +
+                line2 += cell.BottomWall ? "---+" : "   +";
+            }
+
+            // add the lines to the output
+            output.AppendLine(line1);
+            output.AppendLine(line2);
+        }
+        return output.ToString();
+    }
     }
 }

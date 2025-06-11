@@ -5,6 +5,7 @@ using System.Linq;
 using Classes;
 using UnityEngine;
 
+[RequireComponent(typeof(RoomGenerator))]
 public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
@@ -17,6 +18,8 @@ public class StateManager : MonoBehaviour
     
     private Maze maze;
     
+    private RoomGenerator roomGenerator;
+    
     void Start()
     {
         if (Instance == null)
@@ -26,10 +29,12 @@ public class StateManager : MonoBehaviour
         else
         {
             Destroy(this);
+            return;
         }
 
         DontDestroyOnLoad(this);
 
+        roomGenerator = this.GetComponent<RoomGenerator>();
         InitRooms();
     }
 
@@ -37,6 +42,9 @@ public class StateManager : MonoBehaviour
     {
         maze = new Maze(Rows, Columns);
         maze.GenerateMaze();
-        List<BaseCell> cells =  maze.Cells.Cast<BaseCell>().ToList();
+        List<Room> cells =  maze.Cells.Cast<Room>().ToList();
+        
+        cells.ForEach(room => roomGenerator.InstanciateRoom(room));
+        Debug.Log(maze.PrintMaze());
     }
 }
