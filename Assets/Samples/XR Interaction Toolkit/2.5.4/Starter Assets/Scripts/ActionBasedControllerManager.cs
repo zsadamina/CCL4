@@ -152,6 +152,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             var teleportModeActivateAction = GetInputAction(m_TeleportModeActivate);
+        
             if (teleportModeActivateAction != null)
             {
                 teleportModeActivateAction.performed += OnStartTeleport;

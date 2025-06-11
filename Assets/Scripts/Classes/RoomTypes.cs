@@ -8,5 +8,6 @@
         LivingRoom,
         Office,
         Clockroom,
+        Hallway
     }
 }

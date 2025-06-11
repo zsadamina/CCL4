@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Classes;
 using UnityEngine;
 
@@ -8,13 +9,13 @@ public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
 
-    public Room[,] Rooms;
-
     [Range(2,5)]
     [SerializeField] public int Rows;
     
     [Range(2,5)]
     [SerializeField] public int Columns;
+    
+    private Maze maze;
     
     void Start()
     {
@@ -34,9 +35,8 @@ public class StateManager : MonoBehaviour
 
     private void InitRooms()
     {
-        Rooms = new Room[Rows, Columns];
-        int[] middle = {Rows/2, Columns/2};
-        
-        Rooms[middle[0],middle[1]] = new Room(RoomType.LivingRoom); 
+        maze = new Maze(Rows, Columns);
+        maze.GenerateMaze();
+        List<BaseCell> cells =  maze.Cells.Cast<BaseCell>().ToList();
     }
 }

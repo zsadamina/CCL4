@@ -26,6 +26,9 @@
 # Visual Studio cache directory
 .vs/
 
+# PlantUml
+/plantuml/
+
 # Gradle cache directory
 .gradle/
 

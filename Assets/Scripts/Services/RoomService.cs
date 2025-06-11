@@ -8,7 +8,5 @@ namespace Services
         {
             return new Room(type, version,x,y,spawnchance);
         }
-        
-        
     }
 }
