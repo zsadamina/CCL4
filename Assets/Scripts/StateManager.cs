@@ -42,9 +42,8 @@ public class StateManager : MonoBehaviour
     {
         maze = new Maze(Rows, Columns);
         maze.GenerateMaze();
-        List<Room> cells =  maze.Cells.Cast<Room>().ToList();
-        
-        cells.ForEach(room => roomGenerator.InstanciateRoom(room));
-        Debug.Log(maze.PrintMaze());
+        roomGenerator.setMaze(maze);
+        roomGenerator.GenerateRooms();
+        //Debug.Log(maze.PrintMaze());
     }
 }

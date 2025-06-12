@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Classes;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [Serializable]
 public class RoomGenerator : MonoBehaviour
@@ -10,12 +12,13 @@ public class RoomGenerator : MonoBehaviour
     public static RoomGenerator Instance;
 
     [SerializeField] private float roomSquare = 5f;
-    
+
     [SerializeField] private GameObject hallwayPrefab;
     [SerializeField] private GameObject roomPrefab;
-    [SerializeField] private GameObject fillerPathPrefab;
+
+    private Maze maze;
     
-    public List<Room> InitializedRooms { get; set; }
+    Dictionary<String,GameObject> InitializedRooms = new Dictionary<String, GameObject>();
     
     void Start()
     {
@@ -31,47 +34,64 @@ public class RoomGenerator : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void InstanciateRoom(Room room)
+    public void setMaze(Maze maze) => this.maze = maze;
+
+    public void GenerateRoomWithFiller(BaseCell room)
     {
+        float x = room.Column * roomSquare * 3;
+        float y = room.Row * roomSquare * -3;
+        Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity);
 
-        float x = room.Column * roomSquare * -3;
-        float y = room.Row * roomSquare * +3;
-        
-        var roomGO = Instantiate(hallwayPrefab, new Vector3(x, 0,y), Quaternion.identity);
-        if (!room.TopWall)
-        {
-            Instantiate(fillerPathPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
-        }
-        else
-        {
-            Instantiate(roomPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
+        GameObject topPrefab = !room.TopWall ? hallwayPrefab : roomPrefab;
+        GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : roomPrefab;
+        GameObject rightPrefab = !room.RightWall ? hallwayPrefab : roomPrefab;
+        GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : roomPrefab;
 
-        }
-        if (!room.BottomWall)
+        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.identity);
+        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.identity);
+        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.identity);
+        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.identity);
+    }
+    /*
+    public void GenerateRooms(BaseCell[,] baseCell)
+    {
+        List<BaseCell> cells =  baseCell.Cast<BaseCell>().ToList();
+        cells.ForEach(GenerateRoomWithoutFiller);
+    }
+    */
+
+    public void GenerateRooms()
+    {
+        GenerateRoomWithoutFiller(maze.Cells[0, 0], 0, 0);
+    }
+
+    public void GenerateRoomWithoutFiller(BaseCell room, int column, int row)
+    {
+        float x = column * roomSquare;
+        float y = row * -roomSquare;
+
+        Debug.Log("Column: " + column + ", Row: " + row);
+
+        GameObject cell = Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity);
+        InitializedRooms.Add($"{column}{row}", cell);
+        if (!room.TopWall && !InitializedRooms.ContainsKey($"{column}{row - 1}"))
         {
-            Instantiate(fillerPathPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
+            GenerateRoomWithoutFiller(maze.Cells[ row - 1,column], row - 1,column );
         }
-        else
+
+        if (!room.BottomWall && !InitializedRooms.ContainsKey($"{column}{row + 1}"))
         {
-            Instantiate(roomPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
+            GenerateRoomWithoutFiller(maze.Cells[row + 1,column ], row + 1,column );
         }
-        
-        if (!room.RightWall)
+
+        if (!room.RightWall && !InitializedRooms.ContainsKey($"{column + 1}{row}"))
         {
-            Instantiate(fillerPathPrefab, new Vector3(x - 50, 0,y), Quaternion.identity);
+            GenerateRoomWithoutFiller(maze.Cells[row,column + 1], row,column + 1 );
         }
-        else
+
+        if (!room.LeftWall && !InitializedRooms.ContainsKey($"{column - 1}{row}"))
         {
-            Instantiate(roomPrefab, new Vector3(x - 50, 0,y + 50), Quaternion.identity);
-        }
-        
-        if (!room.LeftWall)
-        {
-            Instantiate(fillerPathPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
-        }
-        else
-        {
-            Instantiate(roomPrefab, new Vector3(x, 0,y + 50), Quaternion.identity);
+            GenerateRoomWithoutFiller(maze.Cells[row,column - 1], row,column - 1);
         }
     }
 }
