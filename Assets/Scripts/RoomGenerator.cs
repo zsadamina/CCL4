@@ -60,10 +60,17 @@ public class RoomGenerator : MonoBehaviour
         GameObject rightPrefab = !room.RightWall ? hallwayPrefab : roomPrefab;
         GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : roomPrefab;
 
-        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.identity);
-        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.identity);
-        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.identity);
-        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.identity);
+        //Cross tiles
+        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.identity);     // T
+        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.identity);  // B
+        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.identity);   // R
+        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.identity);    // L
+        
+        //Corner Tiles
+        if(!(room.TopWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y + roomSquare), Quaternion.identity); // TR
+        if(!(room.BottomWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y - roomSquare), Quaternion.identity); // BL
+        if(!(room.BottomWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y - roomSquare), Quaternion.identity); // BR
+        if(!(room.TopWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y + roomSquare), Quaternion.identity); // TL
     }
 
     public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
