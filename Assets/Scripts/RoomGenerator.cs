@@ -36,6 +36,19 @@ public class RoomGenerator : MonoBehaviour
 
     public void setMaze(Maze maze) => this.maze = maze;
 
+    public void GenerateRooms()
+    {
+        List<BaseCell> cells =  maze.Cells.Cast<BaseCell>().ToList();
+        cells.ForEach(GenerateRoomWithFiller);
+    }
+    
+    /*
+    public void GenerateRooms()
+    {
+        GenerateRoomWithoutFiller(maze.Cells[0, 0], 0, 0);
+    }
+    */
+    
     public void GenerateRoomWithFiller(BaseCell room)
     {
         float x = room.Column * roomSquare * 3;
@@ -52,20 +65,8 @@ public class RoomGenerator : MonoBehaviour
         Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.identity);
         Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.identity);
     }
-    /*
-    public void GenerateRooms(BaseCell[,] baseCell)
-    {
-        List<BaseCell> cells =  baseCell.Cast<BaseCell>().ToList();
-        cells.ForEach(GenerateRoomWithoutFiller);
-    }
-    */
 
-    public void GenerateRooms()
-    {
-        GenerateRoomWithoutFiller(maze.Cells[0, 0], 0, 0);
-    }
-
-    public void GenerateRoomWithoutFiller(BaseCell room, int column, int row)
+    public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
     {
         float x = column * roomSquare;
         float y = row * -roomSquare;
@@ -76,22 +77,25 @@ public class RoomGenerator : MonoBehaviour
         InitializedRooms.Add($"{column}{row}", cell);
         if (!room.TopWall && !InitializedRooms.ContainsKey($"{column}{row - 1}"))
         {
-            GenerateRoomWithoutFiller(maze.Cells[ row - 1,column], row - 1,column );
+            GenerateRoomWithoutFiller(maze.Cells[ column,row - 1], row - 1,column );
+            return;
         }
 
         if (!room.BottomWall && !InitializedRooms.ContainsKey($"{column}{row + 1}"))
         {
-            GenerateRoomWithoutFiller(maze.Cells[row + 1,column ], row + 1,column );
+            GenerateRoomWithoutFiller(maze.Cells[column,row + 1 ], row + 1,column );
+            return;
         }
 
         if (!room.RightWall && !InitializedRooms.ContainsKey($"{column + 1}{row}"))
         {
-            GenerateRoomWithoutFiller(maze.Cells[row,column + 1], row,column + 1 );
+            GenerateRoomWithoutFiller(maze.Cells[column + 1,row], row,column + 1 );
+            return;
         }
 
         if (!room.LeftWall && !InitializedRooms.ContainsKey($"{column - 1}{row}"))
         {
-            GenerateRoomWithoutFiller(maze.Cells[row,column - 1], row,column - 1);
+            GenerateRoomWithoutFiller(maze.Cells[column - 1,row], row,column - 1);
         }
     }
 }
