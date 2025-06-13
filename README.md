@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zsadamina/CCL4">
-    <img src=" " alt="Logo" width="80" height="80">
+    <img src="Documentation/INTE_Logo_With_Background.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">INTE</h3>
