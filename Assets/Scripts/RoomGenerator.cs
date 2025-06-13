@@ -61,16 +61,16 @@ public class RoomGenerator : MonoBehaviour
         GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : roomPrefab;
 
         //Cross tiles
-        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.identity);     // T
-        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.identity);  // B
-        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.identity);   // R
-        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.identity);    // L
+        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.Euler(0, 90, 0));     // T
+        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.Euler(0, -90, 0));  // B
+        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.Euler(0, 180, 0));   // R
+        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.Euler(0, 0, 0));    // L
         
         //Corner Tiles
-        if(!(room.TopWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y + roomSquare), Quaternion.identity); // TR
-        if(!(room.BottomWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y - roomSquare), Quaternion.identity); // BL
-        if(!(room.BottomWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y - roomSquare), Quaternion.identity); // BR
-        if(!(room.TopWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y + roomSquare), Quaternion.identity); // TL
+        if(!(room.TopWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 180, 0):Quaternion.Euler(0, 90, 0)); // TR
+        if(!(room.BottomWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y - roomSquare), !room.BottomWall ?Quaternion.Euler(0, 0, 0):Quaternion.Euler(0,-90,0)); // BL
+        if(!(room.BottomWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y - roomSquare), !room.BottomWall?Quaternion.Euler(0, 180, 0): Quaternion.Euler(0,-90,0)); // BR
+        if(!(room.TopWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 0, 0): Quaternion.Euler(0,90,0)); // TL
     }
 
     public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
