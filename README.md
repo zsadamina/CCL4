@@ -13,7 +13,7 @@
   <p align="center">
     A VR Game by a group of students doing this for the first time
     <br />
-    <a href="https://github.com/zsadamina/CCL4"><strong>a link we may need »</strong></a>
+    <a href="https://zsadamina.github.io/CCL4/"><strong>Git Page »</strong></a>
   </p>
 </div>
 
