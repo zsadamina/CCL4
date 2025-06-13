@@ -20,7 +20,7 @@ public class StateManager : MonoBehaviour
     
     private RoomGenerator roomGenerator;
     
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -35,7 +35,12 @@ public class StateManager : MonoBehaviour
         DontDestroyOnLoad(this);
 
         roomGenerator = this.GetComponent<RoomGenerator>();
+    }
+
+    private void Start()
+    {
         InitRooms();
+        NavMeshManager.Instance?.BuildNavMesh();
     }
 
     private void InitRooms()
@@ -44,6 +49,7 @@ public class StateManager : MonoBehaviour
         maze.GenerateMaze();
         roomGenerator.setMaze(maze);
         roomGenerator.GenerateRooms();
+
         //Debug.Log(maze.PrintMaze());
     }
 }
