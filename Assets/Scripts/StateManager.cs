@@ -1,14 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Classes;
 using UnityEngine;
 
+[RequireComponent(typeof(RoomGenerator))]
 public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
-
-    public Room[,] Rooms;
 
     [Range(2,5)]
     [SerializeField] public int Rows;
@@ -16,7 +16,11 @@ public class StateManager : MonoBehaviour
     [Range(2,5)]
     [SerializeField] public int Columns;
     
-    void Start()
+    private Maze maze;
+    
+    private RoomGenerator roomGenerator;
+    
+    void Awake()
     {
         if (Instance == null)
         {
@@ -25,18 +29,27 @@ public class StateManager : MonoBehaviour
         else
         {
             Destroy(this);
+            return;
         }
 
         DontDestroyOnLoad(this);
 
+        roomGenerator = this.GetComponent<RoomGenerator>();
+    }
+
+    private void Start()
+    {
         InitRooms();
+        NavMeshManager.Instance?.BuildNavMesh();
     }
 
     private void InitRooms()
     {
-        Rooms = new Room[Rows, Columns];
-        int[] middle = {Rows/2, Columns/2};
-        
-        Rooms[middle[0],middle[1]] = new Room(RoomType.LivingRoom); 
+        maze = new Maze(Rows, Columns);
+        maze.GenerateMaze();
+        roomGenerator.setMaze(maze);
+        roomGenerator.GenerateRooms();
+
+        //Debug.Log(maze.PrintMaze());
     }
 }

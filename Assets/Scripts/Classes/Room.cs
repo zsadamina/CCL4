@@ -3,25 +3,21 @@
 namespace Classes
 {
     [Serializable]
-    public class Room
+    public class Room : BaseCell
     {
-        
         public RoomType Type { get; set; }
 
         public int Version { get; set; }
 
         public float Spawnchance { get; set; }
 
-        public int x { get; set; }
-
-        public int y { get; set; }
-
-        public Room(RoomType type = RoomType.LivingRoom, int version = 1,int x = 0, int y = 0, float spawnchance = 0)
+        public float Rotation { get; set; }
+        
+        public Room(RoomType type = RoomType.LivingRoom, int version = 1,int x = 0, int y = 0,float rotation = 0, float spawnchance = 0):base(x,y)
         {
             this.Type = type;
             this.Version = version;
-            this.x = x;
-            this.y = y;
+            this.Rotation = rotation;
             this.Spawnchance = spawnchance;
         }
     }
