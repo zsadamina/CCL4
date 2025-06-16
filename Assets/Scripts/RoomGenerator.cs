@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Classes;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 [Serializable]
@@ -15,7 +16,7 @@ public class RoomGenerator : MonoBehaviour
 
     [SerializeField] private GameObject hallwayPrefab;
     [SerializeField] private GameObject[] roomPrefabs;
-    [SerializeField] private float[] probabilities;
+    [SerializeField] private float[] propabilities;
 
     private Maze maze;
     
@@ -87,19 +88,19 @@ public class RoomGenerator : MonoBehaviour
 
     private int GetRandomRoomIndex()
     {
-        if (probabilities == null || probabilities.Length == 0)
+        if (propabilities == null || propabilities.Length == 0)
         {
             Debug.LogWarning("WeightedRandomSelector: Weights array is null or empty.");
             return -1;
         }
         
-        if (roomPrefabs.Length != probabilities.Length)
+        if (roomPrefabs.Length != propabilities.Length)
         {
             Debug.LogWarning("WeightedRandomSelector: The Probality count does not match with the Room Prefab count.");
             return -1;
         }
 
-        float totalWeight = probabilities.Sum();
+        float totalWeight = propabilities.Sum();
 
         if (totalWeight <= 0f)
         {
@@ -110,11 +111,11 @@ public class RoomGenerator : MonoBehaviour
         float randomNumber = UnityEngine.Random.Range(0f, totalWeight);
 
         float cumulativeWeight = 0f;
-        for (int i = 0; i < probabilities.Length; i++)
+        for (int i = 0; i < propabilities.Length; i++)
         {
-            if (probabilities[i] < 0f) continue; // Skip negative weights
+            if (propabilities[i] < 0f) continue; // Skip negative weights
 
-            cumulativeWeight += probabilities[i];
+            cumulativeWeight += propabilities[i];
             if (randomNumber <= cumulativeWeight)
             {
                 return i;
@@ -122,7 +123,7 @@ public class RoomGenerator : MonoBehaviour
         }
 
         // Fallback for edge cases (e.g., float precision, or if randomNumber exactly equals totalWeight)
-        return probabilities.Length - 1;
+        return propabilities.Length - 1;
     }
     
     public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
