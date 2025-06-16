@@ -14,7 +14,8 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private float roomSquare = 5f;
 
     [SerializeField] private GameObject hallwayPrefab;
-    [SerializeField] private GameObject roomPrefab;
+    [SerializeField] private GameObject[] roomPrefabs;
+    [SerializeField] private float[] probabilities;
 
     private Maze maze;
     
@@ -55,10 +56,10 @@ public class RoomGenerator : MonoBehaviour
         float y = room.Row * roomSquare * -3;
         Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity);
 
-        GameObject topPrefab = !room.TopWall ? hallwayPrefab : roomPrefab;
-        GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : roomPrefab;
-        GameObject rightPrefab = !room.RightWall ? hallwayPrefab : roomPrefab;
-        GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : roomPrefab;
+        GameObject topPrefab = !room.TopWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
+        GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
+        GameObject rightPrefab = !room.RightWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
+        GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
 
         //Cross tiles
         Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.Euler(0, 90, 0));     // T
@@ -67,12 +68,63 @@ public class RoomGenerator : MonoBehaviour
         Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.Euler(0, 0, 0));    // L
         
         //Corner Tiles
-        if(!(room.TopWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 180, 0):Quaternion.Euler(0, 90, 0)); // TR
-        if(!(room.BottomWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y - roomSquare), !room.BottomWall ?Quaternion.Euler(0, 0, 0):Quaternion.Euler(0,-90,0)); // BL
-        if(!(room.BottomWall && room.RightWall))Instantiate(roomPrefab, new Vector3(x + roomSquare, 0, y - roomSquare), !room.BottomWall?Quaternion.Euler(0, 180, 0): Quaternion.Euler(0,-90,0)); // BR
-        if(!(room.TopWall && room.LeftWall))Instantiate(roomPrefab, new Vector3(x - roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 0, 0): Quaternion.Euler(0,90,0)); // TL
+        if(!(room.TopWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 180, 0):Quaternion.Euler(0, 90, 0)); // TR
+        if(!(room.BottomWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y - roomSquare), !room.BottomWall ?Quaternion.Euler(0, 0, 0):Quaternion.Euler(0,-90,0)); // BL
+        if(!(room.BottomWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y - roomSquare), !room.BottomWall?Quaternion.Euler(0, 180, 0): Quaternion.Euler(0,-90,0)); // BR
+        if(!(room.TopWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 0, 0): Quaternion.Euler(0,90,0)); // TL
     }
 
+    private GameObject GetRandomRoomWithSpawnChance()
+    {
+        int randomIndex = GetRandomRoomIndex();
+        if (randomIndex == -1)
+        {
+            return null;
+        }
+        
+        return roomPrefabs[randomIndex];
+    }
+
+    private int GetRandomRoomIndex()
+    {
+        if (probabilities == null || probabilities.Length == 0)
+        {
+            Debug.LogWarning("WeightedRandomSelector: Weights array is null or empty.");
+            return -1;
+        }
+        
+        if (roomPrefabs.Length != probabilities.Length)
+        {
+            Debug.LogWarning("WeightedRandomSelector: The Probality count does not match with the Room Prefab count.");
+            return -1;
+        }
+
+        float totalWeight = probabilities.Sum();
+
+        if (totalWeight <= 0f)
+        {
+            Debug.LogWarning("WeightedRandomSelector: Total weight is zero or negative.");
+            return -1;
+        }
+
+        float randomNumber = UnityEngine.Random.Range(0f, totalWeight);
+
+        float cumulativeWeight = 0f;
+        for (int i = 0; i < probabilities.Length; i++)
+        {
+            if (probabilities[i] < 0f) continue; // Skip negative weights
+
+            cumulativeWeight += probabilities[i];
+            if (randomNumber <= cumulativeWeight)
+            {
+                return i;
+            }
+        }
+
+        // Fallback for edge cases (e.g., float precision, or if randomNumber exactly equals totalWeight)
+        return probabilities.Length - 1;
+    }
+    
     public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
     {
         float x = column * roomSquare;
