@@ -940,7 +940,7 @@ MonoBehaviour:
     type: 3}
   roomPrefabs:
   - {fileID: 8869285297583552727, guid: 91e1b001a325aa541b86e7586aa6f048, type: 3}
-  probabilities:
+  propabilities:
   - 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
