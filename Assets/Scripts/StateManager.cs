@@ -5,7 +5,6 @@ using System.Linq;
 using Classes;
 using UnityEngine;
 
-[RequireComponent(typeof(RoomGenerator))]
 public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
@@ -17,8 +16,8 @@ public class StateManager : MonoBehaviour
     [SerializeField] public int Columns;
     
     private Maze maze;
-    
     private RoomGenerator roomGenerator;
+
     
     void Awake()
     {
@@ -34,7 +33,7 @@ public class StateManager : MonoBehaviour
 
         DontDestroyOnLoad(this);
 
-        roomGenerator = this.GetComponent<RoomGenerator>();
+        roomGenerator = RoomGenerator.Instance;
     }
 
     private void Start()
