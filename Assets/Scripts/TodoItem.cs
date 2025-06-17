@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PickupItemClass
 {
@@ -16,6 +18,7 @@ public class PickupItemClass
     }
 }
 
+[RequireComponent(typeof(XRSimpleInteractable))]
 public class TodoItem : MonoBehaviour
 {
 

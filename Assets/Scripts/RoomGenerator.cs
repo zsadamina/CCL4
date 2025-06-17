@@ -32,8 +32,6 @@ public class RoomGenerator : MonoBehaviour
         {
             Destroy(this);
         }
-
-        DontDestroyOnLoad(this);
     }
 
     public void setMaze(Maze maze) => this.maze = maze;

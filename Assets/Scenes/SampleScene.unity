@@ -920,16 +920,16 @@ MonoBehaviour:
   - {fileID: 3226445877944864879, guid: b1537501c57f8114fa75b969cf0cbbf9, type: 3}
   - {fileID: 8209678054092879601, guid: 7f27f6c854afe1e46850063be84dce23, type: 3}
   propabilities:
+  - 0
+  - 0
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!4 &2018292166
 Transform:
   m_ObjectHideFlags: 0
@@ -1005,10 +1005,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabsArray:
-  - {fileID: 919132149155446097, guid: 4ccfc25a73cf81e4ab918ef6fde9da45, type: 3}
-  - {fileID: 919132149155446097, guid: 503c601fdc7a08e4c8fe242320e7133e, type: 3}
-  - {fileID: 919132149155446097, guid: be44eb79adb9afc43a927016419136b2, type: 3}
-  - {fileID: 919132149155446097, guid: 7ca75da693ec5824f9f707c982181a33, type: 3}
+  - {fileID: 919132149155446097, guid: 25fa2fae8298ae9458ebfd5d9feff297, type: 3}
+  - {fileID: 919132149155446097, guid: 384e547b026ceba48b61ac34e8bd32cf, type: 3}
+  - {fileID: 919132149155446097, guid: 5489d81d432ee414c8650b19066863ed, type: 3}
+  - {fileID: 919132149155446097, guid: 573c15562fa20e94cae8c8b533db7f04, type: 3}
+  - {fileID: 919132149155446097, guid: f62203ee1529e2542a79026caa311919, type: 3}
+  - {fileID: 919132149155446097, guid: d763abb6a8f7da3459c9fc329cb71bfb, type: 3}
+  - {fileID: 919132149155446097, guid: ec5fc05c93368c549bf9daac4d6e1dd7, type: 3}
+  - {fileID: 919132149155446097, guid: 8534dba6bc10a6b46a40261323b7c321, type: 3}
+  - {fileID: 919132149155446097, guid: c056a502adb661844b0629f52d50eea7, type: 3}
+  - {fileID: 919132149155446097, guid: c06da14db616a5e48a6087b9c67e9b00, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
