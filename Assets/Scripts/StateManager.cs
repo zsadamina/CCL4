@@ -17,8 +17,9 @@ public class StateManager : MonoBehaviour
     [SerializeField] public int Columns;
     
     private Maze maze;
-    
     private RoomGenerator roomGenerator;
+
+    public List<PickupItemClass> Inventory;
     
     void Awake()
     {

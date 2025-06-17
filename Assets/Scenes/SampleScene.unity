@@ -887,6 +887,7 @@ GameObject:
   - component: {fileID: 2027931123}
   - component: {fileID: 2027931122}
   - component: {fileID: 2027931124}
+  - component: {fileID: 2027931125}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -942,6 +943,20 @@ MonoBehaviour:
   - {fileID: 8869285297583552727, guid: 91e1b001a325aa541b86e7586aa6f048, type: 3}
   propabilities:
   - 1
+--- !u!114 &2027931125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027931121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dafcc41db18c2544927ffd8e3faccaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabsArray:
+  - {fileID: 3215935777036549716, guid: 624fbe86416f66d41b04fcf4e39cddca, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
