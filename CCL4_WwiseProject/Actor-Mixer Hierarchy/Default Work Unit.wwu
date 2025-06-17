@@ -3,69 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{AA70355E-B96A-423D-9923-22B33F448464}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="PA_Music" ID="{EC30681A-FD6B-4685-BB95-04FE2596F7DE}" ShortID="701910392">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="_NeverGonnaGiveYouUp" ID="{D8DF3351-851A-4E93-910C-9B40E02246B2}" ShortID="166356495">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_NeverGonnaGiveYouUp" ID="{E5E1AF45-A944-4B6B-B1D4-FC635A3332A2}">
-									<Language>SFX</Language>
-									<AudioFile>_NeverGonnaGiveYouUp.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="828237836"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_NeverGonnaGiveYouUp" ID="{E5E1AF45-A944-4B6B-B1D4-FC635A3332A2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_WakeMeUp" ID="{C25E2336-71FF-40B7-A05D-118BEA644D75}" ShortID="619336136">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_WakeMeUp" ID="{CD61A82D-2A66-4F72-82C0-57B30D3FD3AB}">
-									<Language>SFX</Language>
-									<AudioFile>_WakeMeUp.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="248284923"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_WakeMeUp" ID="{CD61A82D-2A66-4F72-82C0-57B30D3FD3AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 				<Folder Name="Bear" ID="{1249C6AE-1CAC-4A01-83A9-D92D04F32E85}" ShortID="382486458">
 					<ChildrenList>
 						<RandomSequenceContainer Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" ShortID="886546815">
@@ -266,6 +203,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -481,8 +423,537 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="_Yawns" ID="{41AF40D8-C787-465D-91F5-275FFBA12EEB}" ShortID="1009489286">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="_Yawn1" ID="{CDEC968B-BEC1-46CF-8098-F21974F0C9E0}" ShortID="2038688">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_Yawn1" ID="{40D07E53-6BA4-4DC9-89C7-8619ABCB0391}">
+											<Language>SFX</Language>
+											<AudioFile>_Yawns\_Yawn1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="876034913"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_Yawn1" ID="{40D07E53-6BA4-4DC9-89C7-8619ABCB0391}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_Yawn2" ID="{17791506-B2CF-494D-BDF4-547369DB5647}" ShortID="130515490">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_Yawn2" ID="{84E01CEA-1580-4053-9B1A-82ECF1833658}">
+											<Language>SFX</Language>
+											<AudioFile>_Yawns\_Yawn2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="426234358"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_Yawn2" ID="{84E01CEA-1580-4053-9B1A-82ECF1833658}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_Yawn3" ID="{0D830247-0DB7-4A74-A9A4-7FFA4DB83486}" ShortID="978262490">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_Yawn3" ID="{FB161DFB-CE92-464B-9406-40484F5A0E55}">
+											<Language>SFX</Language>
+											<AudioFile>_Yawns\_Yawn3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="205481770"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_Yawn3" ID="{FB161DFB-CE92-464B-9406-40484F5A0E55}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_Yawn4" ID="{7C5F5306-F4C4-4D12-809F-8B84B58CCE2B}" ShortID="462839050">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_Yawn4" ID="{4ABF4077-8594-4E4B-B533-6209F4E82C30}">
+											<Language>SFX</Language>
+											<AudioFile>_Yawns\_Yawn4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="536827308"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_Yawn4" ID="{4ABF4077-8594-4E4B-B533-6209F4E82C30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_Yawn5" ID="{8B933077-3EAC-42EF-8206-698A56D4D742}" ShortID="193693785">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_Yawn5" ID="{7967E0F7-EC06-4927-8B51-3A2C84990BD3}">
+											<Language>SFX</Language>
+											<AudioFile>_Yawns\_Yawn5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="536062304"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_Yawn5" ID="{7967E0F7-EC06-4927-8B51-3A2C84990BD3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="_Exhausted" ID="{70CDDE80-E052-4D44-86F9-DBFC1E75FF7C}" ShortID="664212519">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="_VeeryTired" ID="{3A5BA03E-89FA-4B77-865C-09D1186449E9}" ShortID="471783482">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="_VeeryTired1" ID="{97729D2F-03FB-4FB8-88C3-1988D83A1EDC}" ShortID="444488194">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_VeeryTired1" ID="{7D0478A7-EF06-4FC6-B91F-1A659C4B929A}">
+													<Language>SFX</Language>
+													<AudioFile>_VeeryTired\_VeeryTired1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="80908469"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="_VeeryTired1" ID="{7D0478A7-EF06-4FC6-B91F-1A659C4B929A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_VeeryTired2" ID="{AE7A4227-9490-4911-B5D6-0EB93DDD91FA}" ShortID="129350728">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_VeeryTired2" ID="{2EDF89BB-A7B7-4995-8D49-661D6E1636AF}">
+													<Language>SFX</Language>
+													<AudioFile>_VeeryTired\_VeeryTired2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="367435409"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="_VeeryTired2" ID="{2EDF89BB-A7B7-4995-8D49-661D6E1636AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="_ChildyTire" ID="{49C43191-EA07-4E56-BDE8-527387FF188A}" ShortID="269505350">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="_ChildyTire1" ID="{3F275D8D-FE63-4A95-A720-1F936EF29B91}" ShortID="345976602">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_ChildyTire1" ID="{7035330D-755C-4256-9907-9B6848B0D32C}">
+													<Language>SFX</Language>
+													<AudioFile>_ChildyTire\_ChildyTire1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="607019106"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="_ChildyTire1" ID="{7035330D-755C-4256-9907-9B6848B0D32C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="_ChildyTire2" ID="{552A643E-738E-4CAE-9189-414DDDD083A2}" ShortID="118934983">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="_ChildyTire2" ID="{E2BEB2AB-7DC3-4BF1-B11E-04CA43CEB446}">
+													<Language>SFX</Language>
+													<AudioFile>_ChildyTire\_ChildyTire2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="894174040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="_ChildyTire2" ID="{E2BEB2AB-7DC3-4BF1-B11E-04CA43CEB446}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="_PlayerBump" ID="{DB9D6FC2-50D0-4366-9F72-06CD2100A774}" ShortID="467440750">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CDECFBF5-3D80-44F8-A6B6-8BE567EB9595}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-400"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{38FC3720-2463-453D-9D7F-597327FE618C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-18"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_PlayerBump" ID="{ADCB728F-63C4-4195-B012-D52E6FBF0B64}">
+									<Language>SFX</Language>
+									<AudioFile>_PlayerBump.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="611394155"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_PlayerBump" ID="{ADCB728F-63C4-4195-B012-D52E6FBF0B64}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
+				<RandomSequenceContainer Name="PAMusic" ID="{E0D3B45A-A302-4DA6-B778-26C7A644526C}" ShortID="106153003">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="_NeverGonnaGiveYouUp" ID="{4C833CDE-955F-4AB7-AF90-81D80FF26D16}" ShortID="522787774">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_NeverGonnaGiveYouUp" ID="{3AB21F53-726E-466E-AA1F-D3A8641823EE}">
+									<Language>SFX</Language>
+									<AudioFile>_NeverGonnaGiveYouUp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="828237836"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_NeverGonnaGiveYouUp" ID="{3AB21F53-726E-466E-AA1F-D3A8641823EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="_WakeMeUp" ID="{62B28EDF-8E00-402B-A43B-68106D8B3B07}" ShortID="699736376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_WakeMeUp" ID="{49A2D7BA-B394-49DF-8EE0-2EEF7342488E}">
+									<Language>SFX</Language>
+									<AudioFile>_WakeMeUp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="248284923"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_WakeMeUp" ID="{49A2D7BA-B394-49DF-8EE0-2EEF7342488E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" ShortID="915269958">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_Silence" ID="{DFC4D4B9-6754-49B5-979D-0F20AF31B0BC}">
+									<Language>SFX</Language>
+									<AudioFile>_Silence.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="237530338"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_Silence" ID="{DFC4D4B9-6754-49B5-979D-0F20AF31B0BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="_NeverGonnaGiveYouUp" ID="{4C833CDE-955F-4AB7-AF90-81D80FF26D16}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="_WakeMeUp" ID="{62B28EDF-8E00-402B-A43B-68106D8B3B07}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

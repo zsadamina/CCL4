@@ -12,7 +12,7 @@ public class PlayerFootstepsAudio : MonoBehaviour
     public bool useLeftHand = true;
 
     [Header("Wwise")]
-    public AK.Wwise.Event footstepEvent; // Drag your Wwise Event here
+    public AK.Wwise.Event footstepEvent; 
     public float stepInterval = 0.5f;
 
     private float stepTimer = 0f;

@@ -9,7 +9,7 @@
 							<ValueList>
 								<Value Platform="Android">4</Value>
 								<Value Platform="Mac">4</Value>
-								<Value Platform="Windows">4</Value>
+								<Value Platform="Windows">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
@@ -37,7 +37,7 @@
 							<ValueList>
 								<Value Platform="Android">0</Value>
 								<Value Platform="Mac">0</Value>
-								<Value Platform="Windows">0</Value>
+								<Value Platform="Windows">1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -49,7 +49,11 @@
 							<ConversionPlugin Name="" ID="{882B4BAE-460D-4887-B940-01207BF8EFA3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{1B62BDC9-9F84-4936-BFED-99574F6AF7AB}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{C625A97E-01FB-4F7B-8055-687DF69FD812}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="1"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

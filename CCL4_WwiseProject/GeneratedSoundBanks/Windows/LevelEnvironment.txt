@@ -1,16 +1,29 @@
 Event	ID	Name			Wwise Object Path	Notes
+	362971886	Play__PlayerBump			\Default Work Unit\Play__PlayerBump	
+	1579610859	Play__Yawns			\Default Work Unit\Play__Yawns	
 	1787411852	Play__FootstepsLevel			\Default Work Unit\Play__FootstepsLevel	
+	2278865038	Play__Exhausted			\Default Work Unit\Play__Exhausted	
 	2578942166	Play__SoftSteps			\Default Work Unit\Play__SoftSteps	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	54935977	_Footstep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4C\{4CA8DCB7-4221-ADEC-C983-A800C31779F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep3		78812
-	288586794	_SoftStep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\50\{508BB87E-576C-E93E-212C-AEF95BE978F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep1		211888
-	469566813	_Footstep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\ED\{EDE068C4-E2AC-2CBF-095B-961C3B9EBBFA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep2		68076
-	482489373	_SoftStep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6C\{6CAE5E4A-892A-7268-589B-5F202070EDBE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep2		211888
-	500000841	_SoftStep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D9\{D92AA7AD-278C-231C-8EF7-352B7E01DE5D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep4		229528
-	632449823	_SoftStep6	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\01\{01B54727-201A-3B86-3B9B-D1F2132B702E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep6		229528
-	742873965	_Footstep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\63\{637119B2-F912-E56D-9694-E92F410BBB4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep4		82388
-	840864182	_Footstep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\C0\{C0726E1F-C47C-F259-0C88-0E9FCFDD534C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep1		82388
-	952692076	_SoftStep5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8C\{8CC53D2F-1DDE-28CE-CEED-DCC3A682C18D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep5		211888
-	975225104	_SoftStep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\DA\{DAC4C8D2-F8C3-836F-9796-18B1B2D4963D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep3		229528
+	54935977	_Footstep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\F9\{F990C0F2-A345-1797-C5A0-88ED96C0847F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep3		1037
+	80908469	_VeeryTired1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\85\{85D815C3-3281-CC44-1D2B-37A4314CBD2C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Exhausted\_VeeryTired\_VeeryTired1		70437
+	205481770	_Yawn3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\13\{139C084D-8C06-8836-55F2-F0A0E8401847}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Yawns\_Yawn3		9416
+	288586794	_SoftStep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\AB\{ABD66626-9990-9BEE-67C3-4AE3B32964B6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep1		4331
+	367435409	_VeeryTired2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\15\{15630CFF-F30A-F517-A5B2-738A39D0E29C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Exhausted\_VeeryTired\_VeeryTired2		28771
+	426234358	_Yawn2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\51\{51E842CB-967C-FE82-BDE3-E7860DDDB6E0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Yawns\_Yawn2		9874
+	469566813	_Footstep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\53\{53099DCC-233C-256E-8F64-F06A04E1A3EC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep2		951
+	482489373	_SoftStep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\55\{55E7746B-2625-7DCA-B934-C77CED4C289A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep2		4164
+	500000841	_SoftStep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\2A\{2A55AE31-2929-0031-FB42-9F852A98B84F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep4		3604
+	536062304	_Yawn5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8F\{8F56E2DA-A18E-9F31-360C-6F5DF8BD00BF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Yawns\_Yawn5		8997
+	536827308	_Yawn4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8D\{8DBA7C2A-5148-6AFA-F1AA-60F267A15E0F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Yawns\_Yawn4		18055
+	607019106	_ChildyTire1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A2\{A2A79B79-E349-6167-A6E3-B2C63C9B3DF1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Exhausted\_ChildyTire\_ChildyTire1		18592
+	611394155	_PlayerBump	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\1A\{1A2A42A6-4C75-541F-DB86-4F5A1C673027}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_PlayerBump		1597
+	632449823	_SoftStep6	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\14\{1491EFC2-B120-E014-AD34-A5380AAD0841}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep6		2913
+	742873965	_Footstep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4A\{4A1EA0A3-976A-A5F5-B75D-392BC18C648C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep4		1033
+	840864182	_Footstep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4B\{4B6DF382-0380-7D03-9F4E-3A96E4FC451D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep1		1045
+	876034913	_Yawn1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\DB\{DB68A824-996B-96C1-7750-4EDA2ABF1E66}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Yawns\_Yawn1		10052
+	894174040	_ChildyTire2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\AE\{AE31A15D-8D0E-2583-7BAF-B841302DA963}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_Exhausted\_ChildyTire\_ChildyTire2		19614
+	952692076	_SoftStep5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\73\{736ECD65-D329-AA26-2126-54CF905BACB9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep5		4131
+	975225104	_SoftStep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\63\{63756E35-B5CD-2B03-B6AF-ED1BABEFF89B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep3		3623
 
