@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D13EBB4B-6B49-4392-82F4-BE1B42928B03}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{D13EBB4B-6B49-4392-82F4-BE1B42928B03}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Music" ID="{406A5DF6-C9A9-4C59-9CC5-E3949D49BFDC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PA_Music" ID="{EC30681A-FD6B-4685-BB95-04FE2596F7DE}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="LevelEnvironment" ID="{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="_FootstepsLevel" ID="{AA112B0C-69E6-42E4-86A5-A3AC818BE51A}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

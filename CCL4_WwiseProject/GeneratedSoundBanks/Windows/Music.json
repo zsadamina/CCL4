@@ -1,0 +1,86 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{406A5DF6-C9A9-4C59-9CC5-E3949D49BFDC}",
+    "Language": "SFX",
+    "Hash": "{944C3E50-7ABC-6FDA-93E7-41863164D348}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "248284923",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakeMeUp.wav",
+      "CachePath": "42/{42981ACC-6BAC-56B0-B4DA-669D7F3F7108}.wem"
+     },
+     {
+      "Id": "828237836",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_NeverGonnaGiveYouUp.wav",
+      "CachePath": "7F/{7F66ABAB-1668-551B-CB6E-DE9FEB4BD900}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2656427947",
+      "Name": "Play__NeverGonnaGiveYouUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__NeverGonnaGiveYouUp",
+      "GUID": "{0AB2C984-D203-4F22-B5D9-7A8287583775}",
+      "DurationType": "OneShot",
+      "DurationMin": "212.09106",
+      "DurationMax": "212.09106",
+      "MediaRefs": [
+       {
+        "Id": "828237836"
+       }
+      ]
+     },
+     {
+      "Id": "2477745328",
+      "Name": "Play__WakeMeUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__WakeMeUp",
+      "GUID": "{1B7BCE05-09C3-4E1A-B214-881CA743565C}",
+      "DurationType": "OneShot",
+      "DurationMin": "233.17479",
+      "DurationMax": "233.17479",
+      "MediaRefs": [
+       {
+        "Id": "248284923"
+       }
+      ]
+     },
+     {
+      "Id": "3408178795",
+      "Name": "Play_PA_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PA_Music",
+      "GUID": "{068E8BE2-F6D7-4B24-8821-5C8ACF8D8AFA}",
+      "DurationType": "OneShot",
+      "DurationMin": "212.09106",
+      "DurationMax": "233.17479",
+      "MediaRefs": [
+       {
+        "Id": "248284923"
+       },
+       {
+        "Id": "828237836"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2C624490-6C8B-D920-A160-C5C87C6DE601}"
+ }
+}
