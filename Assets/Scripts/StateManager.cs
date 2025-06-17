@@ -19,7 +19,6 @@ public class StateManager : MonoBehaviour
     private Maze maze;
     private RoomGenerator roomGenerator;
 
-    public List<PickupItemClass> Inventory;
     
     void Awake()
     {

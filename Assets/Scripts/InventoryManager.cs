@@ -14,6 +14,8 @@ public class InventoryManager : MonoBehaviour
     public PickupItemClass[] PickupItems;
 
     public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
+    
+    public List<TodoItem> Todos {get; set;} = new List<TodoItem>();
 
     void Awake()
     {
@@ -31,5 +33,21 @@ public class InventoryManager : MonoBehaviour
         
         PickupItems = itemPrefabsArray.Select(itemPrefab =>
             new PickupItemClass(itemPrefab.name, itemPrefab)).ToArray();
+    }
+
+    void Start()
+    {
+        InitSpawnPoints();
+    }
+
+    private void InitSpawnPoints()
+    {
+       var shuffledList = Todos.OrderBy( x => Random.value ).ToList();
+       var selectedSpawnPoints = shuffledList.GetRange(0, Todos.Count);
+       Debug.Log(selectedSpawnPoints.Count);
+       for (int i = 0; i < PickupItems.Length; i++)
+       {
+           selectedSpawnPoints[i].InitPickupItem(PickupItems[i]);
+       } 
     }
 }

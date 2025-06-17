@@ -956,7 +956,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabsArray:
-  - {fileID: 3215935777036549716, guid: 624fbe86416f66d41b04fcf4e39cddca, type: 3}
+  - {fileID: 919132149155446097, guid: 4ccfc25a73cf81e4ab918ef6fde9da45, type: 3}
+  - {fileID: 919132149155446097, guid: 503c601fdc7a08e4c8fe242320e7133e, type: 3}
+  - {fileID: 919132149155446097, guid: be44eb79adb9afc43a927016419136b2, type: 3}
+  - {fileID: 919132149155446097, guid: 7ca75da693ec5824f9f707c982181a33, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
