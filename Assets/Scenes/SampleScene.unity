@@ -701,6 +701,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7690080512698956844, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7873184977108000993, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_CameraYOffset
@@ -909,8 +914,26 @@ MonoBehaviour:
   hallwayPrefab: {fileID: 5388062190955815175, guid: 801f0de7f4709614680223b15ae36840,
     type: 3}
   roomPrefabs:
-  - {fileID: 8869285297583552727, guid: 91e1b001a325aa541b86e7586aa6f048, type: 3}
+  - {fileID: 483600675471412421, guid: 1853576a6ab72254a945633897447693, type: 3}
+  - {fileID: 639016387517311752, guid: 8b43611cbf60d544c946311e985e9dcf, type: 3}
+  - {fileID: 958788308497523136, guid: baeeba3bab737534ea63e5917057fa1d, type: 3}
+  - {fileID: 7573437596147785227, guid: 3d9cc22567f54a14ea774985dfb7f9aa, type: 3}
+  - {fileID: 8503102699521389755, guid: aa5274dbb41ea3d499c60b9b6a5efc7e, type: 3}
+  - {fileID: 550549023078449258, guid: b5e38e90284797849ac61c120df584cc, type: 3}
+  - {fileID: 5816119751573405927, guid: 13ad1cc2f07a66c4886160ad53490a3e, type: 3}
+  - {fileID: 7270131692769328404, guid: 3ebbc3eaabbb68e4bba24b711f9585b3, type: 3}
+  - {fileID: 3226445877944864879, guid: b1537501c57f8114fa75b969cf0cbbf9, type: 3}
+  - {fileID: 8209678054092879601, guid: 7f27f6c854afe1e46850063be84dce23, type: 3}
   propabilities:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   - 1
 --- !u!4 &2018292166
 Transform:
@@ -957,8 +980,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98be6ac61b532634f8693fce559ab9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rows: 4
-  Columns: 4
+  Rows: 2
+  Columns: 2
 --- !u!4 &2027931123
 Transform:
   m_ObjectHideFlags: 0
@@ -987,10 +1010,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefabsArray:
-  - {fileID: 919132149155446097, guid: 4ccfc25a73cf81e4ab918ef6fde9da45, type: 3}
-  - {fileID: 919132149155446097, guid: 503c601fdc7a08e4c8fe242320e7133e, type: 3}
-  - {fileID: 919132149155446097, guid: be44eb79adb9afc43a927016419136b2, type: 3}
-  - {fileID: 919132149155446097, guid: 7ca75da693ec5824f9f707c982181a33, type: 3}
+  - {fileID: 1573648798630216955, guid: 099f51f565a917145b5bfd62a5b7cecc, type: 3}
+  - {fileID: 3782918504892516610, guid: ca57982e09899054995cef994e702f90, type: 3}
+  - {fileID: 3062040860222767501, guid: 61b30e788d317194ead35a34d356065c, type: 3}
+  - {fileID: 3770677261438179631, guid: 9deb1f43c9a841b448a552a457aa05c6, type: 3}
+  - {fileID: 6482566274167336290, guid: 9956995779297d947bbd86ec843265f5, type: 3}
+  - {fileID: 1752652373905042979, guid: f8f570859bfbaa94a990c926023b5057, type: 3}
+  - {fileID: 7901666017867104503, guid: 5b104b65d69efc245b500463c75bf33e, type: 3}
+  - {fileID: 888480717298680403, guid: 67e638866471c6a438aac7b6939f84d1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

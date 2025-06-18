@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PickupItemClass
 {
@@ -16,6 +18,7 @@ public class PickupItemClass
     }
 }
 
+[RequireComponent(typeof(XRSimpleInteractable))]
 public class TodoItem : MonoBehaviour
 {
 
@@ -30,22 +33,12 @@ public class TodoItem : MonoBehaviour
         _inventoryManager.Todos.Add(this);
     }
     
-    public void PickupItem()
-    {
-        Debug.Log("Picked up Item");
-        Destroy(this.gameObject);
-        Destroy(_pickupItemGameObject);
-        
-        if(_pickupItem != null){
-            _inventoryManager.Inventory.Add(_pickupItem);
-            Debug.Log(_inventoryManager.Inventory.Count);
-        }
-    }
-
     public void InitPickupItem(PickupItemClass prefab)
     {
         
         _pickupItemGameObject = Instantiate(prefab.prefab, this.GetSpawnPoint(), Quaternion.identity);
+        _pickupItemGameObject.GetComponent<CollectableItem>()._pickupItem = prefab;
+        
         _pickupItemGameObject.transform.SetParent(this.gameObject.transform);
         Debug.Log("Picked up itemName: " +this.gameObject.name);
     }

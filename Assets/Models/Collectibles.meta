@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 36642dac406e2724fa6901d2a1744ac3
+<<<<<<<< HEAD:Assets/Scenes/SampleScene.meta
+guid: db9b06d27dfa38b4dac15c6b96d9eb3d
+========
+guid: 787730595b5ab0a49ad07b1b3c6e5d36
+>>>>>>>> origin/Prefabs:Assets/Models/Collectibles.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
