@@ -5,15 +5,19 @@
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{406A5DF6-C9A9-4C59-9CC5-E3949D49BFDC}">
 					<ObjectInclusionList>
-						<ObjectRef Name="PA_Music" ID="{EC30681A-FD6B-4685-BB95-04FE2596F7DE}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PAMusic" ID="{CFF8A83C-DA16-4626-8839-21C33A25772C}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PAMusic" ID="{E0D3B45A-A302-4DA6-B778-26C7A644526C}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="LevelEnvironment" ID="{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play__Yawns" ID="{B16C932B-2CE0-4180-A0C2-AC1C400B838E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_FootstepsLevel" ID="{AA112B0C-69E6-42E4-86A5-A3AC818BE51A}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play__PlayerBump" ID="{E0E9689E-3702-441C-A531-118EFAD523B0}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play__Exhausted" ID="{51B789FC-0488-4AC1-B9EA-6CF4B2BC311A}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
