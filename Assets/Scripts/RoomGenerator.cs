@@ -22,7 +22,7 @@ public class RoomGenerator : MonoBehaviour
     
     Dictionary<String,GameObject> InitializedRooms = new Dictionary<String, GameObject>();
     
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         {
@@ -32,8 +32,6 @@ public class RoomGenerator : MonoBehaviour
         {
             Destroy(this);
         }
-
-        DontDestroyOnLoad(this);
     }
 
     public void setMaze(Maze maze) => this.maze = maze;
@@ -55,7 +53,7 @@ public class RoomGenerator : MonoBehaviour
     {
         float x = room.Column * roomSquare * 3;
         float y = room.Row * roomSquare * -3;
-        Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity);
+        Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity, this.gameObject.transform);
 
         GameObject topPrefab = !room.TopWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
         GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
@@ -63,16 +61,16 @@ public class RoomGenerator : MonoBehaviour
         GameObject leftPrefab = !room.LeftWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
 
         //Cross tiles
-        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.Euler(0, 90, 0));     // T
-        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.Euler(0, -90, 0));  // B
-        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.Euler(0, 180, 0));   // R
-        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.Euler(0, 0, 0));    // L
+        Instantiate(topPrefab, new Vector3(x, 0, y + roomSquare), Quaternion.Euler(0, 90, 0), this.gameObject.transform);     // T
+        Instantiate(bottomPrefab, new Vector3(x, 0, y - roomSquare), Quaternion.Euler(0, -90, 0), this.gameObject.transform);  // B
+        Instantiate(rightPrefab, new Vector3(x + roomSquare, 0, y), Quaternion.Euler(0, 180, 0), this.gameObject.transform);   // R
+        Instantiate(leftPrefab, new Vector3(x - roomSquare, 0, y), Quaternion.Euler(0, 0, 0), this.gameObject.transform);    // L
         
         //Corner Tiles
-        if(!(room.TopWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 180, 0):Quaternion.Euler(0, 90, 0)); // TR
-        if(!(room.BottomWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y - roomSquare), !room.BottomWall ?Quaternion.Euler(0, 0, 0):Quaternion.Euler(0,-90,0)); // BL
-        if(!(room.BottomWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y - roomSquare), !room.BottomWall?Quaternion.Euler(0, 180, 0): Quaternion.Euler(0,-90,0)); // BR
-        if(!(room.TopWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 0, 0): Quaternion.Euler(0,90,0)); // TL
+        if(!(room.TopWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 180, 0):Quaternion.Euler(0, 90, 0), this.gameObject.transform); // TR
+        if(!(room.BottomWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y - roomSquare), !room.BottomWall ?Quaternion.Euler(0, 0, 0):Quaternion.Euler(0,-90,0), this.gameObject.transform); // BL
+        if(!(room.BottomWall && room.RightWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x + roomSquare, 0, y - roomSquare), !room.BottomWall?Quaternion.Euler(0, 180, 0): Quaternion.Euler(0,-90,0), this.gameObject.transform); // BR
+        if(!(room.TopWall && room.LeftWall))Instantiate(GetRandomRoomWithSpawnChance(), new Vector3(x - roomSquare, 0, y + roomSquare), !room.TopWall?Quaternion.Euler(0, 0, 0): Quaternion.Euler(0,90,0), this.gameObject.transform); // TL
     }
 
     private GameObject GetRandomRoomWithSpawnChance()
