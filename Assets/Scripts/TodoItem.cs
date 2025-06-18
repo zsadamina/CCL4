@@ -18,7 +18,6 @@ public class PickupItemClass
     }
 }
 
-[RequireComponent(typeof(XRSimpleInteractable))]
 public class TodoItem : MonoBehaviour
 {
 
