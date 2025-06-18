@@ -1,0 +1,157 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1586582072",
+    "Type": "User",
+    "GUID": "{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}",
+    "Language": "SFX",
+    "Hash": "{225DEB2A-8042-0F22-1076-787DD51AA6AE}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\LevelEnvironment",
+    "ShortName": "LevelEnvironment",
+    "Path": "LevelEnvironment.bnk",
+    "Media": [
+     {
+      "Id": "54935977",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep3.wav",
+      "CachePath": "4C/{4CA8DCB7-4221-ADEC-C983-A800C31779F6}.wem"
+     },
+     {
+      "Id": "288586794",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep1.wav",
+      "CachePath": "50/{508BB87E-576C-E93E-212C-AEF95BE978F5}.wem"
+     },
+     {
+      "Id": "469566813",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep2.wav",
+      "CachePath": "ED/{EDE068C4-E2AC-2CBF-095B-961C3B9EBBFA}.wem"
+     },
+     {
+      "Id": "482489373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep2.wav",
+      "CachePath": "6C/{6CAE5E4A-892A-7268-589B-5F202070EDBE}.wem"
+     },
+     {
+      "Id": "500000841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep4.wav",
+      "CachePath": "D9/{D92AA7AD-278C-231C-8EF7-352B7E01DE5D}.wem"
+     },
+     {
+      "Id": "632449823",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep6.wav",
+      "CachePath": "01/{01B54727-201A-3B86-3B9B-D1F2132B702E}.wem"
+     },
+     {
+      "Id": "742873965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep4.wav",
+      "CachePath": "63/{637119B2-F912-E56D-9694-E92F410BBB4E}.wem"
+     },
+     {
+      "Id": "840864182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep1.wav",
+      "CachePath": "C0/{C0726E1F-C47C-F259-0C88-0E9FCFDD534C}.wem"
+     },
+     {
+      "Id": "952692076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep5.wav",
+      "CachePath": "8C/{8CC53D2F-1DDE-28CE-CEED-DCC3A682C18D}.wem"
+     },
+     {
+      "Id": "975225104",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_SoftSteps\\_SoftStep3.wav",
+      "CachePath": "DA/{DAC4C8D2-F8C3-836F-9796-18B1B2D4963D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1787411852",
+      "Name": "Play__FootstepsLevel",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__FootstepsLevel",
+      "GUID": "{6A07D1D6-79F4-4688-936C-6C66921EF1A3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.38537416",
+      "DurationMax": "0.6227134",
+      "MediaRefs": [
+       {
+        "Id": "54935977"
+       },
+       {
+        "Id": "469566813"
+       },
+       {
+        "Id": "742873965"
+       },
+       {
+        "Id": "840864182"
+       }
+      ]
+     },
+     {
+      "Id": "2578942166",
+      "Name": "Play__SoftSteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__SoftSteps",
+      "GUID": "{1F9EEABF-2085-4AC0-B1FA-1BF58C31AD43}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0696441",
+      "DurationMax": "1.4599134",
+      "MediaRefs": [
+       {
+        "Id": "288586794"
+       },
+       {
+        "Id": "482489373"
+       },
+       {
+        "Id": "500000841"
+       },
+       {
+        "Id": "632449823"
+       },
+       {
+        "Id": "952692076"
+       },
+       {
+        "Id": "975225104"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B4960895-91AA-5207-7125-E597CF7ED6D7}"
+ }
+}

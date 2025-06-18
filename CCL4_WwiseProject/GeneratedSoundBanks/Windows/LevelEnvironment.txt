@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1787411852	Play__FootstepsLevel			\Default Work Unit\Play__FootstepsLevel	
+	2578942166	Play__SoftSteps			\Default Work Unit\Play__SoftSteps	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54935977	_Footstep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4C\{4CA8DCB7-4221-ADEC-C983-A800C31779F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep3		78812
+	288586794	_SoftStep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\50\{508BB87E-576C-E93E-212C-AEF95BE978F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep1		211888
+	469566813	_Footstep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\ED\{EDE068C4-E2AC-2CBF-095B-961C3B9EBBFA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep2		68076
+	482489373	_SoftStep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6C\{6CAE5E4A-892A-7268-589B-5F202070EDBE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep2		211888
+	500000841	_SoftStep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D9\{D92AA7AD-278C-231C-8EF7-352B7E01DE5D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep4		229528
+	632449823	_SoftStep6	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\01\{01B54727-201A-3B86-3B9B-D1F2132B702E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep6		229528
+	742873965	_Footstep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\63\{637119B2-F912-E56D-9694-E92F410BBB4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep4		82388
+	840864182	_Footstep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\C0\{C0726E1F-C47C-F259-0C88-0E9FCFDD534C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep1		82388
+	952692076	_SoftStep5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8C\{8CC53D2F-1DDE-28CE-CEED-DCC3A682C18D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep5		211888
+	975225104	_SoftStep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\DA\{DAC4C8D2-F8C3-836F-9796-18B1B2D4963D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep3		229528
+
