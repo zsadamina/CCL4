@@ -920,16 +920,16 @@ MonoBehaviour:
   - {fileID: 3226445877944864879, guid: b1537501c57f8114fa75b969cf0cbbf9, type: 3}
   - {fileID: 8209678054092879601, guid: 7f27f6c854afe1e46850063be84dce23, type: 3}
   propabilities:
-  - 0
-  - 0
   - 1
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
 --- !u!4 &2018292166
 Transform:
   m_ObjectHideFlags: 0
@@ -975,8 +975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98be6ac61b532634f8693fce559ab9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rows: 4
-  Columns: 4
+  Rows: 2
+  Columns: 2
 --- !u!4 &2027931123
 Transform:
   m_ObjectHideFlags: 0
