@@ -42,6 +42,10 @@ public class InventoryManager : MonoBehaviour
 
     private void InitSpawnPoints()
     {
+        if (Todos.Count <= 0)
+        {
+            return;
+        }
        var shuffledList = Todos.OrderBy( x => Random.value ).ToList();
        var selectedSpawnPoints = shuffledList.GetRange(0, Todos.Count);
        Debug.Log(selectedSpawnPoints.Count);
