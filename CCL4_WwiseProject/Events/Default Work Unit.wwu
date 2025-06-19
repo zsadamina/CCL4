@@ -358,6 +358,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play__WarehouseWind" ID="{AB07A5A1-1560-445D-8BCE-CD677ED89C6E}">
+					<ChildrenList>
+						<Action Name="" ID="{81DE8008-E9CA-48E6-9D2E-97612AD2B855}" ShortID="303842147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="_WarehouseWind" ID="{89938AF3-C98D-46DE-B8A9-14C57FC9A688}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

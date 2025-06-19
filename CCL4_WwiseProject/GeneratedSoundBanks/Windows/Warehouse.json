@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D7A64CE1-DDA5-4CFE-80D2-272D35AAA166}",
     "Language": "SFX",
-    "Hash": "{32A97A42-65C1-1170-BAB9-096C3C213F32}",
+    "Hash": "{1B0D7CA3-0497-78C7-616C-4D9D426F7F26}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Warehouse",
     "ShortName": "Warehouse",
     "Path": "Warehouse.bnk",
@@ -32,12 +32,12 @@
       "CachePath": "D8/{D8F7168E-8B2B-6B4C-EA26-EECE2C4D7577}.wem"
      },
      {
-      "Id": "159493294",
+      "Id": "149462713",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "_Wind.wav",
-      "CachePath": "5F/{5F5732AC-489D-0498-B29C-39A93A3C7CBA}.wem"
+      "ShortName": "_warehouseWind.wav",
+      "CachePath": "67/{678717F3-7897-013A-CA5F-D34EC3E8FB8D}.wem"
      },
      {
       "Id": "225526876",
@@ -251,6 +251,20 @@
       ]
      },
      {
+      "Id": "839561668",
+      "Name": "Play__WarehouseWind",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__WarehouseWind",
+      "GUID": "{AB07A5A1-1560-445D-8BCE-CD677ED89C6E}",
+      "DurationType": "OneShot",
+      "DurationMin": "100.86907",
+      "DurationMax": "100.86907",
+      "MediaRefs": [
+       {
+        "Id": "149462713"
+       }
+      ]
+     },
+     {
       "Id": "2483767443",
       "Name": "Play__Whoosh",
       "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__Whoosh",
@@ -263,22 +277,10 @@
         "Id": "633485570"
        }
       ]
-     },
-     {
-      "Id": "3791168207",
-      "Name": "Play__Wind",
-      "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__Wind",
-      "GUID": "{2AB4C018-9215-464C-9B99-261E0B756B5C}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "159493294"
-       }
-      ]
      }
     ]
    }
   ],
-  "FileHash": "{BF2E3D54-D155-34AB-7641-09FD9E2D55B3}"
+  "FileHash": "{E69DCA05-0782-E7D4-30A2-E6D7A0473916}"
  }
 }

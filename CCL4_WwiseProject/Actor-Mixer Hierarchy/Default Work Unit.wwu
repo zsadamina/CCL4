@@ -36,11 +36,6 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -613,7 +608,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1870,6 +1865,9 @@
 					<ObjectLists>
 						<ObjectList Name="Playlist">
 							<Reference>
+								<ObjectRef Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+							</Reference>
+							<Reference>
 								<ObjectRef Name="_NeverGonnaGiveYouUp" ID="{4C833CDE-955F-4AB7-AF90-81D80FF26D16}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 							</Reference>
 							<Reference>
@@ -1877,9 +1875,6 @@
 							</Reference>
 							<Reference>
 								<ObjectRef Name="_WakeMeUp" ID="{62B28EDF-8E00-402B-A43B-68106D8B3B07}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
-							</Reference>
-							<Reference>
-								<ObjectRef Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="RTPC">
@@ -4589,6 +4584,35 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="_WarehouseWind" ID="{89938AF3-C98D-46DE-B8A9-14C57FC9A688}" ShortID="230113096">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="WarehouseWind" ID="{3283695B-2608-47DC-AA95-12D8C2FC1DC7}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_warehouseWind" ID="{12A76B37-D16F-4BEC-B751-F8E48E07B6E4}">
+									<Language>SFX</Language>
+									<AudioFile>_warehouseWind.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="149462713"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_warehouseWind" ID="{12A76B37-D16F-4BEC-B751-F8E48E07B6E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Furniture" ID="{C07D6BF9-7E13-4D17-8BD7-DC68CA250256}" ShortID="887032925">

@@ -240,49 +240,14 @@ GameObject:
   m_Component:
   - component: {fileID: 309151410}
   - component: {fileID: 309151409}
-  - component: {fileID: 309151408}
+  - component: {fileID: 309151411}
   m_Layer: 0
-  m_Name: Music
+  m_Name: PASystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &309151408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309151407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcbc3e64945e5b849bd259e88d9d2696, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c7cdea8a663e0d7419d72b0ce1be4b4a,
-      type: 2}
-  useCallbacks: 0
-  stopSoundOnDestroy: 1
-  Callbacks: []
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
 --- !u!114 &309151409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +287,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309151411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309151407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a8ffd4c23bf784da6676bc64610b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDelayBetweenAnnouncements: 180
+  maxDelayBetweenAnnouncements: 270
+  speakerObject: {fileID: 309151407}
+  musicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c7cdea8a663e0d7419d72b0ce1be4b4a,
+      type: 2}
+  announcementEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be4c74e3eda428c43ac0e82e68877198,
+      type: 2}
+  musicVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 936ef41d2a63a724f9b6b2cd3b139f48,
+      type: 2}
+  normalMusicVolume: 100
+  fadedMusicVolume: 0
+  fadeDuration: 1
 --- !u!4 &333153070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 374208250855312057, guid: 5378baf5937b2194b900e4e5983bc91b,
@@ -1351,6 +1349,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9edbcc528426289469b69effe4422f19,
       type: 2}
+  fallAsleepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c0f87a2c735351749992373d0f0bb547,
+      type: 2}
 --- !u!114 &1151181211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,7 +1658,7 @@ CapsuleCollider:
   m_Radius: 0.6
   m_Height: 3
   m_Direction: 1
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!54 &1352630069
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}",
     "Language": "SFX",
-    "Hash": "{A3F3B00B-E33C-BB6E-A128-E5ED859DF6A9}",
+    "Hash": "{88527493-178F-3F45-4B98-42A4ABDF5A4B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\LevelEnvironment",
     "ShortName": "LevelEnvironment",
     "Path": "LevelEnvironment.bnk",
@@ -134,6 +134,14 @@
       "Location": "Memory",
       "ShortName": "_StealerSounds\\_WhooshYoinkGotcha\\_WhooshYoinkGotcha11.wav",
       "CachePath": "B3/{B334F1F4-2E76-663F-05D6-9E7B265E4C8E}.wem"
+     },
+     {
+      "Id": "172181549",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp5.wav",
+      "CachePath": "C6/{C6E0C81A-9BE0-FDA8-F5E7-2CC99D075E9C}.wem"
      },
      {
       "Id": "178760347",
@@ -262,6 +270,22 @@
       "Location": "Memory",
       "ShortName": "_StealerSounds\\_WhooshYoinkGotcha\\_WhooshYoinkGotcha8.wav",
       "CachePath": "85/{851CB409-67B1-B45A-9699-F95C2F1BAC6D}.wem"
+     },
+     {
+      "Id": "318083483",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp2.wav",
+      "CachePath": "72/{721C3BA7-29BE-7A9D-09DE-706CEC0CE2DD}.wem"
+     },
+     {
+      "Id": "324912200",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp4.wav",
+      "CachePath": "63/{638F4E7D-C663-188E-1D22-0A38CC6B62CE}.wem"
      },
      {
       "Id": "325841004",
@@ -472,6 +496,14 @@
       "CachePath": "5F/{5F122E79-1C01-716A-9A3E-7EA1522E77A0}.wem"
      },
      {
+      "Id": "511097856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp6.wav",
+      "CachePath": "C7/{C707EAC1-BA45-686C-0893-6790AAB971CD}.wem"
+     },
+     {
       "Id": "514574374",
       "Language": "SFX",
       "Streaming": "false",
@@ -534,6 +566,14 @@
       "Location": "Memory",
       "ShortName": "_StealerSounds\\_Nahuh\\_Nahuh14.wav",
       "CachePath": "D0/{D0E81ED8-C05D-3C75-AFDA-B18FFE8B7F44}.wem"
+     },
+     {
+      "Id": "563351776",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp3.wav",
+      "CachePath": "1C/{1C412270-9B0F-9D4A-A36A-2FE302EAFF58}.wem"
      },
      {
       "Id": "565850318",
@@ -752,6 +792,22 @@
       "CachePath": "22/{22D6EC03-DD4C-FDB6-1E55-9D3B751CBC44}.wem"
      },
      {
+      "Id": "784623044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FallingAsleep\\_FallingAsleep1.wav",
+      "CachePath": "A8/{A8FE122E-8661-5FDD-B35F-70805DB93AA9}.wem"
+     },
+     {
+      "Id": "805624367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp7.wav",
+      "CachePath": "1A/{1A27592F-1888-6C19-7766-6CAA50654C91}.wem"
+     },
+     {
       "Id": "829502810",
       "Language": "SFX",
       "Streaming": "false",
@@ -790,6 +846,14 @@
       "Location": "Memory",
       "ShortName": "_BearDialogue\\_BearNono\\_BearLine10_3.wav",
       "CachePath": "6B/{6BDE5614-DB4A-52A8-3B5E-6985BEAC9E35}.wem"
+     },
+     {
+      "Id": "854040635",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_FallingAsleep\\_FallingAsleep2.wav",
+      "CachePath": "8C/{8C877885-AD49-7B62-9698-4337F232CA56}.wem"
      },
      {
       "Id": "859922888",
@@ -846,6 +910,14 @@
       "Location": "Memory",
       "ShortName": "_ChildyTire\\_ChildyTire2.wav",
       "CachePath": "19/{19C7AF4E-AA5C-360A-A489-45046363DB34}.wem"
+     },
+     {
+      "Id": "922875176",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_WakingUp\\_WakingUp1.wav",
+      "CachePath": "61/{6186B331-7BEA-DA9A-8645-4C7967D14197}.wem"
      },
      {
       "Id": "925818406",
@@ -1109,6 +1181,23 @@
        },
        {
         "Id": "940890137"
+       }
+      ]
+     },
+     {
+      "Id": "1590281344",
+      "Name": "Play__FallingAsleep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__FallingAsleep",
+      "GUID": "{B61CBAF4-A119-43F5-A39C-E9643C322388}",
+      "DurationType": "OneShot",
+      "DurationMin": "60.560658",
+      "DurationMax": "60.560658",
+      "MediaRefs": [
+       {
+        "Id": "784623044"
+       },
+       {
+        "Id": "854040635"
        }
       ]
      },
@@ -1519,6 +1608,38 @@
       ]
      },
      {
+      "Id": "2480831051",
+      "Name": "Play__WakingUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__WakingUp",
+      "GUID": "{85271415-2DBB-435C-A06D-2FB73A6C61DA}",
+      "DurationType": "OneShot",
+      "DurationMin": "13.2940855",
+      "DurationMax": "13.2940855",
+      "MediaRefs": [
+       {
+        "Id": "172181549"
+       },
+       {
+        "Id": "318083483"
+       },
+       {
+        "Id": "324912200"
+       },
+       {
+        "Id": "511097856"
+       },
+       {
+        "Id": "563351776"
+       },
+       {
+        "Id": "805624367"
+       },
+       {
+        "Id": "922875176"
+       }
+      ]
+     },
+     {
       "Id": "1318259352",
       "Name": "Play__YapperIntro",
       "ObjectPath": "\\Events\\Default Work Unit\\Yapper\\Play__YapperIntro",
@@ -1599,6 +1720,6 @@
     ]
    }
   ],
-  "FileHash": "{D2667929-3A76-A156-1D5D-D5C8617FF4DF}"
+  "FileHash": "{3C420097-F3D4-B1A5-1E79-D12CA41182B4}"
  }
 }

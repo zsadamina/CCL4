@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: a31e1b30e4aedc448e87aa580b2436a5
     GuidInternal: 
-    m_lastTime: -8584512724910558042
+    m_lastTime: -8584513579573512491
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4bbb3ed1496b924382f4be1b42928b03
     GuidInternal: 
-    m_lastTime: -8584512571030581500
+    m_lastTime: -8584512495186366973
     List:
     - name: LevelEnvironment
       guid: f2b3d8114981f64dac6a277bd4eb200c
@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 02c05c88b3b2db46a7870a889691f192
     GuidInternal: 
-    m_lastTime: -8584512571190658036
+    m_lastTime: -8584512495185902358
     List:
     - name: Bear
       guid: 1edec31a1b556e47b7b9cd2e0b2b817e
@@ -688,6 +688,23 @@ MonoBehaviour:
       maxAttenuation: 50
       maxDuration: 2.6428797
       minDuration: 0.6180952
+    - name: Play__WarehouseWind
+      guid: a1a507ab60155d448bcecd677ed89c6e
+      id: 839561668
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Play__WarehouseWind
+        ObjectType: 3
+        guid: a1a507ab60155d448bcecd677ed89c6e
+      Path: Events\Default Work Unit\Play__WarehouseWind
+      maxAttenuation: 0
+      maxDuration: 100.86907
+      minDuration: 100.86907
     - name: Play__Whoosh
       guid: 8c57a98a90132944a17aa532961e9556
       id: 2483767443
@@ -908,8 +925,64 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 442f808ac82fa04f80764163d55959df
     GuidInternal: 
-    m_lastTime: -8584512724925240813
-    List: []
+    m_lastTime: -8584512761460382186
+    List:
+    - name: BuildingProcess
+      guid: d4f27a6564e66946a233228467a6120a
+      id: 2622895872
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442f808ac82fa04f80764163d55959df
+      - ElementName: BuildingProcess
+        ObjectType: 13
+        guid: d4f27a6564e66946a233228467a6120a
+      Path: Game Parameters\Default Work Unit\BuildingProcess
+    - name: BuildingVolume
+      guid: f284027fa9ec924fad0a574cb5af1821
+      id: 3306349719
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442f808ac82fa04f80764163d55959df
+      - ElementName: BuildingVolume
+        ObjectType: 13
+        guid: f284027fa9ec924fad0a574cb5af1821
+      Path: Game Parameters\Default Work Unit\BuildingVolume
+    - name: MusicVolume
+      guid: 0af1a0eaf75a884595bb9e54b8eafa68
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442f808ac82fa04f80764163d55959df
+      - ElementName: MusicVolume
+        ObjectType: 13
+        guid: 0af1a0eaf75a884595bb9e54b8eafa68
+      Path: Game Parameters\Default Work Unit\MusicVolume
+    - name: PlayerHeartbeat
+      guid: 170d94f4f20e8c4595eb0ce8ab250530
+      id: 2844590054
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442f808ac82fa04f80764163d55959df
+      - ElementName: PlayerHeartbeat
+        ObjectType: 13
+        guid: 170d94f4f20e8c4595eb0ce8ab250530
+      Path: Game Parameters\Default Work Unit\PlayerHeartbeat
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -922,7 +995,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: aa2a89ed9987344388effc1bb2623442
     GuidInternal: 
-    m_lastTime: -8584512724910578781
+    m_lastTime: -8584513579573782518
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -936,7 +1009,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 60e613630bb70c4a92b3c8a2dce534f4
     GuidInternal: 
-    m_lastTime: -8584512724910578781
+    m_lastTime: -8584513579573702520
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -950,10 +1023,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: f6005dbaa39c6c45a11daf96dab8f2f0
     GuidInternal: 
-    m_lastTime: -8584512724910568260
+    m_lastTime: -8584513579573602523
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000f00000010000000110000001200000016000000170000001c0000001d0000001e0000001f0000002700000028000000310000003d0000003e0000004a0000004b000000
+  ExpandedWaapiItemIds: 08000000090000000e00000011000000240000002500000026000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

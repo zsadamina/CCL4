@@ -42,7 +42,7 @@
 						<ObjectRef Name="_BearDialogue1" ID="{C07E1A82-7E88-40C1-8EA0-453CBA52C69E}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__Whoosh" ID="{8AA9578C-1390-4429-A17A-A532961E9556}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_CollectPiece" ID="{313A08E0-1F38-442F-8E64-4D656F09EE95}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__Wind" ID="{2AB4C018-9215-464C-9B99-261E0B756B5C}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play__WarehouseWind" ID="{AB07A5A1-1560-445D-8BCE-CD677ED89C6E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_BearDialogue2" ID="{6812007C-8B3A-4C13-BC72-BD6C461F0032}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__ManualDrop" ID="{440F61CD-EF2F-4F8E-8DE8-8B3BE210B25E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
