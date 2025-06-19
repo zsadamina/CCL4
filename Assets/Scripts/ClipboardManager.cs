@@ -13,6 +13,8 @@ public class ClipboardManager : MonoBehaviour
     [SerializeField] private GameObject _clipboardFurniture;
     [SerializeField] private Sprite[] _clipboardItemSprites;
     [SerializeField] private GameObject _clipBoardHealth;
+    [SerializeField] private GameObject _clipboardPage2;
+    private int _currentPage = 1;
 
 
     void Awake()
@@ -47,7 +49,7 @@ public class ClipboardManager : MonoBehaviour
             Debug.LogError("Icon container not found in clipboard furniture prefab.");
             return;
         }
-        
+
         iconContainer.GetComponent<Image>().sprite = item.sprite;
 
         var countContainer = _clipboardFurniture.transform.Find("Count");
@@ -62,6 +64,20 @@ public class ClipboardManager : MonoBehaviour
         else
         {
             checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check + 1];
+        }
+    }
+
+    public void SwitchPage()
+    {
+        if (_currentPage == 1)
+        {
+            _clipboardPage2.SetActive(true);
+            _currentPage = 2;
+        }
+        else if (_currentPage == 2)
+        {
+            _clipboardPage2.SetActive(false);
+            _currentPage = 1;
         }
     }
 }
