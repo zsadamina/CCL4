@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
+    private StateManager _stateManager;
 
     public PickupItemClass _pickupItem { get; set; }
     
@@ -14,7 +15,7 @@ public class CollectableItem : MonoBehaviour
 
     void Awake()
     {
-        _inventoryManager = InventoryManager.Instance;
+        _stateManager = StateManager.Instance;
     }
     
     // Start is called before the first frame update
@@ -24,10 +25,9 @@ public class CollectableItem : MonoBehaviour
         Destroy(this.transform.parent.gameObject);
         pickupSound.Post(gameObject);
         
-        if (_pickupItem != null)
-        {
+        if(_pickupItem != null){
             _inventoryManager.Inventory.Add(_pickupItem);
-            if (_inventoryManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
+             if (_inventoryManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
             {
                 StateManager.allItemsCollected = true;
             }
