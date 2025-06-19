@@ -8,16 +8,16 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
-    
+
     [SerializeField] private GameObject[] itemPrefabsArray;
 
     public PickupItemClass[] PickupItems;
 
-    public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
-    
+    public List<PickupItemClass> Inventory { get; set; } = new List<PickupItemClass>();
+
     private RoomGenerator _roomGenerator;
     private SpawnPointManager _spawnpointManager;
-    
+
     void Awake()
     {
         if (Instance == null)
@@ -49,12 +49,12 @@ public class InventoryManager : MonoBehaviour
         {
             return;
         }
-       var shuffledList = todos.OrderBy( x => Random.value ).ToList();
-       var selectedSpawnPoints = shuffledList.GetRange(0, todos.Count);
-       Debug.Log(selectedSpawnPoints.Count);
-       for (int i = 0; i < PickupItems.Length; i++)
-       {
-           selectedSpawnPoints[i].InitPickupItem(PickupItems[i]);
-       } 
+        var shuffledList = todos.OrderBy(x => Random.value).ToList();
+        var selectedSpawnPoints = shuffledList.GetRange(0, todos.Count);
+        Debug.Log(selectedSpawnPoints.Count);
+        for (int i = 0; i < PickupItems.Length; i++)
+        {
+            selectedSpawnPoints[i].InitPickupItem(PickupItems[i]);
+        }
     }
 }
