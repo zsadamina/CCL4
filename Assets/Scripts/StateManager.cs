@@ -8,7 +8,7 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
-    
+    public static bool allItemsCollected = false;
     
     void Awake()
     {

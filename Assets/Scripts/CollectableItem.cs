@@ -22,6 +22,14 @@ public class CollectableItem : MonoBehaviour
         
         if(_pickupItem != null){
             _inventoryManager.Inventory.Add(_pickupItem);
+            if (_inventoryManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
+            {
+                StateManager.allItemsCollected = true;
+            }
+            else
+            {
+                StateManager.allItemsCollected = false;
+            }
             Debug.Log(_inventoryManager.Inventory.Count);
         }
     }
