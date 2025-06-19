@@ -26,8 +26,6 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private float[] propabilities;
 
     private Maze maze;
-    public List<TodoItem> Todos {get; set;} = new List<TodoItem>();
-
     
     Dictionary<String, GameObject> InitializedRooms = new Dictionary<String, GameObject>();
 
