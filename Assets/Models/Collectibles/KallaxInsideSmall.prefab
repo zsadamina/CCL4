@@ -120,6 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2111a70270fc8b04484ef9c0d1be4bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 26a247f8a4cd63548a1ec4510f9479bb,
+      type: 2}
 --- !u!114 &7254011641499546125
 MonoBehaviour:
   m_ObjectHideFlags: 0

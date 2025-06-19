@@ -8,14 +8,14 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
-    
+
     [SerializeField] private GameObject[] itemPrefabsArray;
 
     public PickupItemClass[] PickupItems;
     
     private RoomGenerator _roomGenerator;
     private SpawnPointManager _spawnpointManager;
-    
+
     void Awake()
     {
         if (Instance == null)

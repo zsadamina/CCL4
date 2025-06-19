@@ -1,0 +1,29 @@
+Event	ID	Name			Wwise Object Path	Notes
+	839561668	Play__WarehouseWind			\Default Work Unit\Play__WarehouseWind	
+	1201367580	Play__ManualDrop			\Default Work Unit\Warehouse\Play__ManualDrop	
+	1532893637	Play__BearDialogue2			\Default Work Unit\Bear\Play__BearDialogue2	
+	1532893638	Play__BearDialogue1			\Default Work Unit\Bear\Play__BearDialogue1	
+	2341641687	Play__FootstepsWarehouse			\Default Work Unit\Warehouse\Play__FootstepsWarehouse	
+	2483767443	Play__Whoosh			\Default Work Unit\Warehouse\Play__Whoosh	
+	2593610629	Play__CollectPiece			\Default Work Unit\Player\Play__CollectPiece	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	104368171	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\Silence1\Silence	
+	508423172	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\Silence2\Silence	
+	973383345	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\Silence3\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54935977	_ConcreteFootstep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\51\{51AC1B5E-5C14-F2FC-D399-BF8659E8BC21}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_FootstepsWarehouse\_ConcreteFootstep3		1269
+	81019076	_BearLine456	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D8\{D8F7168E-8B2B-6B4C-EA26-EECE2C4D7577}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\_BearLine456		101133
+	149462713	_WarehouseWind	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\67\{678717F3-7897-013A-CA5F-D34EC3E8FB8D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_WarehouseWind		264225
+	225526876	_BearLine9	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\C5\{C5E09380-8CE8-B698-2E2D-771B02D67CCB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue2\_BearLine9		11494
+	390948077	_BearLine12	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\B9\{B9DA7581-C7D9-8470-A3BA-19946F097BAB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\_BearLine12		59996
+	466036366	_CollectPiece	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\F3\{F39FA870-AD03-3466-BC63-E27BD27D9AB2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_CollectPiece		4595
+	469566813	_ConcreteFootstep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\C7\{C77228FA-2E67-9032-31CE-A8694D7CE66A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_FootstepsWarehouse\_ConcreteFootstep2		1126
+	633485570	_Whoosh	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\57\{57E15EEB-A9CA-2FC2-C3F7-A39E05F7E45E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_AmbientSounds\_Whoosh		7363
+	671489997	_BearLine3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\1A\{1A4098B3-8FE8-D6EB-E12D-C9560B0058E9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue1\_BearLine3		60755
+	742873965	_ConcreteFootstep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6D\{6D41FB1A-F1C5-7A17-D20B-8443D23B646A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_FootstepsWarehouse\_ConcreteFootstep4		1277
+	821945767	_ManualDrop	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\60\{6015EDD7-D551-17FD-C79C-2F5DE7308ACE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_ManualDrop		16674
+	840864182	_ConcreteFootstep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8E\{8E1D7FD2-50B4-AB6F-A8DE-24B56202E67F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_FootstepsWarehouse\_ConcreteFootstep1		1279
+	1047921320	_BearLine78	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\9E\{9E7D5DA7-B29A-E9CA-1B84-3D94EFF5DE05}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearDialogue2\_BearLine78		22277
+

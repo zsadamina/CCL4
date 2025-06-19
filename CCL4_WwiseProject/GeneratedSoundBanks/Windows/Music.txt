@@ -1,8 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2824242752	Play_PAMusic			\Default Work Unit\Play_PAMusic	
+	188869204	Play_PADialogues			\Default Work Unit\PA\Play_PADialogues	
+	2824242752	Play_PAMusic			\Default Work Unit\PA\Play_PAMusic	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	237530338	_Silence	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\50\{50EA985D-0FFA-C6F6-20FF-B47F13D1CFE6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_Silence		4545
-	248284923	_WakeMeUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\B5\{B56417FC-79DE-262F-4DA4-631032D144F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_WakeMeUp		764491
-	828237836	_NeverGonnaGiveYouUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6C\{6C4FC099-5903-BAE2-5593-CD147F7577ED}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_NeverGonnaGiveYouUp		1455361
+	231882732	_PA3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\80\{80600FDC-098D-2831-86E1-E945AA867349}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PADialogues\_PA3		23402
+	237530338	_Silence	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\E4\{E43DDD6D-2B62-1FBB-0F06-8B14A71E501B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_Silence		4545
+	248284923	_WakeMeUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\04\{04F88432-298C-8AE2-A275-1E8DEFA68966}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_WakeMeUp		947428
+	264367380	_PA1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\8A\{8AD7244A-49C1-2E0A-B3B0-BD03308168EC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PADialogues\_PA1		80651
+	828237836	_NeverGonnaGiveYouUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\F0\{F0C5F897-B5F8-DBD9-8941-5EA978F4E213}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_NeverGonnaGiveYouUp		1701859
+	985254864	_PA2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\1D\{1DA6E7A8-BE99-484D-F8B8-5594349F718B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PADialogues\_PA2		18864
+	1025232754	_PA4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\02\{02C1668A-F3A3-474A-2C0F-AFC1F7A53C71}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PADialogues\_PA4		40506
 

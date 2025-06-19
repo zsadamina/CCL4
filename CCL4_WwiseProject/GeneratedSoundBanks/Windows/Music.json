@@ -10,18 +10,26 @@
     "Type": "User",
     "GUID": "{406A5DF6-C9A9-4C59-9CC5-E3949D49BFDC}",
     "Language": "SFX",
-    "Hash": "{44D50672-C7E4-173E-4976-38580965E2EE}",
+    "Hash": "{B00E94CB-861E-A065-224C-3644CF85FC77}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
     "Media": [
+     {
+      "Id": "231882732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_PA\\_PA3.wav",
+      "CachePath": "80/{80600FDC-098D-2831-86E1-E945AA867349}.wem"
+     },
      {
       "Id": "237530338",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_Silence.wav",
-      "CachePath": "50/{50EA985D-0FFA-C6F6-20FF-B47F13D1CFE6}.wem"
+      "CachePath": "E4/{E43DDD6D-2B62-1FBB-0F06-8B14A71E501B}.wem"
      },
      {
       "Id": "248284923",
@@ -29,7 +37,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_WakeMeUp.wav",
-      "CachePath": "B5/{B56417FC-79DE-262F-4DA4-631032D144F6}.wem"
+      "CachePath": "04/{04F88432-298C-8AE2-A275-1E8DEFA68966}.wem"
+     },
+     {
+      "Id": "264367380",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_PA\\_PA1.wav",
+      "CachePath": "8A/{8AD7244A-49C1-2E0A-B3B0-BD03308168EC}.wem"
      },
      {
       "Id": "828237836",
@@ -37,14 +53,53 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_NeverGonnaGiveYouUp.wav",
-      "CachePath": "6C/{6C4FC099-5903-BAE2-5593-CD147F7577ED}.wem"
+      "CachePath": "F0/{F0C5F897-B5F8-DBD9-8941-5EA978F4E213}.wem"
+     },
+     {
+      "Id": "985254864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_PA\\_PA2.wav",
+      "CachePath": "1D/{1DA6E7A8-BE99-484D-F8B8-5594349F718B}.wem"
+     },
+     {
+      "Id": "1025232754",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_PA\\_PA4.wav",
+      "CachePath": "02/{02C1668A-F3A3-474A-2C0F-AFC1F7A53C71}.wem"
      }
     ],
     "Events": [
      {
+      "Id": "188869204",
+      "Name": "Play_PADialogues",
+      "ObjectPath": "\\Events\\Default Work Unit\\PA\\Play_PADialogues",
+      "GUID": "{C1D804C3-F92F-4DED-97BD-7B54D701B774}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.8946033",
+      "DurationMax": "30.49077",
+      "MediaRefs": [
+       {
+        "Id": "231882732"
+       },
+       {
+        "Id": "264367380"
+       },
+       {
+        "Id": "985254864"
+       },
+       {
+        "Id": "1025232754"
+       }
+      ]
+     },
+     {
       "Id": "2824242752",
       "Name": "Play_PAMusic",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_PAMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\PA\\Play_PAMusic",
       "GUID": "{CFF8A83C-DA16-4626-8839-21C33A25772C}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -59,9 +114,17 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{EAA0F10A-5AF7-4588-95BB-9E54B8EAFA68}"
+     }
     ]
    }
   ],
-  "FileHash": "{86F9E810-EA84-E915-31A4-1D67898226C5}"
+  "FileHash": "{9408BCA6-CE57-5F02-0720-72C82D40FA57}"
  }
 }
