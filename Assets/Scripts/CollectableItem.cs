@@ -20,7 +20,7 @@ public class CollectableItem : MonoBehaviour
         Destroy(this.transform.parent.gameObject);
         
         if(_pickupItem != null){
-            _stateManager.Inventory.Add(_pickupItem);
+            _stateManager.AddItem(_pickupItem);
             Debug.Log(_stateManager.Inventory.Count);
         }
     }
