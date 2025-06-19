@@ -21,7 +21,6 @@ namespace AK
         static const AkUniqueID PLAY__COLLECTPIECE = 2593610629U;
         static const AkUniqueID PLAY__EXHAUSTED = 2278865038U;
         static const AkUniqueID PLAY__FALLINGASLEEP = 1590281344U;
-        static const AkUniqueID PLAY__FLICKERINGLIGHTS = 416380418U;
         static const AkUniqueID PLAY__FOOTSTEPSLEVEL = 1787411852U;
         static const AkUniqueID PLAY__FOOTSTEPSSTEALER = 1563433806U;
         static const AkUniqueID PLAY__FOOTSTEPSWAREHOUSE = 2341641687U;
@@ -38,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY__WAKINGUP = 2480831051U;
         static const AkUniqueID PLAY__WAREHOUSEWIND = 839561668U;
         static const AkUniqueID PLAY__WHOOSH = 2483767443U;
+        static const AkUniqueID PLAY__YAPPERDIALOGUE = 4062939572U;
         static const AkUniqueID PLAY__YAPPERINTRO = 1318259352U;
         static const AkUniqueID PLAY__YAWNS = 1579610859U;
         static const AkUniqueID PLAY_BUILDING = 3149174998U;
