@@ -4,7 +4,6 @@ using System.Linq;
 using Classes;
 using UnityEngine;
 
-[RequireComponent(typeof(StateManager))]
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
@@ -15,8 +14,8 @@ public class InventoryManager : MonoBehaviour
 
     public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
     
-    public List<TodoItem> Todos {get; set;} = new List<TodoItem>();
-
+    private RoomGenerator _roomGenerator;
+    
     void Awake()
     {
         if (Instance == null)
@@ -31,6 +30,7 @@ public class InventoryManager : MonoBehaviour
 
         DontDestroyOnLoad(this);
         
+        _roomGenerator = RoomGenerator.Instance;
         PickupItems = itemPrefabsArray.Select(itemPrefab =>
             new PickupItemClass(itemPrefab.name, itemPrefab)).ToArray();
     }
@@ -42,8 +42,13 @@ public class InventoryManager : MonoBehaviour
 
     private void InitSpawnPoints()
     {
-       var shuffledList = Todos.OrderBy( x => Random.value ).ToList();
-       var selectedSpawnPoints = shuffledList.GetRange(0, Todos.Count);
+        List<TodoItem> todos = _roomGenerator.Todos;
+        if (todos.Count <= 0)
+        {
+            return;
+        }
+       var shuffledList = todos.OrderBy( x => Random.value ).ToList();
+       var selectedSpawnPoints = shuffledList.GetRange(0, todos.Count);
        Debug.Log(selectedSpawnPoints.Count);
        for (int i = 0; i < PickupItems.Length; i++)
        {
