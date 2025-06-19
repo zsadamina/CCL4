@@ -8,27 +8,33 @@ public class Companion : MonoBehaviour
     public float stoppingDistanceThreshold = 0.5f; // Adjust based on agent's stopping distance
     
     private NavMeshAgent _navMeshAgent;
+    private Animator _animator;
     
     [SerializeField]
     private Transform target;
+
+
     // Start is called before the first frame update
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         _navMeshAgent.SetDestination(target.position);
-
-        if (_navMeshAgent.hasPath && _navMeshAgent.remainingDistance > _navMeshAgent.stoppingDistance + stoppingDistanceThreshold)
+        Debug.Log(_navMeshAgent.hasPath && _navMeshAgent.remainingDistance - _navMeshAgent.stoppingDistance < _navMeshAgent.stoppingDistance + stoppingDistanceThreshold);
+        if (_navMeshAgent.hasPath && _navMeshAgent.remainingDistance - _navMeshAgent.stoppingDistance > _navMeshAgent.stoppingDistance + stoppingDistanceThreshold)
         {
-            // Agent is moving towards a destination
+            Debug.Log("Moving");
+            _animator.SetBool("IsMoving", true);
         }
         else
         {
-            // Agent is standing still or has reached its destination
+            Debug.Log("Stopped");
+            _animator.SetBool("IsMoving", false);
         }
     }
 }
