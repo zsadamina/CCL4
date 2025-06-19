@@ -38,17 +38,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play__FootstepsWarehouse" ID="{5BD9AFA1-B146-41C2-A938-FB2359FEC9FC}">
-							<ChildrenList>
-								<Action Name="" ID="{F654BDFA-3DD7-49BC-9204-D9DDC9E28A81}" ShortID="132447367">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="_FootstepsWarehouse" ID="{6F8F5645-F28D-4287-AEB6-6A6B89CFA0E3}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play__PlayerBump" ID="{E0E9689E-3702-441C-A531-118EFAD523B0}">
 							<ChildrenList>
 								<Action Name="" ID="{ABE39703-B815-4504-A854-D2D89B28D3DF}" ShortID="528910622">
@@ -318,6 +307,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="_ManualDrop" ID="{D6EEAF88-F309-44D5-8743-E61552468470}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play__FootstepsWarehouse" ID="{65E4CABE-80DD-4006-BF02-ECFB304123B9}">
+							<ChildrenList>
+								<Action Name="" ID="{AF1F9431-C16C-4007-97B5-7E39D8078109}" ShortID="629870759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="_FootstepsWarehouse" ID="{6F8F5645-F28D-4287-AEB6-6A6B89CFA0E3}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
