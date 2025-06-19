@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
+    private StateManager _stateManager;
 
     public PickupItemClass _pickupItem { get; set; }
-    
-    private InventoryManager _inventoryManager;
 
     void Awake()
     {
-        _inventoryManager = InventoryManager.Instance;
+        _stateManager = StateManager.Instance;
     }
     
     // Start is called before the first frame update
@@ -21,8 +20,8 @@ public class CollectableItem : MonoBehaviour
         Destroy(this.transform.parent.gameObject);
         
         if(_pickupItem != null){
-            _inventoryManager.Inventory.Add(_pickupItem);
-            Debug.Log(_inventoryManager.Inventory.Count);
+            _stateManager.Inventory.Add(_pickupItem);
+            Debug.Log(_stateManager.Inventory.Count);
         }
     }
 }
