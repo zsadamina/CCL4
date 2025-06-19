@@ -9,6 +9,7 @@ public class SafeZone : MonoBehaviour
     [SerializeField] Material activeMaterial;
     [SerializeField] GameObject safeZoneGround;
     [SerializeField] GameObject furniturePrefab;
+    [SerializeField] GameObject furnitureSpawnPoint;
 
     private bool _isActive = false;
 
@@ -36,7 +37,12 @@ public class SafeZone : MonoBehaviour
 
     public void BuildFurniture()
     {
-        StateManager.itemBuild = true;
-        furniturePrefab.SetActive(true);
+        if (StateManager.allItemsCollected)
+        {
+            StateManager.itemBuild = true;
+            GameObject furniture = Instantiate(furniturePrefab, furnitureSpawnPoint.transform.position, Quaternion.identity);
+            furniture.transform.Rotate(-90, 0, 0);
+            furniture.transform.SetParent(furnitureSpawnPoint.transform);
+        }
     }
 }
