@@ -53,11 +53,6 @@ public class ClipboardManager : MonoBehaviour
         {
             checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check+1];
         }
-
-        // var text = new GameObject("Text");
-        // text.transform.SetParent(iconParent);
-        // text.AddComponent<Text>().text = item.Name; 
-
     }
 
     void Update()

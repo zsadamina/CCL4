@@ -53,7 +53,11 @@ public class StateManager : MonoBehaviour
 
     void UpdateUI()
     {
-        Debug.Log("Updating UI with current inventory state...");
+        foreach (Transform child in _clipboardManager.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        
         Dictionary<string, List<PickupItemClass>> pickUpItems = _inventoryManager.PickupItems
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());
