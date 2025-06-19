@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 374208250855312057}
   - component: {fileID: 6039706154475294915}
   m_Layer: 0
-  m_Name: Ursa
+  m_Name: Yrsa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

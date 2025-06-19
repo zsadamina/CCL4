@@ -55,7 +55,7 @@ public class Stealer : MonoBehaviour
         {
              Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
 
-            if (_navMeshAgent.remainingDistance < 0.1)
+            if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance)
             {
                 this.gameObject.SetActive(false);
                 Debug.Log("I am Gone");
@@ -69,24 +69,32 @@ public class Stealer : MonoBehaviour
         if (_navMeshAgent.remainingDistance < stealRange && _navMeshAgent.remainingDistance != 0)
         {
             Debug.Log("Yoink");
-            var inventory = _stateManager.Inventory;
             _navMeshAgent.SetDestination(new Vector3(0, 0, 0));
             YoinkMode = false;
 
-            if (inventory.Count == 0)
-            {
-                return;
-            }
+            
 
-            int randomIndex = Random.Range(0, inventory.Count - 1);
-            var item = inventory[randomIndex];
-            inventory.RemoveAt(randomIndex);
-            Debug.Log("Stolen Item:"+ item.Name);
-            TodoItem spawnpoint = InventoryManager.Instance.getRandomSpawnPointRange(1).FirstOrDefault();
-            if (spawnpoint)
-            {
-                spawnpoint.InitPickupItem(item);
-            }
+            
+        }
+    }
+
+    void StealItemFromInventory()
+    {
+        var inventory = _stateManager.Inventory;
+
+        if (inventory.Count == 0)
+        {
+            return;
+        }
+        
+        int randomIndex = Random.Range(0, inventory.Count - 1);
+        var item = inventory[randomIndex];
+        inventory.RemoveAt(randomIndex);
+        Debug.Log("Stolen Item:"+ item.Name);
+        TodoItem spawnpoint = InventoryManager.Instance.getRandomSpawnPointRange(1).FirstOrDefault();
+        if (spawnpoint)
+        {
+            spawnpoint.InitPickupItem(item);
         }
     }
 }
