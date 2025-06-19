@@ -7,8 +7,12 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" ShortID="886546815">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>16</Value>
@@ -17,14 +21,13 @@
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-150</Value>
+										<Value>-450</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{6FC8ABD0-6490-4574-A391-E5B6B396517A}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="200"/>
 													<Property Name="Min" Type="Real64" Value="-200"/>
 												</PropertyList>
 											</Modifier>
@@ -34,6 +37,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1920,12 +1928,19 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="_StealerSounds" ID="{C8406390-29F6-49CA-B99F-069F65D8AF9F}" ShortID="1009634741">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Stealer Attenuation" ID="{D4567E42-4CE6-43D6-93E4-4DFA85CCBC3D}" WorkUnitID="{A314FC5A-5C51-4FE1-9C0B-7138D7203FE3}"/>
+									<ObjectRef Name="Employee Attenuation" ID="{D4567E42-4CE6-43D6-93E4-4DFA85CCBC3D}" WorkUnitID="{A314FC5A-5C51-4FE1-9C0B-7138D7203FE3}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -3833,7 +3848,8 @@
 						</RandomSequenceContainer>
 						<Sound Name="_FootstepsStealer" ID="{59D2B039-18F6-4C65-9A58-16B8A3107068}" ShortID="510072661">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
@@ -3841,6 +3857,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Employee Attenuation" ID="{D4567E42-4CE6-43D6-93E4-4DFA85CCBC3D}" WorkUnitID="{A314FC5A-5C51-4FE1-9C0B-7138D7203FE3}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
 								</Reference>
@@ -3850,6 +3869,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="_FootstepsStealer" ID="{69142F15-6E1C-4027-8A32-660C16E444A1}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.429997528170507"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.95242120899041"/>
+										<Property Name="LoopEnd" Type="Real64" Value="21.0582570705343"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>_FootstepsStealer.wav</AudioFile>
 									<MediaIDList>

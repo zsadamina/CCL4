@@ -369,6 +369,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play__FallingAsleep" ID="{B61CBAF4-A119-43F5-A39C-E9643C322388}">
+					<ChildrenList>
+						<Action Name="" ID="{425C4C06-43EF-4216-9D2B-6E311C79B8CC}" ShortID="190994723">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="_FallingAsleep" ID="{8C794ADD-9E49-4AD1-87F8-C43CAB27CD55}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play__WakingUp" ID="{85271415-2DBB-435C-A06D-2FB73A6C61DA}">
+					<ChildrenList>
+						<Action Name="" ID="{B1700D9F-8E7F-45CC-9034-E0F6017F2A63}" ShortID="53920638">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="_WakingUp" ID="{D95B77D7-B2BE-4F8C-A91F-F956EBEA4B3D}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

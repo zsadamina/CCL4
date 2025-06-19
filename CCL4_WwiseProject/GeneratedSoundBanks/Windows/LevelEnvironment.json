@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}",
     "Language": "SFX",
-    "Hash": "{88527493-178F-3F45-4B98-42A4ABDF5A4B}",
+    "Hash": "{5D0D2FEA-7495-F424-76EB-C8C834821687}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\LevelEnvironment",
     "ShortName": "LevelEnvironment",
     "Path": "LevelEnvironment.bnk",
@@ -789,7 +789,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsStealer.wav",
-      "CachePath": "22/{22D6EC03-DD4C-FDB6-1E55-9D3B751CBC44}.wem"
+      "CachePath": "AB/{AB761A54-6536-0BB0-E95D-A1784668CA24}.wem"
      },
      {
       "Id": "784623044",
@@ -1243,9 +1243,8 @@
       "Name": "Play__FootstepsStealer",
       "ObjectPath": "\\Events\\Default Work Unit\\Stealer\\Play__FootstepsStealer",
       "GUID": "{90BB7B08-20DD-4A18-A616-ECA372375008}",
-      "DurationType": "OneShot",
-      "DurationMin": "22.557438",
-      "DurationMax": "22.557438",
+      "MaxAttenuation": "25",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "781359899"
@@ -1311,9 +1310,10 @@
       "Name": "Play__SoftSteps",
       "ObjectPath": "\\Events\\Default Work Unit\\Bear\\Play__SoftSteps",
       "GUID": "{1F9EEABF-2085-4AC0-B1FA-1BF58C31AD43}",
+      "MaxAttenuation": "25",
       "DurationType": "OneShot",
-      "DurationMin": "1.1664551",
-      "DurationMax": "1.592047",
+      "DurationMin": "1.5570309",
+      "DurationMax": "1.8932736",
       "MediaRefs": [
        {
         "Id": "288586794"
@@ -1354,10 +1354,8 @@
       "Name": "Play__StealerSounds",
       "ObjectPath": "\\Events\\Default Work Unit\\Stealer\\Play__StealerSounds",
       "GUID": "{CCE7EE4F-D027-4FA0-961F-27BB7C53CA63}",
-      "MaxAttenuation": "50",
-      "DurationType": "OneShot",
-      "DurationMin": "0.6180952",
-      "DurationMax": "2.6428797",
+      "MaxAttenuation": "25",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "16669490"
@@ -1720,6 +1718,6 @@
     ]
    }
   ],
-  "FileHash": "{3C420097-F3D4-B1A5-1E79-D12CA41182B4}"
+  "FileHash": "{A794A336-768B-0235-93C1-11C2407E6B48}"
  }
 }

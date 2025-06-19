@@ -48,7 +48,7 @@ public class PASystemAudioManager : MonoBehaviour
         // 1. Fade music out
         yield return StartCoroutine(FadeRTPC(musicVolumeRTPC, normalMusicVolume, fadedMusicVolume, fadeDuration));
 
-        // 2. Play announcement and wait for it to finish via callback
+        // 2. Play announcement
         announcementFinished = false;
 
        AkUnitySoundEngine.PostEvent(

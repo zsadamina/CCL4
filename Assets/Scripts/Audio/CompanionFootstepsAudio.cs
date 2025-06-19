@@ -1,18 +1,17 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using AK.Wwise;
 using UnityEngine.AI;
+using AK.Wwise;
 
 [RequireComponent(typeof(AkGameObj))]
 public class CompanionFootstepsAudio : MonoBehaviour
 {
-   [Header("Footstep Settings")]
-    public AK.Wwise.Event footstepEvent;
-    public float stepInterval = 0.5f;         // Seconds between steps while sliding
-    public float minSpeed = 0.05f;            // Slide threshold
+    [Header("Footstep Settings")]
+    [SerializeField] private AK.Wwise.Event footstepEvent;
+    [SerializeField] private float stepInterval = 0.5f;  
+    [SerializeField] private float minSpeed = 0.05f;     
 
     private NavMeshAgent agent;
-    private float lastStepTime;
+    private float lastStepTime = 0f;
 
     void Start()
     {
@@ -22,14 +21,12 @@ public class CompanionFootstepsAudio : MonoBehaviour
 
     void Update()
     {
-        float speed = agent.velocity.magnitude;
+        bool isWalking = agent.velocity.magnitude > minSpeed && agent.remainingDistance > agent.stoppingDistance;
 
-        if (speed > minSpeed && Time.time - lastStepTime >= stepInterval)
+        if (isWalking && Time.time - lastStepTime >= stepInterval)
         {
-            footstepEvent.Post(gameObject); // Plays from cube's position
+            footstepEvent.Post(gameObject);  
             lastStepTime = Time.time;
         }
     }
 }
-
-

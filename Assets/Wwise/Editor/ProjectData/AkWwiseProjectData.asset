@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4bbb3ed1496b924382f4be1b42928b03
     GuidInternal: 
-    m_lastTime: -8584512495186366973
+    m_lastTime: -8584512435997930116
     List:
     - name: LevelEnvironment
       guid: f2b3d8114981f64dac6a277bd4eb200c
@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 02c05c88b3b2db46a7870a889691f192
     GuidInternal: 
-    m_lastTime: -8584512495185902358
+    m_lastTime: -8584512435996890746
     List:
     - name: Bear
       guid: 1edec31a1b556e47b7b9cd2e0b2b817e
@@ -411,6 +411,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 244.50679
       minDuration: 69.96892
+    - name: Play__FallingAsleep
+      guid: f4ba1cb619a1f543a39ce9643c322388
+      id: 1590281344
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Play__FallingAsleep
+        ObjectType: 3
+        guid: f4ba1cb619a1f543a39ce9643c322388
+      Path: Events\Default Work Unit\Play__FallingAsleep
+      maxAttenuation: 0
+      maxDuration: 60.560658
+      minDuration: 60.560658
     - name: Play__FlickeringLights
       guid: 429340ce1d3e80418aac1a6d33dcb67b
       id: 416380418
@@ -465,9 +482,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 087bbb90dd20184aa616eca372375008
       Path: Events\Default Work Unit\Stealer\Play__FootstepsStealer
-      maxAttenuation: 0
-      maxDuration: 22.557438
-      minDuration: 22.557438
+      maxAttenuation: 25
+      maxDuration: 0
+      minDuration: 0
     - name: Play__FootstepsWarehouse
       guid: becae465dd800640bf02ecfb304123b9
       id: 2341641687
@@ -645,9 +662,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: bfea9e1f8520c04ab1fa1bf58c31ad43
       Path: Events\Default Work Unit\Bear\Play__SoftSteps
-      maxAttenuation: 0
-      maxDuration: 1.592047
-      minDuration: 1.1664551
+      maxAttenuation: 25
+      maxDuration: 1.8932736
+      minDuration: 1.5570309
     - name: Play__StealerIntro
       guid: ed42b9ef2ee8474a80ab1b6029914a1a
       id: 1414004439
@@ -685,9 +702,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4feee7cc27d0a04f961f27bb7c53ca63
       Path: Events\Default Work Unit\Stealer\Play__StealerSounds
-      maxAttenuation: 50
-      maxDuration: 2.6428797
-      minDuration: 0.6180952
+      maxAttenuation: 25
+      maxDuration: 0
+      minDuration: 0
+    - name: Play__WakingUp
+      guid: 15142785bb2d5c43a06d2fb73a6c61da
+      id: 2480831051
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Play__WakingUp
+        ObjectType: 3
+        guid: 15142785bb2d5c43a06d2fb73a6c61da
+      Path: Events\Default Work Unit\Play__WakingUp
+      maxAttenuation: 0
+      maxDuration: 13.2940855
+      minDuration: 13.2940855
     - name: Play__WarehouseWind
       guid: a1a507ab60155d448bcecd677ed89c6e
       id: 839561668
@@ -743,8 +777,8 @@ MonoBehaviour:
         guid: 18c0b42a15924c469b99261e0b756b5c
       Path: Events\Default Work Unit\Warehouse\Play__Wind
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play__YapperIntro
       guid: 699f8f8681abe14caf86e68cdce0644e
       id: 1318259352
@@ -1026,7 +1060,7 @@ MonoBehaviour:
     m_lastTime: -8584513579573602523
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 08000000090000000e00000011000000240000002500000026000000
+  ExpandedWaapiItemIds: 0700000008000000090000000e00000011000000130000002500000026000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
