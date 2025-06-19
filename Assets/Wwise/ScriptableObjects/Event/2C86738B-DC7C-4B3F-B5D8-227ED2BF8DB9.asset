@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690929a59dc7a42da9030305190d391f, type: 3}
-  m_Name: XRDeviceSimulatorSettings
+  m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
+  m_Name: 2C86738B-DC7C-4B3F-B5D8-227ED2BF8DB9
   m_EditorClassIdentifier: 
-  m_AutomaticallyInstantiateSimulatorPrefab: 0
-  m_AutomaticallyInstantiateInEditorOnly: 1
-  m_SimulatorPrefab: {fileID: 0}
+  objectName: Play__AmbientSounds
+  id: 2663482479
+  guid: 2C86738B-DC7C-4B3F-B5D8-227ED2BF8DB9
+  IsInUserDefinedSoundBank: 1

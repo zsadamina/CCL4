@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{406A5DF6-C9A9-4C59-9CC5-E3949D49BFDC}",
     "Language": "SFX",
-    "Hash": "{8E7D7090-FD6F-4639-08FC-26C4DBB5F9F7}",
+    "Hash": "{DFA9582B-2A7C-7761-D3A4-5D4B2B6697D1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_PA\\_PA3.wav",
-      "CachePath": "70/{7068B9F4-D5D0-8FC5-FEEE-72FE3B6EB38A}.wem"
+      "CachePath": "80/{80600FDC-098D-2831-86E1-E945AA867349}.wem"
      },
      {
       "Id": "237530338",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_Silence.wav",
-      "CachePath": "50/{50EA985D-0FFA-C6F6-20FF-B47F13D1CFE6}.wem"
+      "CachePath": "E4/{E43DDD6D-2B62-1FBB-0F06-8B14A71E501B}.wem"
      },
      {
       "Id": "248284923",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_WakeMeUp.wav",
-      "CachePath": "B5/{B56417FC-79DE-262F-4DA4-631032D144F6}.wem"
+      "CachePath": "04/{04F88432-298C-8AE2-A275-1E8DEFA68966}.wem"
      },
      {
       "Id": "264367380",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_PA\\_PA1.wav",
-      "CachePath": "1F/{1F3FB60B-C2B8-65B8-0E1F-DA8B56CF4780}.wem"
+      "CachePath": "8A/{8AD7244A-49C1-2E0A-B3B0-BD03308168EC}.wem"
      },
      {
       "Id": "828237836",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_NeverGonnaGiveYouUp.wav",
-      "CachePath": "6C/{6C4FC099-5903-BAE2-5593-CD147F7577ED}.wem"
+      "CachePath": "F0/{F0C5F897-B5F8-DBD9-8941-5EA978F4E213}.wem"
      },
      {
       "Id": "985254864",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_PA\\_PA2.wav",
-      "CachePath": "65/{65CBE3FF-AFB7-CD7A-1F99-8419572770AB}.wem"
+      "CachePath": "1D/{1DA6E7A8-BE99-484D-F8B8-5594349F718B}.wem"
      },
      {
       "Id": "1025232754",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_PA\\_PA4.wav",
-      "CachePath": "19/{1912CC09-1DD5-242F-26A6-53E8DC647517}.wem"
+      "CachePath": "02/{02C1668A-F3A3-474A-2C0F-AFC1F7A53C71}.wem"
      }
     ],
     "Events": [
@@ -125,6 +125,6 @@
     ]
    }
   ],
-  "FileHash": "{0FA01812-7F82-C79E-C9D9-E420EB441EFD}"
+  "FileHash": "{F322AD07-B831-50E8-4C76-17FC16F83BC9}"
  }
 }

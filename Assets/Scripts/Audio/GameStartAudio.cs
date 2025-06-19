@@ -9,10 +9,11 @@ public class GameStartAudio : MonoBehaviour
 
     [Header("Wwise Events")]
     public AK.Wwise.Event dropEvent;
-    public AK.Wwise.Event companionEvent;
+    public AK.Wwise.Event companionEvent1;
+    public AK.Wwise.Event companionEvent2;
 
     [Header("Timing")]
-    public float delayBeforeCompanionTalk = 3.0f;
+    public float delay = 3.0f;
 
     void Start()
     {
@@ -23,8 +24,16 @@ public class GameStartAudio : MonoBehaviour
     {
         dropEvent.Post(dropSoundSource);
 
-        yield return new WaitForSeconds(delayBeforeCompanionTalk);
+        yield return new WaitForSeconds(delay);
 
-        companionEvent.Post(companionRigTransform);
+        // ▶️ Play first companion line
+        companionEvent2.Post(companionRigTransform);
+
+        // ⏱ Wait for it to finish (adjust duration to match actual line)
+        yield return new WaitForSeconds(61f); // change this if needed
+
+        // ▶️ Play second companion line
+        companionEvent2.Post(companionRigTransform);
     }
+
 }

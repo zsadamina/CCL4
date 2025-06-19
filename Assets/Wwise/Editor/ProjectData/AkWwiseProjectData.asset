@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 99a71391d0e66c4199639f2d576d23da
     GuidInternal: 
-    m_lastTime: -8584512718707225745
+    m_lastTime: -8584512615648318587
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4bbb3ed1496b924382f4be1b42928b03
     GuidInternal: 
-    m_lastTime: -8584512724910603832
+    m_lastTime: -8584512571030581500
     List:
     - name: LevelEnvironment
       guid: f2b3d8114981f64dac6a277bd4eb200c
@@ -110,6 +110,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: f2b3d8114981f64dac6a277bd4eb200c
       Path: SoundBanks\Default Work Unit\LevelEnvironment
+    - name: Menu
+      guid: 0a2f16bc7e09a7469251be1ffb4a54d4
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bbb3ed1496b924382f4be1b42928b03
+      - ElementName: Menu
+        ObjectType: 7
+        guid: 0a2f16bc7e09a7469251be1ffb4a54d4
+      Path: SoundBanks\Default Work Unit\Menu
     - name: Music
       guid: f65d6a40a9c9594c9cc5e3949d49bfdc
       id: 3991942870
@@ -124,6 +138,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: f65d6a40a9c9594c9cc5e3949d49bfdc
       Path: SoundBanks\Default Work Unit\Music
+    - name: Warehouse
+      guid: e14ca6d7a5ddfe4c80d2272d35aaa166
+      id: 2981836174
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4bbb3ed1496b924382f4be1b42928b03
+      - ElementName: Warehouse
+        ObjectType: 7
+        guid: e14ca6d7a5ddfe4c80d2272d35aaa166
+      Path: SoundBanks\Default Work Unit\Warehouse
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -136,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 02c05c88b3b2db46a7870a889691f192
     GuidInternal: 
-    m_lastTime: -8584512718706902733
+    m_lastTime: -8584512571190658036
     List:
     - name: Bear
       guid: 1edec31a1b556e47b7b9cd2e0b2b817e
@@ -223,9 +251,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play__BearDialogue
-      guid: 992867f86f8cb8419c7e05ad337f9413
-      id: 1180914829
+    - name: Play__AmbientSounds
+      guid: 8b73862c7cdc3f4bb5d8227ed2bf8db9
+      id: 2663482479
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
+      - ElementName: Play__AmbientSounds
+        ObjectType: 3
+        guid: 8b73862c7cdc3f4bb5d8227ed2bf8db9
+      Path: Events\Default Work Unit\Warehouse\Play__AmbientSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play__BearDialogue1
+      guid: fe293af82d72994cab7c6ae72d087935
+      id: 1532893638
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -236,13 +284,33 @@ MonoBehaviour:
       - ElementName: Bear
         ObjectType: 4
         guid: 1edec31a1b556e47b7b9cd2e0b2b817e
-      - ElementName: Play__BearDialogue
+      - ElementName: Play__BearDialogue1
         ObjectType: 3
-        guid: 992867f86f8cb8419c7e05ad337f9413
-      Path: Events\Default Work Unit\Bear\Play__BearDialogue
+        guid: fe293af82d72994cab7c6ae72d087935
+      Path: Events\Default Work Unit\Bear\Play__BearDialogue1
       maxAttenuation: 0
-      maxDuration: 70.193504
-      minDuration: 70.193504
+      maxDuration: 56.614235
+      minDuration: 56.614235
+    - name: Play__BearDialogue2
+      guid: 37edba3c1310cb4ea64f05b6446cc62e
+      id: 1532893637
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      - ElementName: Play__BearDialogue2
+        ObjectType: 3
+        guid: 37edba3c1310cb4ea64f05b6446cc62e
+      Path: Events\Default Work Unit\Bear\Play__BearDialogue2
+      maxAttenuation: 0
+      maxDuration: 11.579274
+      minDuration: 11.579274
     - name: Play__BearNono
       guid: dc2681fac1f6b14e9f9fa10aec30414b
       id: 4008653967
@@ -321,8 +389,8 @@ MonoBehaviour:
         guid: 4af4984728c0934e8e84629573dd26a5
       Path: Events\Default Work Unit\Player\Play__CollectPiece
       maxAttenuation: 0
-      maxDuration: 2.7853467
-      minDuration: 2.7853467
+      maxDuration: 2.4814615
+      minDuration: 2.2755103
     - name: Play__Exhausted
       guid: fc89b7518804c14ab9ea6cf4b2bc311a
       id: 2278865038
@@ -418,8 +486,8 @@ MonoBehaviour:
         guid: becae465dd800640bf02ecfb304123b9
       Path: Events\Default Work Unit\Warehouse\Play__FootstepsWarehouse
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.5236375
+      minDuration: 0.36374474
     - name: Play__FootstepsYapper
       guid: 277b54285833c64bb4cb37475f9b07d3
       id: 1573465489
@@ -638,8 +706,8 @@ MonoBehaviour:
         guid: 8c57a98a90132944a17aa532961e9556
       Path: Events\Default Work Unit\Warehouse\Play__Whoosh
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 4.7048407
+      minDuration: 3.5246482
     - name: Play__Wind
       guid: 18c0b42a15924c469b99261e0b756b5c
       id: 3791168207
@@ -885,7 +953,7 @@ MonoBehaviour:
     m_lastTime: -8584512724910568260
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000080000000900000010000000110000001200000016000000170000001c0000001d0000001e0000001f0000003d0000003e0000004a0000004b000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000f00000010000000110000001200000016000000170000001c0000001d0000001e0000001f0000002700000028000000310000003d0000003e0000004a0000004b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

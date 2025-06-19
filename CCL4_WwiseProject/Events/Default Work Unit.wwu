@@ -112,17 +112,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play__BearDialogue" ID="{F8672899-8C6F-41B8-9C7E-05AD337F9413}">
-							<ChildrenList>
-								<Action Name="" ID="{BA1253CE-8E58-42E5-ACAB-85DF7B325945}" ShortID="981016354">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="_BearDialogue" ID="{C07E1A82-7E88-40C1-8EA0-453CBA52C69E}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play__Clapping" ID="{33834542-23CF-4077-AB2F-96F4E598D30F}">
 							<ChildrenList>
 								<Action Name="" ID="{C6BE15D7-A5AB-4006-8F68-2E098DB9660C}" ShortID="282130863">
@@ -140,6 +129,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="_BearNono" ID="{BD2AE098-5288-4EEB-8CF4-3BD776C6CBCC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play__BearDialogue2" ID="{3CBAED37-1013-4ECB-A64F-05B6446CC62E}">
+							<ChildrenList>
+								<Action Name="" ID="{11233E7A-AD22-45E0-B508-DF3AA2C62335}" ShortID="985418628">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="_BearDialogue2" ID="{6812007C-8B3A-4C13-BC72-BD6C461F0032}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play__BearDialogue1" ID="{F83A29FE-722D-4C99-AB7C-6AE72D087935}">
+							<ChildrenList>
+								<Action Name="" ID="{6B11CCA2-DC62-4F29-88FE-9FFBEA1CF178}" ShortID="1040014526">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="_BearDialogue1" ID="{C07E1A82-7E88-40C1-8EA0-453CBA52C69E}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -318,6 +329,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="_FootstepsWarehouse" ID="{6F8F5645-F28D-4287-AEB6-6A6B89CFA0E3}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play__AmbientSounds" ID="{2C86738B-DC7C-4B3F-B5D8-227ED2BF8DB9}">
+							<ChildrenList>
+								<Action Name="" ID="{A08B2CD1-C019-410A-96FF-FE7FE3C05965}" ShortID="685750996">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="_AmbientSounds" ID="{CAB29836-19F5-46BE-8C70-7C7A44B4E4B8}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

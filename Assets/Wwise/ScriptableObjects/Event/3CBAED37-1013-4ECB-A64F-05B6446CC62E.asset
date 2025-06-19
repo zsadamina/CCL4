@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 690929a59dc7a42da9030305190d391f, type: 3}
-  m_Name: XRDeviceSimulatorSettings
+  m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
+  m_Name: 3CBAED37-1013-4ECB-A64F-05B6446CC62E
   m_EditorClassIdentifier: 
-  m_AutomaticallyInstantiateSimulatorPrefab: 0
-  m_AutomaticallyInstantiateInEditorOnly: 1
-  m_SimulatorPrefab: {fileID: 0}
+  objectName: Play__BearDialogue2
+  id: 1532893637
+  guid: 3CBAED37-1013-4ECB-A64F-05B6446CC62E
+  IsInUserDefinedSoundBank: 1

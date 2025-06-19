@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
-  m_Name: 8AA9578C-1390-4429-A17A-A532961E9556
+  m_Name: 4798F44A-C028-4E93-8E84-629573DD26A5
   m_EditorClassIdentifier: 
-  objectName: Play__Whoosh
-  id: 2483767443
-  guid: 8AA9578C-1390-4429-A17A-A532961E9556
+  objectName: Play__CollectPiece
+  id: 2593610629
+  guid: 4798F44A-C028-4E93-8E84-629573DD26A5
   IsInUserDefinedSoundBank: 1

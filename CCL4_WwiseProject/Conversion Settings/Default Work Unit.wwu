@@ -51,7 +51,7 @@
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{C625A97E-01FB-4F7B-8055-687DF69FD812}" PluginName="Vorbis" CompanyID="0" PluginID="4">
 								<PropertyList>
-									<Property Name="QualityFactor" Type="Real32" Value="1"/>
+									<Property Name="QualityFactor" Type="Real32" Value="3"/>
 								</PropertyList>
 							</ConversionPlugin>
 						</ConversionPluginInfo>

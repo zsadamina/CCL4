@@ -13,7 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY__BEARDIALOGUE = 1180914829U;
+        static const AkUniqueID PLAY__BEARDIALOGUE1 = 1532893638U;
+        static const AkUniqueID PLAY__BEARDIALOGUE2 = 1532893637U;
         static const AkUniqueID PLAY__BEARNONO = 4008653967U;
         static const AkUniqueID PLAY__CHECKOFFWITHPENCIL = 1681451465U;
         static const AkUniqueID PLAY__CLAPPING = 1917949731U;
@@ -22,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY__FLICKERINGLIGHTS = 416380418U;
         static const AkUniqueID PLAY__FOOTSTEPSLEVEL = 1787411852U;
         static const AkUniqueID PLAY__FOOTSTEPSSTEALER = 1563433806U;
+        static const AkUniqueID PLAY__FOOTSTEPSWAREHOUSE = 2341641687U;
         static const AkUniqueID PLAY__FOOTSTEPSYAPPER = 1573465489U;
         static const AkUniqueID PLAY__KEYCHAIN = 434027157U;
         static const AkUniqueID PLAY__LEVELCOMPLETE = 2785570664U;

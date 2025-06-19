@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
-  m_Name: F8672899-8C6F-41B8-9C7E-05AD337F9413
+  m_Name: F83A29FE-722D-4C99-AB7C-6AE72D087935
   m_EditorClassIdentifier: 
-  objectName: Play__BearDialogue
-  id: 1180914829
-  guid: F8672899-8C6F-41B8-9C7E-05AD337F9413
+  objectName: Play__BearDialogue1
+  id: 1532893638
+  guid: F83A29FE-722D-4C99-AB7C-6AE72D087935
   IsInUserDefinedSoundBank: 1

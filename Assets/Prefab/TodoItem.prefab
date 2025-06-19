@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7832969563607358042}
   - component: {fileID: 6618978946072189791}
+  - component: {fileID: 3319705649242710325}
   m_Layer: 0
   m_Name: TodoItem
   m_TagString: Untagged
@@ -44,3 +45,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b64fd1babc5b84999c03a7ce94fd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 26a247f8a4cd63548a1ec4510f9479bb,
+      type: 2}
+--- !u!114 &3319705649242710325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885122102431230448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe03a646f9e21741ace060c9f0007b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
