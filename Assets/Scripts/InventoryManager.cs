@@ -12,8 +12,6 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject[] itemPrefabsArray;
 
     public PickupItemClass[] PickupItems;
-
-    public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
     
     private RoomGenerator _roomGenerator;
     private SpawnPointManager _spawnpointManager;
@@ -44,17 +42,23 @@ public class InventoryManager : MonoBehaviour
 
     private void InitSpawnPoints()
     {
-        List<TodoItem> todos = _spawnpointManager.Todos;
-        if (todos.Count <= 0)
-        {
-            return;
-        }
-       var shuffledList = todos.OrderBy( x => Random.value ).ToList();
-       var selectedSpawnPoints = shuffledList.GetRange(0, todos.Count);
+        var selectedSpawnPoints = getRandomSpawnPointRange(PickupItems.Length);
+
        Debug.Log(selectedSpawnPoints.Count);
        for (int i = 0; i < PickupItems.Length; i++)
        {
            selectedSpawnPoints[i].InitPickupItem(PickupItems[i]);
        } 
+    }
+
+    public List<TodoItem> getRandomSpawnPointRange(int range)
+    {
+        List<TodoItem> todos = _spawnpointManager.Todos;
+        if (todos.Count <= 0)
+        {
+            return new List<TodoItem>();
+        }
+        var shuffledList = todos.OrderBy( x => Random.value ).Where(item => item.transform.childCount == 0).ToList();
+        return shuffledList.GetRange(0, range);
     }
 }
