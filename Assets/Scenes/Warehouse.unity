@@ -454,6 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59778f218155c604fa2f104ae1360c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inactiveMaterial: {fileID: 2100000, guid: 9bce6b2949e06c54eb7d8dd47395cb52, type: 2}
+  activeMaterial: {fileID: 2100000, guid: f9d3674c6fcb3ab46a8df241d04c6bf4, type: 2}
+  safeZoneGround: {fileID: 1385619216}
 --- !u!1001 &112674806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1501,6 +1504,7 @@ Transform:
   - {fileID: 763415612}
   - {fileID: 1588687508}
   - {fileID: 1825514276}
+  - {fileID: 786560725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &480229980
@@ -2371,6 +2375,81 @@ Transform:
   - {fileID: 1005939763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 5.337, z: 0}
+--- !u!1 &786560724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 786560725}
+  - component: {fileID: 786560727}
+  - component: {fileID: 786560726}
+  - component: {fileID: 786560728}
+  m_Layer: 0
+  m_Name: ExitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786560725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786560724}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3689, y: -0.2342, z: 0.1917}
+  m_LocalScale: {x: 0.45094305, y: 3.7023518, z: 6.870078}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 466544239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &786560726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786560724}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &786560727
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786560724}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &786560728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786560724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549a1bc6edd11e54db6bce19265acc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &804017809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3505,6 +3584,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6932154234529962815, guid: 4583afbf676a8b945be954b3f068733b,
     type: 3}
   m_PrefabInstance: {fileID: 1377964594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1385619216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7310711399418805359, guid: e7d573cd28201b04285f85df4a8343a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1453998582}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1387913142
 PrefabInstance:
@@ -5351,6 +5436,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Interaction Setup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
