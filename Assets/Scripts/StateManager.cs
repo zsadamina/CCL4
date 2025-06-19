@@ -9,6 +9,7 @@ public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
     public static bool allItemsCollected = false;
+    public static bool itemBuild = false;
     
     void Awake()
     {

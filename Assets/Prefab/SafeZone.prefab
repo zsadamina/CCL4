@@ -133,10 +133,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1101852837341977932}
-    - targetCorrespondingSourceObject: {fileID: 702376429093581832, guid: e7d573cd28201b04285f85df4a8343a8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7979331763188610001}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d573cd28201b04285f85df4a8343a8, type: 3}
 --- !u!4 &2567200319063945112 stripped
@@ -157,37 +153,37 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 2567200319063945112}
+    m_TransformParent: {fileID: 1101852837341977932}
     m_Modifications:
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.32106918
+      value: 0.6835206
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.27113798
+      value: 0.54052293
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 12.77796
+      value: 1.57913
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3168811
+      value: 0.20560405
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.190001
+      value: 0.7690001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.11848026
+      value: -0.008040997
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 07d8ff49282bc1e448da2f088c57f512,
         type: 3}
@@ -325,7 +321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6601999717671791479, guid: 9d530da0392d50b4698082be570f2c38,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7979331763188610001}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d530da0392d50b4698082be570f2c38, type: 3}
 --- !u!4 &1101852837341977932 stripped

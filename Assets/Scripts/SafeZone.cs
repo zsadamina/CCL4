@@ -8,6 +8,7 @@ public class SafeZone : MonoBehaviour
     [SerializeField] Material inactiveMaterial;
     [SerializeField] Material activeMaterial;
     [SerializeField] GameObject safeZoneGround;
+    [SerializeField] GameObject furniturePrefab;
 
     private bool _isActive = false;
 
@@ -15,14 +16,14 @@ public class SafeZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         _isActive = StateManager.allItemsCollected;
-        
+
         if (_isActive)
         {
             safeZoneGround.GetComponent<Renderer>().material = activeMaterial;
@@ -31,5 +32,11 @@ public class SafeZone : MonoBehaviour
         {
             safeZoneGround.GetComponent<Renderer>().material = inactiveMaterial;
         }
+    }
+
+    public void BuildFurniture()
+    {
+        StateManager.itemBuild = true;
+        furniturePrefab.SetActive(true);
     }
 }

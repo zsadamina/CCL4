@@ -19,8 +19,10 @@ public class EndTutorialScript : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && StateManager.allItemsCollected)
+        Debug.Log("Collision Detected with: " + other.name);
+        if (other.CompareTag("Player") && StateManager.itemBuild)
         {
+            Debug.Log("End of Tutorial Triggered");
             SceneManager.LoadScene("SampleScene");
         }
     }
