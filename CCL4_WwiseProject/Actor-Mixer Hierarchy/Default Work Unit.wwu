@@ -4372,13 +4372,9 @@
 				</Folder>
 				<Folder Name="Furniture" ID="{C07D6BF9-7E13-4D17-8BD7-DC68CA250256}" ShortID="887032925">
 					<ChildrenList>
-						<Sound Name="_ScrewFumble" ID="{20E4195E-DB17-4CBE-B838-AAC4B8BD8099}" ShortID="42973431">
+						<BlendContainer Name="Building" ID="{8AEDAFA2-B6AD-456F-A07C-67BB27AFDA80}" ShortID="248966160">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4389,86 +4385,286 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="_ScrewFumble" ID="{80204556-6D88-45E5-9562-5BC73456582C}">
-									<Language>SFX</Language>
-									<AudioFile>_ScrewFumble.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="829502810"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="_ScrewFumble" ID="{20E4195E-DB17-4CBE-B838-AAC4B8BD8099}" ShortID="42973431">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_ScrewFumble" ID="{80204556-6D88-45E5-9562-5BC73456582C}">
+											<Language>SFX</Language>
+											<AudioFile>_ScrewFumble.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="829502810"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_ScrewFumble" ID="{80204556-6D88-45E5-9562-5BC73456582C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_WoodHammering" ID="{5DC6876C-C0AB-4726-B7F0-FFD7D0252176}" ShortID="720473579">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-300</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_WoodHammering" ID="{A4B732FA-1A5E-4669-9306-EBE6C4530CDE}">
+											<Language>SFX</Language>
+											<AudioFile>_WoodHammering.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="990143674"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_WoodHammering" ID="{A4B732FA-1A5E-4669-9306-EBE6C4530CDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_WoodDropping" ID="{9181E825-D773-468E-BA88-8FA6EFD2C71C}" ShortID="557394663">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-430</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_WoodDropping" ID="{A0629304-A28C-4BE2-904B-8D56E5D54F3E}">
+											<Language>SFX</Language>
+											<AudioFile>_WoodDropping.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239214575"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_WoodDropping" ID="{A0629304-A28C-4BE2-904B-8D56E5D54F3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="_WoodHammering_01" ID="{D5AC4CD4-697F-48E0-89EF-E4EA20D56C5C}" ShortID="758791902">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-650</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="_WoodHammering" ID="{44AD672D-3139-4782-BDF1-0D1AA605E742}">
+											<Language>SFX</Language>
+											<AudioFile>_WoodHammering.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="990143674"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="_WoodHammering" ID="{44AD672D-3139-4782-BDF1-0D1AA605E742}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_ScrewFumble" ID="{80204556-6D88-45E5-9562-5BC73456582C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_WoodDropping" ID="{9181E825-D773-468E-BA88-8FA6EFD2C71C}" ShortID="557394663">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-430</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_WoodDropping" ID="{A0629304-A28C-4BE2-904B-8D56E5D54F3E}">
-									<Language>SFX</Language>
-									<AudioFile>_WoodDropping.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="239214575"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_WoodDropping" ID="{A0629304-A28C-4BE2-904B-8D56E5D54F3E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_WoodHammering" ID="{5DC6876C-C0AB-4726-B7F0-FFD7D0252176}" ShortID="720473579">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-300</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_WoodHammering" ID="{A4B732FA-1A5E-4669-9306-EBE6C4530CDE}">
-									<Language>SFX</Language>
-									<AudioFile>_WoodHammering.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="990143674"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_WoodHammering" ID="{A4B732FA-1A5E-4669-9306-EBE6C4530CDE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{20C324B3-9671-4697-9EAB-ABB8C85BD576}" ShortID="409406608">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="BuildingVolume" ID="{7F0284F2-ECA9-4F92-AD0A-574CB5AF1821}" WorkUnitID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1B295856-C3EB-4593-9487-29439D277B84}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.55556</XPos>
+																		<YPos>-0.26772</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<BlendTrackList>
+								<BlendTrack Name="BuildingFurniture" ID="{3A1628DD-DECB-487F-8344-5AC98351C67C}" ShortID="97787606">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="BuildingProcess" ID="{657AF2D4-E664-4669-A233-228467A6120A}" WorkUnitID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1C40852B-8D47-4F13-9B76-EF44EA0652DD}" ShortID="917591833">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="BuildingProcess" ID="{657AF2D4-E664-4669-A233-228467A6120A}" WorkUnitID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D470FD75-E8A0-489C-9771-962DEC3C2576}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.65111</XPos>
+																				<YPos>-2.88646</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="_WoodDropping" ID="{9181E825-D773-468E-BA88-8FA6EFD2C71C}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>24.135737009544</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="_ScrewFumble" ID="{20E4195E-DB17-4CBE-B838-AAC4B8BD8099}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>5.84987371862849</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>47.0130788264404</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="_WoodHammering" ID="{5DC6876C-C0AB-4726-B7F0-FFD7D0252176}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>34.0756451042771</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>99.9995</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="_WoodHammering_01" ID="{D5AC4CD4-697F-48E0-89EF-E4EA20D56C5C}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>47.0130788264404</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

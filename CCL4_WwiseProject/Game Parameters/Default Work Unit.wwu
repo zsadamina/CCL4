@@ -8,6 +8,16 @@
 						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="BuildingProcess" ID="{657AF2D4-E664-4669-A233-228467A6120A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BuildingVolume" ID="{7F0284F2-ECA9-4F92-AD0A-574CB5AF1821}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
