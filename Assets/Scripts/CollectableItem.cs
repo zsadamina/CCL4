@@ -16,6 +16,7 @@ public class CollectableItem : MonoBehaviour
     void Awake()
     {
         _stateManager = StateManager.Instance;
+        _inventoryManager = InventoryManager.Instance;
     }
     
     // Start is called before the first frame update
