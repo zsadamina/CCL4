@@ -1895,6 +1895,43 @@
 								<ObjectRef Name="_Silence" ID="{3E2A4EF5-A3C1-4C65-B7CA-56CDD3D23C48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
 							</Reference>
 						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{DE8025BB-52A7-4DC3-BE19-2BC8AF519EFF}" ShortID="744667544">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MusicVolume" ID="{EAA0F10A-5AF7-4588-95BB-9E54B8EAFA68}" WorkUnitID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{8732C83F-3C58-49F3-8524-59F12E0E378D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
 					</ObjectLists>
 				</RandomSequenceContainer>
 				<Folder Name="Stealer" ID="{A65CCED8-066A-486E-AC17-EAAD00B196F3}" ShortID="875425474">
