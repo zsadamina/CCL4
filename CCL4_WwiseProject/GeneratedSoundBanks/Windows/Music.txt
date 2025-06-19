@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2824242752	Play_PAMusic			\Default Work Unit\Play_PAMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	237530338	_Silence	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\50\{50EA985D-0FFA-C6F6-20FF-B47F13D1CFE6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_Silence		4545
+	248284923	_WakeMeUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\B5\{B56417FC-79DE-262F-4DA4-631032D144F6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_WakeMeUp		764491
+	828237836	_NeverGonnaGiveYouUp	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6C\{6C4FC099-5903-BAE2-5593-CD147F7577ED}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PAMusic\_NeverGonnaGiveYouUp		1455361
+
