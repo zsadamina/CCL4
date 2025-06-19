@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
-  m_Name: 1B7BCE05-09C3-4E1A-B214-881CA743565C
+  m_Name: 65E4CABE-80DD-4006-BF02-ECFB304123B9
   m_EditorClassIdentifier: 
-  objectName: Play__WakeMeUp
-  id: 2477745328
-  guid: 1B7BCE05-09C3-4E1A-B214-881CA743565C
+  objectName: Play__FootstepsWarehouse
+  id: 2341641687
+  guid: 65E4CABE-80DD-4006-BF02-ECFB304123B9
   IsInUserDefinedSoundBank: 1

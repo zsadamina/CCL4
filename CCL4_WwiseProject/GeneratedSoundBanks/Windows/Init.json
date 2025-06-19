@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}",
+    "Hash": "{3C4339F7-5AFF-3E38-C5C8-5C7386BF06D6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2648499661",
+       "Name": "Hall_Medium_Dark",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Medium_Dark",
+       "GUID": "{626B6E38-739B-4689-819F-F81AD3788BDE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "3701691487",
+       "Name": "Hall_Large_Bright",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Large_Bright",
+       "GUID": "{CB602948-2D1D-4977-A8D5-378184293E80}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -36,14 +54,66 @@
     },
     "Busses": [
      {
+      "Id": "2393774578",
+      "Name": "WarehouseReverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\WarehouseReverb",
+      "GUID": "{554DBA97-69D8-4D6F-9F7E-C59E04137D90}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3701691487"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2573760040",
+      "Name": "WarehouseWind",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\WarehouseWind",
+      "GUID": "{3283695B-2608-47DC-AA95-12D8C2FC1DC7}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2648499661"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{EAA0F10A-5AF7-4588-95BB-9E54B8EAFA68}"
+     },
+     {
+      "Id": "2622895872",
+      "Name": "BuildingProcess",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\BuildingProcess",
+      "GUID": "{657AF2D4-E664-4669-A233-228467A6120A}"
+     },
+     {
+      "Id": "2844590054",
+      "Name": "PlayerHeartbeat",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerHeartbeat",
+      "GUID": "{F4940D17-0EF2-458C-95EB-0CE8AB250530}"
+     },
+     {
+      "Id": "3306349719",
+      "Name": "BuildingVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\BuildingVolume",
+      "GUID": "{7F0284F2-ECA9-4F92-AD0A-574CB5AF1821}"
+     }
     ]
    }
   ],
-  "FileHash": "{7C7AA7C9-DBD8-C167-F916-66ABC7B9D8BD}"
+  "FileHash": "{EE644552-8A95-B8CD-B027-CBB89E9C003C}"
  }
 }

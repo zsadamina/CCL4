@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1201367580	Play__ManualDrop			\Default Work Unit\Warehouse\Play__ManualDrop	
+	2483767443	Play__Whoosh			\Default Work Unit\Warehouse\Play__Whoosh	
+	3791168207	Play__Wind			\Default Work Unit\Warehouse\Play__Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	159493294	_Wind	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\91\{911FF69E-73BF-229B-DD38-52D14C98E903}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_Wind		85035
+	633485570	_Whoosh	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\59\{59985470-D29B-ADB0-49A8-F885D66CA969}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_Whoosh		5751
+	821945767	_ManualDrop	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4E\{4EBCB64B-8B4D-5B1F-5B82-428C6971B41B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\WarehouseSounds\_ManualDrop		14651
+

@@ -1,0 +1,87 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2981836174",
+    "Type": "User",
+    "GUID": "{D7A64CE1-DDA5-4CFE-80D2-272D35AAA166}",
+    "Language": "SFX",
+    "Hash": "{922B13D5-4D48-EAB9-BB8C-22BE5858AA67}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Warehouse",
+    "ShortName": "Warehouse",
+    "Path": "Warehouse.bnk",
+    "Media": [
+     {
+      "Id": "159493294",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_Wind.wav",
+      "CachePath": "91/{911FF69E-73BF-229B-DD38-52D14C98E903}.wem"
+     },
+     {
+      "Id": "633485570",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_Whoosh.wav",
+      "CachePath": "59/{59985470-D29B-ADB0-49A8-F885D66CA969}.wem"
+     },
+     {
+      "Id": "821945767",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_ManualDrop.wav",
+      "CachePath": "4E/{4EBCB64B-8B4D-5B1F-5B82-428C6971B41B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1201367580",
+      "Name": "Play__ManualDrop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__ManualDrop",
+      "GUID": "{440F61CD-EF2F-4F8E-8DE8-8B3BE210B25E}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.1374986",
+      "DurationMax": "3.1374986",
+      "MediaRefs": [
+       {
+        "Id": "821945767"
+       }
+      ]
+     },
+     {
+      "Id": "2483767443",
+      "Name": "Play__Whoosh",
+      "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__Whoosh",
+      "GUID": "{8AA9578C-1390-4429-A17A-A532961E9556}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "633485570"
+       }
+      ]
+     },
+     {
+      "Id": "3791168207",
+      "Name": "Play__Wind",
+      "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__Wind",
+      "GUID": "{2AB4C018-9215-464C-9B99-261E0B756B5C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "159493294"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F55B7E04-19A6-03A1-C766-4F92416D9565}"
+ }
+}

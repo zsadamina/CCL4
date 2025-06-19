@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 99a71391d0e66c4199639f2d576d23da
     GuidInternal: 
-    m_lastTime: -8584512724924520975
+    m_lastTime: -8584512718707225745
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,34 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: WarehouseReverb
+      guid: 97ba4d55d8696f4d9f7ec59e04137d90
+      id: 2393774578
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 99a71391d0e66c4199639f2d576d23da
+      - ElementName: WarehouseReverb
+        ObjectType: 2
+        guid: 97ba4d55d8696f4d9f7ec59e04137d90
+      Path: Master-Mixer Hierarchy\Default Work Unit\WarehouseReverb
+    - name: WarehouseWind
+      guid: 5b6983320826dc47aa9512d8c2fc1dc7
+      id: 2573760040
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 99a71391d0e66c4199639f2d576d23da
+      - ElementName: WarehouseWind
+        ObjectType: 2
+        guid: 5b6983320826dc47aa9512d8c2fc1dc7
+      Path: Master-Mixer Hierarchy\Default Work Unit\WarehouseWind
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -108,8 +136,193 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 02c05c88b3b2db46a7870a889691f192
     GuidInternal: 
-    m_lastTime: -8584512724925264930
+    m_lastTime: -8584512718706902733
     List:
+    - name: Bear
+      guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      id: 1190179415
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      Path: Events\Default Work Unit\Bear
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Furniture
+      guid: 1ae3978f1018454e94bc99c32dea19b8
+      id: 2275022897
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Furniture
+        ObjectType: 4
+        guid: 1ae3978f1018454e94bc99c32dea19b8
+      Path: Events\Default Work Unit\Furniture
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Inventory
+      guid: 12e6d36ea8b1f4449b927b3d4a3f12ab
+      id: 203281819
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Inventory
+        ObjectType: 4
+        guid: 12e6d36ea8b1f4449b927b3d4a3f12ab
+      Path: Events\Default Work Unit\Inventory
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu
+      guid: 8d0b08dcf666a94ca948963db1dda033
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 8d0b08dcf666a94ca948963db1dda033
+      Path: Events\Default Work Unit\Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PA
+      guid: a33329d0578207499e8456dafba179cd
+      id: 1635194332
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: PA
+        ObjectType: 4
+        guid: a33329d0578207499e8456dafba179cd
+      Path: Events\Default Work Unit\PA
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play__BearDialogue
+      guid: 992867f86f8cb8419c7e05ad337f9413
+      id: 1180914829
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      - ElementName: Play__BearDialogue
+        ObjectType: 3
+        guid: 992867f86f8cb8419c7e05ad337f9413
+      Path: Events\Default Work Unit\Bear\Play__BearDialogue
+      maxAttenuation: 0
+      maxDuration: 70.193504
+      minDuration: 70.193504
+    - name: Play__BearNono
+      guid: dc2681fac1f6b14e9f9fa10aec30414b
+      id: 4008653967
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      - ElementName: Play__BearNono
+        ObjectType: 3
+        guid: dc2681fac1f6b14e9f9fa10aec30414b
+      Path: Events\Default Work Unit\Bear\Play__BearNono
+      maxAttenuation: 0
+      maxDuration: 5.131111
+      minDuration: 2.7538776
+    - name: Play__CheckOffWithPencil
+      guid: bb2bce23a234174c892d521d511ebe24
+      id: 1681451465
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Inventory
+        ObjectType: 4
+        guid: 12e6d36ea8b1f4449b927b3d4a3f12ab
+      - ElementName: Play__CheckOffWithPencil
+        ObjectType: 3
+        guid: bb2bce23a234174c892d521d511ebe24
+      Path: Events\Default Work Unit\Inventory\Play__CheckOffWithPencil
+      maxAttenuation: 0
+      maxDuration: 0.59319776
+      minDuration: 0.52847916
+    - name: Play__Clapping
+      guid: 42458333cf237740ab2f96f4e598d30f
+      id: 1917949731
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
+      - ElementName: Play__Clapping
+        ObjectType: 3
+        guid: 42458333cf237740ab2f96f4e598d30f
+      Path: Events\Default Work Unit\Bear\Play__Clapping
+      maxAttenuation: 0
+      maxDuration: 2.529013
+      minDuration: 2.529013
+    - name: Play__CollectPiece
+      guid: 4af4984728c0934e8e84629573dd26a5
+      id: 2593610629
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
+      - ElementName: Play__CollectPiece
+        ObjectType: 3
+        guid: 4af4984728c0934e8e84629573dd26a5
+      Path: Events\Default Work Unit\Player\Play__CollectPiece
+      maxAttenuation: 0
+      maxDuration: 2.7853467
+      minDuration: 2.7853467
     - name: Play__Exhausted
       guid: fc89b7518804c14ab9ea6cf4b2bc311a
       id: 2278865038
@@ -120,13 +333,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
       - ElementName: Play__Exhausted
         ObjectType: 3
         guid: fc89b7518804c14ab9ea6cf4b2bc311a
-      Path: Events\Default Work Unit\Play__Exhausted
+      Path: Events\Default Work Unit\Player\Play__Exhausted
       maxAttenuation: 0
-      maxDuration: 489.01358
-      minDuration: 489.01358
+      maxDuration: 244.50679
+      minDuration: 69.96892
+    - name: Play__FlickeringLights
+      guid: 429340ce1d3e80418aac1a6d33dcb67b
+      id: 416380418
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Play__FlickeringLights
+        ObjectType: 3
+        guid: 429340ce1d3e80418aac1a6d33dcb67b
+      Path: Events\Default Work Unit\Play__FlickeringLights
+      maxAttenuation: 0
+      maxDuration: 10.702864
+      minDuration: 9
     - name: Play__FootstepsLevel
       guid: d6d1076af4798846936c6c66921ef1a3
       id: 1787411852
@@ -137,15 +370,38 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
       - ElementName: Play__FootstepsLevel
         ObjectType: 3
         guid: d6d1076af4798846936c6c66921ef1a3
-      Path: Events\Default Work Unit\Play__FootstepsLevel
+      Path: Events\Default Work Unit\Player\Play__FootstepsLevel
       maxAttenuation: 0
       maxDuration: 0.6227134
       minDuration: 0.38537416
+    - name: Play__FootstepsStealer
+      guid: 087bbb90dd20184aa616eca372375008
+      id: 1563433806
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Stealer
+        ObjectType: 4
+        guid: 088fd1c2a060034fa01a056dbcd0449a
+      - ElementName: Play__FootstepsStealer
+        ObjectType: 3
+        guid: 087bbb90dd20184aa616eca372375008
+      Path: Events\Default Work Unit\Stealer\Play__FootstepsStealer
+      maxAttenuation: 0
+      maxDuration: 22.557438
+      minDuration: 22.557438
     - name: Play__FootstepsWarehouse
-      guid: a1afd95b46b1c241a938fb2359fec9fc
+      guid: becae465dd800640bf02ecfb304123b9
       id: 2341641687
       PathAndIcons:
       - ElementName: Events
@@ -154,16 +410,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
       - ElementName: Play__FootstepsWarehouse
         ObjectType: 3
-        guid: a1afd95b46b1c241a938fb2359fec9fc
-      Path: Events\Default Work Unit\Play__FootstepsWarehouse
+        guid: becae465dd800640bf02ecfb304123b9
+      Path: Events\Default Work Unit\Warehouse\Play__FootstepsWarehouse
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play__NeverGonnaGiveYouUp
-      guid: 84c9b20a03d2224fb5d97a8287583775
-      id: 2656427947
+    - name: Play__FootstepsYapper
+      guid: 277b54285833c64bb4cb37475f9b07d3
+      id: 1573465489
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -171,13 +430,76 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
-      - ElementName: Play__NeverGonnaGiveYouUp
+      - ElementName: Yapper
+        ObjectType: 4
+        guid: eee01b5bb172cf41aff041a47eb6f354
+      - ElementName: Play__FootstepsYapper
         ObjectType: 3
-        guid: 84c9b20a03d2224fb5d97a8287583775
-      Path: Events\Default Work Unit\Play__NeverGonnaGiveYouUp
+        guid: 277b54285833c64bb4cb37475f9b07d3
+      Path: Events\Default Work Unit\Yapper\Play__FootstepsYapper
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 23.691776
+      minDuration: 23.691776
+    - name: Play__KeyChain
+      guid: 69d6963a2cd4564f9adcf901b0ce33c8
+      id: 434027157
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Stealer
+        ObjectType: 4
+        guid: 088fd1c2a060034fa01a056dbcd0449a
+      - ElementName: Play__KeyChain
+        ObjectType: 3
+        guid: 69d6963a2cd4564f9adcf901b0ce33c8
+      Path: Events\Default Work Unit\Stealer\Play__KeyChain
+      maxAttenuation: 0
+      maxDuration: 8
+      minDuration: 8
+    - name: Play__LevelComplete
+      guid: 31ef3663a13a0044b10c9c689ee75fd0
+      id: 2785570664
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 8d0b08dcf666a94ca948963db1dda033
+      - ElementName: Play__LevelComplete
+        ObjectType: 3
+        guid: 31ef3663a13a0044b10c9c689ee75fd0
+      Path: Events\Default Work Unit\Menu\Play__LevelComplete
+      maxAttenuation: 0
+      maxDuration: 25.10406
+      minDuration: 25.10406
+    - name: Play__ManualDrop
+      guid: cd610f442fef8e4f8de88b3be210b25e
+      id: 1201367580
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
+      - ElementName: Play__ManualDrop
+        ObjectType: 3
+        guid: cd610f442fef8e4f8de88b3be210b25e
+      Path: Events\Default Work Unit\Warehouse\Play__ManualDrop
+      maxAttenuation: 0
+      maxDuration: 3.1374986
+      minDuration: 3.1374986
     - name: Play__PlayerBump
       guid: 9e68e9e002371c44a531118efad523b0
       id: 362971886
@@ -188,13 +510,56 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
       - ElementName: Play__PlayerBump
         ObjectType: 3
         guid: 9e68e9e002371c44a531118efad523b0
-      Path: Events\Default Work Unit\Play__PlayerBump
+      Path: Events\Default Work Unit\Player\Play__PlayerBump
       maxAttenuation: 0
       maxDuration: 0.9466264
       minDuration: 0.7091685
+    - name: Play__RegularHeartbeat
+      guid: 35125fdb51685d4bb85d1bf1f4d1a9e2
+      id: 2962672181
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
+      - ElementName: Play__RegularHeartbeat
+        ObjectType: 3
+        guid: 35125fdb51685d4bb85d1bf1f4d1a9e2
+      Path: Events\Default Work Unit\Player\Play__RegularHeartbeat
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play__SelectSound
+      guid: 63b9b2cae45bfa4496e75fc56a49407d
+      id: 1560875070
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Menu
+        ObjectType: 4
+        guid: 8d0b08dcf666a94ca948963db1dda033
+      - ElementName: Play__SelectSound
+        ObjectType: 3
+        guid: 63b9b2cae45bfa4496e75fc56a49407d
+      Path: Events\Default Work Unit\Menu\Play__SelectSound
+      maxAttenuation: 0
+      maxDuration: 0.6337603
+      minDuration: 0.6337603
     - name: Play__SoftSteps
       guid: bfea9e1f8520c04ab1fa1bf58c31ad43
       id: 2578942166
@@ -205,16 +570,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Bear
+        ObjectType: 4
+        guid: 1edec31a1b556e47b7b9cd2e0b2b817e
       - ElementName: Play__SoftSteps
         ObjectType: 3
         guid: bfea9e1f8520c04ab1fa1bf58c31ad43
-      Path: Events\Default Work Unit\Play__SoftSteps
+      Path: Events\Default Work Unit\Bear\Play__SoftSteps
       maxAttenuation: 0
-      maxDuration: 1.4599134
-      minDuration: 1.0696441
-    - name: Play__WakeMeUp
-      guid: 05ce7b1bc3091a4eb214881ca743565c
-      id: 2477745328
+      maxDuration: 1.592047
+      minDuration: 1.1664551
+    - name: Play__StealerIntro
+      guid: ed42b9ef2ee8474a80ab1b6029914a1a
+      id: 1414004439
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -222,13 +590,96 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
-      - ElementName: Play__WakeMeUp
+      - ElementName: Stealer
+        ObjectType: 4
+        guid: 088fd1c2a060034fa01a056dbcd0449a
+      - ElementName: Play__StealerIntro
         ObjectType: 3
-        guid: 05ce7b1bc3091a4eb214881ca743565c
-      Path: Events\Default Work Unit\Play__WakeMeUp
+        guid: ed42b9ef2ee8474a80ab1b6029914a1a
+      Path: Events\Default Work Unit\Stealer\Play__StealerIntro
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 19.335714
+      minDuration: 19.335714
+    - name: Play__StealerSounds
+      guid: 4feee7cc27d0a04f961f27bb7c53ca63
+      id: 1246669283
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Stealer
+        ObjectType: 4
+        guid: 088fd1c2a060034fa01a056dbcd0449a
+      - ElementName: Play__StealerSounds
+        ObjectType: 3
+        guid: 4feee7cc27d0a04f961f27bb7c53ca63
+      Path: Events\Default Work Unit\Stealer\Play__StealerSounds
+      maxAttenuation: 50
+      maxDuration: 2.6428797
+      minDuration: 0.6180952
+    - name: Play__Whoosh
+      guid: 8c57a98a90132944a17aa532961e9556
+      id: 2483767443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
+      - ElementName: Play__Whoosh
+        ObjectType: 3
+        guid: 8c57a98a90132944a17aa532961e9556
+      Path: Events\Default Work Unit\Warehouse\Play__Whoosh
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play__Wind
+      guid: 18c0b42a15924c469b99261e0b756b5c
+      id: 3791168207
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
+      - ElementName: Play__Wind
+        ObjectType: 3
+        guid: 18c0b42a15924c469b99261e0b756b5c
+      Path: Events\Default Work Unit\Warehouse\Play__Wind
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play__YapperIntro
+      guid: 699f8f8681abe14caf86e68cdce0644e
+      id: 1318259352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Yapper
+        ObjectType: 4
+        guid: eee01b5bb172cf41aff041a47eb6f354
+      - ElementName: Play__YapperIntro
+        ObjectType: 3
+        guid: 699f8f8681abe14caf86e68cdce0644e
+      Path: Events\Default Work Unit\Yapper\Play__YapperIntro
+      maxAttenuation: 0
+      maxDuration: 8
+      minDuration: 8
     - name: Play__Yawns
       guid: 2b936cb1e02c8041a0c2ac1c400b838e
       id: 1579610859
@@ -239,13 +690,56 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
       - ElementName: Play__Yawns
         ObjectType: 3
         guid: 2b936cb1e02c8041a0c2ac1c400b838e
-      Path: Events\Default Work Unit\Play__Yawns
+      Path: Events\Default Work Unit\Player\Play__Yawns
+      maxAttenuation: 0
+      maxDuration: 39.38406
+      minDuration: 39.38406
+    - name: Play_Building
+      guid: 065d3844ac424b4fb8c178bfbae422bb
+      id: 3149174998
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Furniture
+        ObjectType: 4
+        guid: 1ae3978f1018454e94bc99c32dea19b8
+      - ElementName: Play_Building
+        ObjectType: 3
+        guid: 065d3844ac424b4fb8c178bfbae422bb
+      Path: Events\Default Work Unit\Furniture\Play_Building
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_PADialogues
+      guid: c304d8c12ff9ed4d97bd7b54d701b774
+      id: 188869204
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: PA
+        ObjectType: 4
+        guid: a33329d0578207499e8456dafba179cd
+      - ElementName: Play_PADialogues
+        ObjectType: 3
+        guid: c304d8c12ff9ed4d97bd7b54d701b774
+      Path: Events\Default Work Unit\PA\Play_PADialogues
+      maxAttenuation: 0
+      maxDuration: 30.49077
+      minDuration: 6.8946033
     - name: Play_PAMusic
       guid: 3ca8f8cf16da2646883921c33a25772c
       id: 2824242752
@@ -256,13 +750,84 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: PA
+        ObjectType: 4
+        guid: a33329d0578207499e8456dafba179cd
       - ElementName: Play_PAMusic
         ObjectType: 3
         guid: 3ca8f8cf16da2646883921c33a25772c
-      Path: Events\Default Work Unit\Play_PAMusic
+      Path: Events\Default Work Unit\PA\Play_PAMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Player
+      guid: 2ea8e350e199be43b0bb52be2d7a167a
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Player
+        ObjectType: 4
+        guid: 2ea8e350e199be43b0bb52be2d7a167a
+      Path: Events\Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stealer
+      guid: 088fd1c2a060034fa01a056dbcd0449a
+      id: 3194511015
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Stealer
+        ObjectType: 4
+        guid: 088fd1c2a060034fa01a056dbcd0449a
+      Path: Events\Default Work Unit\Stealer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Warehouse
+      guid: d74f161dcf6a074c8bdcd9d30f954609
+      id: 2981836174
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Warehouse
+        ObjectType: 4
+        guid: d74f161dcf6a074c8bdcd9d30f954609
+      Path: Events\Default Work Unit\Warehouse
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Yapper
+      guid: eee01b5bb172cf41aff041a47eb6f354
+      id: 1064896814
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02c05c88b3b2db46a7870a889691f192
+      - ElementName: Yapper
+        ObjectType: 4
+        guid: eee01b5bb172cf41aff041a47eb6f354
+      Path: Events\Default Work Unit\Yapper
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -320,7 +885,7 @@ MonoBehaviour:
     m_lastTime: -8584512724910568260
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a000000100000001100000016000000170000001c0000001d0000001e0000001f0000003d0000003e0000004a0000004b000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000900000010000000110000001200000016000000170000001c0000001d0000001e0000001f0000003d0000003e0000004a0000004b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
