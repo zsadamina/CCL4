@@ -21,15 +21,15 @@ public class PickupItemClass
 public class TodoItem : MonoBehaviour
 {
 
-    private InventoryManager _inventoryManager;
     
     private GameObject _pickupItemGameObject;
     private PickupItemClass _pickupItem;
-    
+    private RoomGenerator _roomGenerator;
+
     void Awake()
     {
-        _inventoryManager = InventoryManager.Instance;
-        _inventoryManager.Todos.Add(this);
+        _roomGenerator = RoomGenerator.Instance;
+        _roomGenerator.Todos.Add(this);
     }
     
     public void InitPickupItem(PickupItemClass prefab)
