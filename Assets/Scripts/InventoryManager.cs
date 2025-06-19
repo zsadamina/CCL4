@@ -4,6 +4,7 @@ using System.Linq;
 using Classes;
 using UnityEngine;
 
+[RequireComponent(typeof(SpawnPointManager))]
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
@@ -15,6 +16,7 @@ public class InventoryManager : MonoBehaviour
     public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
     
     private RoomGenerator _roomGenerator;
+    private SpawnPointManager _spawnpointManager;
     
     void Awake()
     {
@@ -29,8 +31,8 @@ public class InventoryManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(this);
-        
-        _roomGenerator = RoomGenerator.Instance;
+
+        _spawnpointManager = SpawnPointManager.Instance;
         PickupItems = itemPrefabsArray.Select(itemPrefab =>
             new PickupItemClass(itemPrefab.name, itemPrefab)).ToArray();
     }
@@ -42,7 +44,7 @@ public class InventoryManager : MonoBehaviour
 
     private void InitSpawnPoints()
     {
-        List<TodoItem> todos = _roomGenerator.Todos;
+        List<TodoItem> todos = _spawnpointManager.Todos;
         if (todos.Count <= 0)
         {
             return;
