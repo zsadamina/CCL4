@@ -57,7 +57,7 @@ public class StateManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        
+
         Dictionary<string, List<PickupItemClass>> pickUpItems = _inventoryManager.PickupItems
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());

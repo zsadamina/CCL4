@@ -10,8 +10,9 @@ using UnityEngine.UI;
 public class ClipboardManager : MonoBehaviour
 {
     public static ClipboardManager Instance;
-    [SerializeField] private GameObject _clipboardItem;
+    [SerializeField] private GameObject _clipboardFurniture;
     [SerializeField] private Sprite[] _clipboardItemSprites;
+    [SerializeField] private GameObject _clipBoardHealth;
 
 
     void Awake()
@@ -27,23 +28,32 @@ public class ClipboardManager : MonoBehaviour
         }
     }
 
-    void Start()
+    public void ReduceHealth()
     {
-
+        if (_clipBoardHealth.transform.childCount > 0)
+        {
+            Destroy(_clipBoardHealth.transform.GetChild(0).gameObject);
+        }
     }
 
     public void setupClipboard(PickupItemClass item, int count, int check, bool done)
     {
-        GameObject gameObject = Instantiate(_clipboardItem, this.gameObject.transform);
+        GameObject gameObject = Instantiate(_clipboardFurniture, this.gameObject.transform);
         gameObject.transform.SetParent(this.gameObject.transform);
 
-        var iconContainer = _clipboardItem.transform.Find("Icon");
+        var iconContainer = _clipboardFurniture.transform.Find("Icon");
+        if (iconContainer == null)
+        {
+            Debug.LogError("Icon container not found in clipboard furniture prefab.");
+            return;
+        }
+        
         iconContainer.GetComponent<Image>().sprite = item.sprite;
 
-        var countContainer = _clipboardItem.transform.Find("Count");
+        var countContainer = _clipboardFurniture.transform.Find("Count");
         countContainer.GetComponent<TMP_Text>().text = "x" + count.ToString();
 
-        var checkContainer = _clipboardItem.transform.Find("Check");
+        var checkContainer = _clipboardFurniture.transform.Find("Check");
 
         if (done)
         {
@@ -51,12 +61,7 @@ public class ClipboardManager : MonoBehaviour
         }
         else
         {
-            checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check+1];
+            checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check + 1];
         }
-    }
-
-    void Update()
-    {
-
     }
 }
