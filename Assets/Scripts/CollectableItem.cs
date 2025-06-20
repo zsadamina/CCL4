@@ -27,6 +27,7 @@ public class CollectableItem : MonoBehaviour
         pickupSound.Post(gameObject);
         
         if(_pickupItem != null){
+            _stateManager.AddItem(_pickupItem);
             _stateManager.Inventory.Add(_pickupItem);
              if (_stateManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
             {
