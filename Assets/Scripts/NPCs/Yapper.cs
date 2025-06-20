@@ -22,8 +22,10 @@ public class Yapper : MonoBehaviour
     private GameObject _locomotion;
 
     private int frameCounter = 0;
-    
+    private ClipboardManager _cardBoardManager;
+
     public bool YappingMode { get; set; } = true;
+    private bool _yappingDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,13 +35,12 @@ public class Yapper : MonoBehaviour
         _stateManager = StateManager.Instance;
         target = GameObject.FindWithTag("Player").transform;
         _locomotion = GameObject.FindWithTag("Locomotion");
+        _cardBoardManager = ClipboardManager.Instance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        
         MoveAgent();
         if (_navMeshAgent.hasPath && _navMeshAgent.remainingDistance - _navMeshAgent.stoppingDistance >
             _navMeshAgent.stoppingDistance + stoppingDistanceThreshold)
@@ -54,18 +55,19 @@ public class Yapper : MonoBehaviour
 
     void MoveAgent()
     {
+        if (!_yappingDone)
+            StartYapping();
+        
         if (YappingMode)
         {
             _navMeshAgent.SetDestination(target.position);
-            StartYapping();
         }
         else
         {
             _navMeshAgent.SetDestination(Vector3.zero);
             frameCounter++;
-            Debug.Log("Distance: " + _navMeshAgent.remainingDistance + " YoinkMode: " + YappingMode);
 
-            if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance && frameCounter > 3)
+            if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance && frameCounter > 5)
             {
                 Destroy(this.gameObject);
             }
@@ -85,8 +87,10 @@ public class Yapper : MonoBehaviour
 
     void StopYapping()
     {
-        _locomotion.SetActive(true);
         YappingMode = false;
+        _yappingDone = true;
+        _cardBoardManager.ReduceHealth();
+        _locomotion.SetActive(true);
         _animator.SetBool("IsTalking", false);
         Debug.Log(_navMeshAgent.isActiveAndEnabled && _navMeshAgent.isOnNavMesh);
     }
