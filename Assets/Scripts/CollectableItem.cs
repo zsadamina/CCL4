@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectableItem : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class CollectableItem : MonoBehaviour
     [Header("Audio")]
     public AK.Wwise.Event pickupSound;
 
+    private UIManager _uiManager;
+
     void Awake()
     {
-        _stateManager = StateManager.Instance;
+        _uiManager = UIManager.Instance;
         _inventoryManager = InventoryManager.Instance;
+        _stateManager = StateManager.Instance;
     }
     
     // Start is called before the first frame update
@@ -27,11 +31,14 @@ public class CollectableItem : MonoBehaviour
         pickupSound.Post(gameObject);
         
         if(_pickupItem != null){
-            _stateManager.AddItem(_pickupItem);
-            _stateManager.Inventory.Add(_pickupItem);
+            _uiManager.AddItem(_pickupItem);
              if (_stateManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
             {
                 StateManager.allItemsCollected = true;
+                if (!_uiManager.Tutorial)
+                {
+                    SceneManager.LoadScene("EndScene");
+                }
             }
             else
             {
