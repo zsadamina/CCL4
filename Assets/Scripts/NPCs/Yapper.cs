@@ -82,13 +82,13 @@ public class Yapper : MonoBehaviour
             _locomotion.SetActive(false);
             _animator.SetBool("IsTalking", true);
             Invoke("StopYapping", yappingTime);
+            _yappingDone = true;
         }
     }
 
     void StopYapping()
     {
         YappingMode = false;
-        _yappingDone = true;
         _cardBoardManager.ReduceHealth();
         _locomotion.SetActive(true);
         _animator.SetBool("IsTalking", false);
