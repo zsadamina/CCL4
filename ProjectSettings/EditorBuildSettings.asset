@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Warehouse.unity
     guid: 6a1702a00a8cb024f8afcd63f2db75f4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/handMenu.unity
     guid: 73976c180addf0242a0d0a53058e7e5c
   - enabled: 1
