@@ -10,10 +10,11 @@ using UnityEngine.UI;
 public class ClipboardManager : MonoBehaviour
 {
     public static ClipboardManager Instance;
-    [SerializeField] private GameObject _clipboardFurniture;
+    [SerializeField] private GameObject _clipboardItemPrefab;
     [SerializeField] private Sprite[] _clipboardItemSprites;
     [SerializeField] private GameObject _clipBoardHealth;
     [SerializeField] private GameObject _clipboardPage2;
+    [SerializeField] public GameObject itemListContainer;
     private int _currentPage = 1;
 
 
@@ -41,35 +42,31 @@ public class ClipboardManager : MonoBehaviour
 
     public void setupClipboard(PickupItemClass item, int count, int check, bool done)
     {
-        if (!this._clipboardFurniture)
+        GameObject gameObject = Instantiate(_clipboardItemPrefab
+        , this.transform);
+        gameObject.transform.SetParent(itemListContainer.transform, false);
+
+        var iconContainer = gameObject.transform.Find("Icon");
+        var countContainer = gameObject.transform.Find("Count");
+        var checkContainer = gameObject.transform.Find("Check");
+
+        // Now modify `gameObject`, not `_clipboardFurniture`:
+        if (iconContainer != null)
+            iconContainer.GetComponent<Image>().sprite = item.sprite;
+
+        if (countContainer != null)
+            countContainer.GetComponent<TMP_Text>().text = "x" + count.ToString();
+
+        if (checkContainer != null)
         {
-            return;
-        }
-        GameObject gameObject = Instantiate(_clipboardFurniture, this.gameObject.transform);
-        
-        gameObject.transform.SetParent(this.gameObject.transform);
-
-        var iconContainer = _clipboardFurniture.transform.Find("Icon");
-        if (iconContainer == null)
-        {
-            Debug.LogError("Icon container not found in clipboard furniture prefab.");
-            return;
-        }
-
-        iconContainer.GetComponent<Image>().sprite = item.sprite;
-
-        var countContainer = _clipboardFurniture.transform.Find("Count");
-        countContainer.GetComponent<TMP_Text>().text = "x" + count.ToString();
-
-        var checkContainer = _clipboardFurniture.transform.Find("Check");
-
-        if (done)
-        {
-            checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[0];
-        }
-        else
-        {
-            checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check + 1];
+            if (done)
+            {
+                checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[5];
+            }
+            else
+            {
+            checkContainer.GetComponent<Image>().sprite = _clipboardItemSprites[check];
+            }
         }
     }
 

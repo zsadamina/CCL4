@@ -3625,12 +3625,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 981877902}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &996515439 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 128131331965620441, guid: 8261ab41c0f96b74f9511785ba9df3b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 714152986}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1005939763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7832969563607358042, guid: bd980414599bd4c4ba72d0f39d5921bc,
@@ -4962,6 +4956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465780087}
   - component: {fileID: 1465780086}
+  - component: {fileID: 1465780088}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -4997,6 +4992,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465780088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465780085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac054c1853a3439546e9d2d4cdc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clipboardItemPrefab: {fileID: 2144604358222497658, guid: d9f23462e0b8f9b47aeccf855d55723e,
+    type: 3}
+  _clipboardItemSprites:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 3e3ea5e3bf9ac644c82de9347ebe022d, type: 3}
+  - {fileID: 21300000, guid: c8efee13e1e484140b67c32a811a5302, type: 3}
+  - {fileID: 21300000, guid: 9f687c9d5626bc04c872f7b5f97361de, type: 3}
+  - {fileID: 21300000, guid: 2ad851898552f424a9ab9c0393f63959, type: 3}
+  - {fileID: 21300000, guid: 15e5ae4fdcafa264e8086797a91a8d9f, type: 3}
+  _clipBoardHealth: {fileID: 714152989}
+  _clipboardPage2: {fileID: 714152987}
+  itemListContainer: {fileID: 1786961678}
 --- !u!1 &1466179724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5920,6 +5939,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1774405830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1786961678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2095931953853000403, guid: 8261ab41c0f96b74f9511785ba9df3b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 714152986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1794119636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6632,7 +6657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac054c1853a3439546e9d2d4cdc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clipboardFurniture: {fileID: 996515439}
+  _clipboardItemPrefab: {fileID: 0}
   _clipboardItemSprites:
   - {fileID: 0}
   - {fileID: 21300000, guid: 3e3ea5e3bf9ac644c82de9347ebe022d, type: 3}
@@ -6642,6 +6667,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 15e5ae4fdcafa264e8086797a91a8d9f, type: 3}
   _clipBoardHealth: {fileID: 714152989}
   _clipboardPage2: {fileID: 714152987}
+  itemListContainer: {fileID: 0}
 --- !u!4 &2000760748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 702376429093581832, guid: e7d573cd28201b04285f85df4a8343a8,

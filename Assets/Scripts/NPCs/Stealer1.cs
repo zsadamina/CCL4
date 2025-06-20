@@ -16,6 +16,7 @@ public class Stealer : MonoBehaviour
     public bool YoinkMode { get; set; } = true;
 
     private Transform target;
+    private UIManager _uiManager;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class Stealer : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponentInChildren<Animator>();
         _stateManager = StateManager.Instance;
+        _uiManager = UIManager.Instance;
         target = GameObject.FindWithTag("Player").transform;
     }
 
@@ -51,7 +53,7 @@ public class Stealer : MonoBehaviour
         }
         else
         {
-             //Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
+            //Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
 
             if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance)
             {
@@ -70,9 +72,8 @@ public class Stealer : MonoBehaviour
             _navMeshAgent.SetDestination(new Vector3(0, 0, 0));
             YoinkMode = false;
 
-            
-
-            
+            if (_stateManager.Inventory.Count > 0)
+                StealItemFromInventory();
         }
     }
 
@@ -84,11 +85,11 @@ public class Stealer : MonoBehaviour
         {
             return;
         }
-        
+
         int randomIndex = Random.Range(0, inventory.Count - 1);
         var item = inventory[randomIndex];
-        inventory.RemoveAt(randomIndex);
-        Debug.Log("Stolen Item:"+ item.Name);
+        _uiManager.RemoveItem(item);
+        Debug.Log("Stolen Item:" + item.Name);
         TodoItem spawnpoint = InventoryManager.Instance.getRandomSpawnPointRange(1).FirstOrDefault();
         if (spawnpoint)
         {
