@@ -24,9 +24,9 @@ public class EmployeeYapperAudio : MonoBehaviour
 
     void Start()
     {
-        
+
         playerObject = GameObject.FindWithTag("Player");
-        
+
         if (footstepLoopEvent.IsValid())
             footstepLoopEvent.Post(dialogueSourceObject != null ? dialogueSourceObject : gameObject);
 
@@ -61,6 +61,25 @@ public class EmployeeYapperAudio : MonoBehaviour
                 AkUnitySoundEngine.StopPlayingID(dialoguePlayingId);
                 dialoguePlayingId = AkUnitySoundEngine.AK_INVALID_PLAYING_ID;
             }
+        }
+    }
+    
+    void OnDisable()
+    {
+        StopDialogueSound();
+    }
+
+    void OnDestroy()
+    {
+        StopDialogueSound();
+    }
+
+    private void StopDialogueSound()
+    {
+        if (dialoguePlayingId != AkUnitySoundEngine.AK_INVALID_PLAYING_ID)
+        {
+            AkUnitySoundEngine.StopPlayingID(dialoguePlayingId);
+            dialoguePlayingId = AkUnitySoundEngine.AK_INVALID_PLAYING_ID;
         }
     }
 }

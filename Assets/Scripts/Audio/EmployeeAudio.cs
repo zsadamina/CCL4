@@ -9,18 +9,18 @@ public class EmployeeAudio : MonoBehaviour
     [SerializeField] private AK.Wwise.Event dialogueEvent;
 
     [Header("Dialogue Trigger Zone")]
-    [SerializeField] private Collider dialogueTriggerZone;      
-    [SerializeField] private GameObject dialogueSourceObject;   
+    [SerializeField] private Collider dialogueTriggerZone;
+    [SerializeField] private GameObject dialogueSourceObject;
 
     [Header("Player XR Origin")]
-    private GameObject playerObject;  
+    private GameObject playerObject;
     private uint dialoguePlayingId = 0;
 
     private void Start()
     {
-        
+
         playerObject = GameObject.FindWithTag("Player");
-        
+
         if (footstepLoopEvent.IsValid())
             footstepLoopEvent.Post(gameObject);
 
@@ -44,4 +44,24 @@ public class EmployeeAudio : MonoBehaviour
             dialoguePlayingId = 0;
         }
     }
+
+    void OnDisable()
+    {
+        StopDialogueSound();
+    }
+
+    void OnDestroy()
+    {
+        StopDialogueSound();
+    }
+
+    private void StopDialogueSound()
+    {
+        if (dialoguePlayingId != AkUnitySoundEngine.AK_INVALID_PLAYING_ID)
+        {
+            AkUnitySoundEngine.StopPlayingID(dialoguePlayingId);
+            dialoguePlayingId = AkUnitySoundEngine.AK_INVALID_PLAYING_ID;
+        }
+    }
+
 }
