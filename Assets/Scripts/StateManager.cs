@@ -18,7 +18,7 @@ public class StateManager : MonoBehaviour
 
     private ClipboardManager _clipboardManager;
 
-    public static int playerHealth = 1;
+    public static int playerHealth = 5;
 
     void Awake()
     {
