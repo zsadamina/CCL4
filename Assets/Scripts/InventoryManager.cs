@@ -28,9 +28,7 @@ public class InventoryManager : MonoBehaviour
             Destroy(this);
             return;
         }
-
-        DontDestroyOnLoad(this);
-
+        
         _spawnpointManager = SpawnPointManager.Instance;
 
         PickupItems = itemPrefabsArray.Select((itemPrefab, i) =>
