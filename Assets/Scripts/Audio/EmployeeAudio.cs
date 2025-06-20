@@ -13,11 +13,14 @@ public class EmployeeAudio : MonoBehaviour
     [SerializeField] private GameObject dialogueSourceObject;   
 
     [Header("Player XR Origin")]
-    [SerializeField] private GameObject playerObject;  
+    private GameObject playerObject;  
     private uint dialoguePlayingId = 0;
 
     private void Start()
     {
+        
+        playerObject = GameObject.FindWithTag("Player");
+        
         if (footstepLoopEvent.IsValid())
             footstepLoopEvent.Post(gameObject);
 

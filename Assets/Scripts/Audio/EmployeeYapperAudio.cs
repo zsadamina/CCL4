@@ -9,7 +9,7 @@ public class EmployeeYapperAudio : MonoBehaviour
     [SerializeField] private AK.Wwise.Event dialogueEvent;
 
     [Header("Player XR Origin")]
-    [SerializeField] private GameObject playerObject;
+    private GameObject playerObject;
 
     [Header("Dialogue Source")]
     [SerializeField] private GameObject dialogueSourceObject;
@@ -24,6 +24,9 @@ public class EmployeeYapperAudio : MonoBehaviour
 
     void Start()
     {
+        
+        playerObject = GameObject.FindWithTag("Player");
+        
         if (footstepLoopEvent.IsValid())
             footstepLoopEvent.Post(dialogueSourceObject != null ? dialogueSourceObject : gameObject);
 
