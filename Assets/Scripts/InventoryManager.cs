@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager Instance;
 
     [SerializeField] private GameObject[] itemPrefabsArray;
+    [SerializeField] private Sprite[] itemSpritesArray;
 
     public PickupItemClass[] PickupItems;
     
@@ -31,8 +32,10 @@ public class InventoryManager : MonoBehaviour
         DontDestroyOnLoad(this);
 
         _spawnpointManager = SpawnPointManager.Instance;
-        PickupItems = itemPrefabsArray.Select(itemPrefab =>
-            new PickupItemClass(itemPrefab.name, itemPrefab)).ToArray();
+
+        PickupItems = itemPrefabsArray.Select((itemPrefab, i) =>
+            new PickupItemClass(itemPrefab.name, itemPrefab, itemSpritesArray[i])
+        ).ToArray();
     }
 
     void Start()
@@ -43,7 +46,12 @@ public class InventoryManager : MonoBehaviour
     private void InitSpawnPoints()
     {
         var selectedSpawnPoints = getRandomSpawnPointRange(PickupItems.Length);
-
+        if( selectedSpawnPoints.Count == 0 )
+        {
+            Debug.LogWarning("No spawn points available for item initialization.");
+            return;
+        }
+        
        Debug.Log(selectedSpawnPoints.Count);
        for (int i = 0; i < PickupItems.Length; i++)
        {

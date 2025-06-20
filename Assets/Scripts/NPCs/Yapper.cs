@@ -19,7 +19,7 @@ public class Yapper : MonoBehaviour
     [SerializeField] private Transform target;
 
 
-    [SerializeField] private GameObject _locomotion;
+    private GameObject _locomotion;
 
     private int frameCounter = 0;
     
@@ -31,6 +31,8 @@ public class Yapper : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponentInChildren<Animator>();
         _stateManager = StateManager.Instance;
+        target = GameObject.FindWithTag("Player").transform;
+        _locomotion = GameObject.FindWithTag("Locomotion");
     }
 
     // Update is called once per frame
@@ -65,7 +67,7 @@ public class Yapper : MonoBehaviour
 
             if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance && frameCounter > 3)
             {
-                this.gameObject.SetActive(false);
+                Destroy(this.gameObject);
             }
         }
     }

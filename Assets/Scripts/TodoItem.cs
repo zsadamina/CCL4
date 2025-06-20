@@ -10,11 +10,13 @@ public class PickupItemClass
 {
     public string Name { get; set; }
     public GameObject prefab { get; set; }
+    public Sprite sprite { get; set; }
 
-    public PickupItemClass(string name, GameObject prefab)
+    public PickupItemClass(string name, GameObject prefab, Sprite sprite)
     {
         this.Name = name;
         this.prefab = prefab;
+        this.sprite = sprite;
     }
 }
 

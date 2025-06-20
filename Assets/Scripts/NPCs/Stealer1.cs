@@ -12,11 +12,10 @@ public class Stealer : MonoBehaviour
     private Animator _animator;
     private StateManager _stateManager;
 
-    [SerializeField] private float stealIntervall = 2000f;
     [SerializeField] private float stealRange = 1f;
     public bool YoinkMode { get; set; } = true;
 
-    [SerializeField] private Transform target;
+    private Transform target;
 
 
     // Start is called before the first frame update
@@ -25,8 +24,7 @@ public class Stealer : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponentInChildren<Animator>();
         _stateManager = StateManager.Instance;
-        _navMeshAgent.SetDestination(target.position);
-
+        target = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -53,11 +51,11 @@ public class Stealer : MonoBehaviour
         }
         else
         {
-             Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
+             //Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
 
             if (_navMeshAgent.remainingDistance < _navMeshAgent.stoppingDistance)
             {
-                this.gameObject.SetActive(false);
+                Destroy(this.gameObject);
                 Debug.Log("I am Gone");
             }
         }
@@ -65,7 +63,7 @@ public class Stealer : MonoBehaviour
 
     void StealItem()
     {
-        Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
+        //Debug.Log("Distance: " +_navMeshAgent.remainingDistance + " YoinkMode: " + YoinkMode);
         if (_navMeshAgent.remainingDistance < stealRange && _navMeshAgent.remainingDistance != 0)
         {
             Debug.Log("Yoink");
