@@ -4,12 +4,13 @@ using Unity.AI.Navigation;
 using UnityEngine;
 
 [RequireComponent(typeof(NavMeshSurface))]
+// Script to manage the NavMeshSurface in the scene
 public class NavMeshManager : MonoBehaviour
 {
     public static NavMeshManager Instance;
     
     private NavMeshSurface _navMeshSurface;
-    // Start is called before the first frame update
+
     void Awake()
     {
         if (Instance == null)

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SpawnPointManager : MonoBehaviour
 {
+    // Singleton instance of SpawnPointManager
     public static SpawnPointManager Instance;
-    public List<TodoItem> Todos {get; set;} = new List<TodoItem>();
+    // List to hold all spawn points in the scene
+    public List<TodoItem> Todos { get; set; } = new List<TodoItem>();
 
-    // Start is called before the first frame update
     void Awake()
     {
         if (Instance == null)

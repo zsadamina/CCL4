@@ -7,28 +7,35 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
+// Generates Rooms based on the maze structure
 [Serializable]
 public class RoomGenerator : MonoBehaviour
 {
+    // Singleton instance of RoomGenerator
     public static RoomGenerator Instance;
 
+    // Size of the room in Unity units
     [SerializeField] private float roomSquare = 5f;
     
-    [Range(2,5)]
+    // Number of rows and columns in the maze
+    [Range(2, 5)]
     [SerializeField] public int Rows;
     
     [Range(2,5)]
     [SerializeField] public int Columns;
     
-
+    // Prefabs for the hallway and room types, including their probabilities of spawning
     [SerializeField] private GameObject hallwayPrefab;
     [SerializeField] private GameObject[] roomPrefabs;
     [SerializeField] private float[] propabilities;
     
+    // The maze instance that this generator will use
     private Maze maze;
     
+    // List to hold the paths created during room generation
     public List<GameObject> paths = new List<GameObject>();
     
+    // Dictionary to hold initialized rooms, mapping room identifiers to GameObjects
     Dictionary<String, GameObject> InitializedRooms = new Dictionary<String, GameObject>();
 
     void Awake()
@@ -41,9 +48,12 @@ public class RoomGenerator : MonoBehaviour
         {
             Destroy(this);
         }
+        //Create a new maze instance with the specified rows and columns
         this.maze = new Maze(Rows, Columns);
         maze.GenerateMaze();
+        // Generate the rooms based on the maze structure
         GenerateRooms();
+        // Build the NavMesh after generating the rooms
         NavMeshManager.Instance?.BuildNavMesh();
     }
     
@@ -53,20 +63,19 @@ public class RoomGenerator : MonoBehaviour
         cells.ForEach(GenerateRoomWithFiller);
     }
 
-    /*
-    public void GenerateRooms()
-    {
-        GenerateRoomWithoutFiller(maze.Cells[0, 0], 0, 0);
-    }
-    */
-
+    // Generates a room with filler tiles based on the walls of the room
+    // The rooms are generated in one cell which itself is split into 9 parts
     public void GenerateRoomWithFiller(BaseCell room)
     {
+        // get the position of the room based on its row and column
         float x = room.Column * roomSquare * 3;
         float y = room.Row * roomSquare * -3;
+
+        // Fill middle with path by default
         var midHallway = Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity, this.gameObject.transform);
         paths.Add(midHallway);
-        
+
+        // Check if a subcell is filled with a room or hallway
         GameObject topPrefab = !room.TopWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
         GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
         GameObject rightPrefab = !room.RightWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
@@ -101,6 +110,7 @@ public class RoomGenerator : MonoBehaviour
                 this.gameObject.transform); // TL
     }
 
+    // Returns a random room prefab based on the defined probabilities
     private GameObject GetRandomRoomWithSpawnChance()
     {
         int randomIndex = GetRandomRoomIndex();
@@ -112,6 +122,7 @@ public class RoomGenerator : MonoBehaviour
         return roomPrefabs[randomIndex];
     }
 
+    // Returns a random index based on the defined probabilities
     private int GetRandomRoomIndex()
     {
         if (propabilities == null || propabilities.Length == 0)
@@ -152,6 +163,7 @@ public class RoomGenerator : MonoBehaviour
         return propabilities.Length - 1;
     }
 
+    // Generates a room without filler tiles
     public void GenerateRoomWithoutFiller(BaseCell room, int row, int column)
     {
         float x = column * roomSquare;

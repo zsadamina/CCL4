@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Functions handling UI Interactions
 public class MainMenu : MonoBehaviour
 {  
     public void StartGame()
