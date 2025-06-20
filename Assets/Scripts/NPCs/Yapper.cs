@@ -22,7 +22,7 @@ public class Yapper : MonoBehaviour
     private GameObject _locomotion;
 
     private int frameCounter = 0;
-    private ClipboardManager _cardBoardManager;
+    private ClipboardManager _clipBoardManager;
 
     public bool YappingMode { get; set; } = true;
     private bool _yappingDone = false;
@@ -35,7 +35,7 @@ public class Yapper : MonoBehaviour
         _stateManager = StateManager.Instance;
         target = GameObject.FindWithTag("Player").transform;
         _locomotion = GameObject.FindWithTag("Locomotion");
-        _cardBoardManager = ClipboardManager.Instance;
+        _clipBoardManager = ClipboardManager.Instance;
     }
 
     // Update is called once per frame
@@ -89,7 +89,8 @@ public class Yapper : MonoBehaviour
     void StopYapping()
     {
         YappingMode = false;
-        _cardBoardManager.ReduceHealth();
+        _clipBoardManager.ReduceHealth();
+        _stateManager.ReducePlayerHealth();
         _locomotion.SetActive(true);
         _animator.SetBool("IsTalking", false);
         Debug.Log(_navMeshAgent.isActiveAndEnabled && _navMeshAgent.isOnNavMesh);

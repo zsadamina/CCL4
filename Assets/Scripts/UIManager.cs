@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
         Dictionary<string, List<PickupItemClass>> pickUpItems = _inventoryManager.PickupItems
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());
-            
+
         Dictionary<string, List<PickupItemClass>> inventoryList = Inventory
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());
@@ -77,4 +77,5 @@ public class UIManager : MonoBehaviour
             _clipboardManager.setupClipboard(item.Value.FirstOrDefault(), pickUpItems[name].Count, inventoryIntem, allItemsFromGroupAreInInventory);
         }
     }
+
 }
