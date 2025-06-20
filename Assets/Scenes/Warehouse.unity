@@ -5612,6 +5612,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7873184977108000993, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7873184977108000993, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -5842,6 +5852,7 @@ GameObject:
   - component: {fileID: 1994225842}
   - component: {fileID: 1994225841}
   - component: {fileID: 1994225844}
+  - component: {fileID: 1994225845}
   m_Layer: 0
   m_Name: StateManager
   m_TagString: Untagged
@@ -5868,6 +5879,13 @@ MonoBehaviour:
   - {fileID: 7901666017867104503, guid: 5b104b65d69efc245b500463c75bf33e, type: 3}
   - {fileID: 7901666017867104503, guid: 5b104b65d69efc245b500463c75bf33e, type: 3}
   - {fileID: 1752652373905042979, guid: f8f570859bfbaa94a990c926023b5057, type: 3}
+  itemSpritesArray:
+  - {fileID: 21300000, guid: 038ae341fe6443d41a51e8f71c908353, type: 3}
+  - {fileID: 21300000, guid: b0ca000c91b1fca448e9a4a02647c8e6, type: 3}
+  - {fileID: 21300000, guid: b0ca000c91b1fca448e9a4a02647c8e6, type: 3}
+  - {fileID: 21300000, guid: b0ca000c91b1fca448e9a4a02647c8e6, type: 3}
+  - {fileID: 21300000, guid: b0ca000c91b1fca448e9a4a02647c8e6, type: 3}
+  - {fileID: 21300000, guid: 437893cff41330545ac8eea2235da410, type: 3}
 --- !u!114 &1994225842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5907,6 +5925,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af841eb0c570b944aa4037e635625553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1994225845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994225840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac054c1853a3439546e9d2d4cdc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clipboardFurniture: {fileID: 0}
+  _clipboardItemSprites: []
+  _clipBoardHealth: {fileID: 0}
+  _clipboardPage2: {fileID: 0}
 --- !u!4 &2000760748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 702376429093581832, guid: e7d573cd28201b04285f85df4a8343a8,
