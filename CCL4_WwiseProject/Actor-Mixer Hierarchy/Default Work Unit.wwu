@@ -191,36 +191,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<Sound Name="_Clapping" ID="{E123673B-859B-4C9B-9B55-893DF3338BE2}" ShortID="346379337">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-400</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_Clapping" ID="{5029AE72-07A1-4568-82D3-9641B7616390}">
-									<Language>SFX</Language>
-									<AudioFile>_Clapping.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="711032879"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_Clapping" ID="{5029AE72-07A1-4568-82D3-9641B7616390}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="_BearDialogue1" ID="{C07E1A82-7E88-40C1-8EA0-453CBA52C69E}" ShortID="121610297">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -3886,66 +3856,6 @@
 								<ActiveSource Name="_FootstepsStealer" ID="{69142F15-6E1C-4027-8A32-660C16E444A1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="_KeyChain" ID="{06BFBEF9-D885-4E3C-8ADF-5DBE4EDD3095}" ShortID="290684832">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_KeyChain" ID="{C4206CE6-AF80-4F4F-9BFA-2D1103CBEB70}">
-									<Language>SFX</Language>
-									<AudioFile>_KeyChain.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="565850318"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_KeyChain" ID="{C4206CE6-AF80-4F4F-9BFA-2D1103CBEB70}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_StealerIntro" ID="{488F4604-227A-46F6-99C6-61E908DEB3C9}" ShortID="461145254">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_StealerIntro" ID="{9BD9D6F6-0FDD-4301-8041-1E193821BFEE}">
-									<Language>SFX</Language>
-									<AudioFile>_StealerIntro.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="407873798"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_StealerIntro" ID="{9BD9D6F6-0FDD-4301-8041-1E193821BFEE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</Folder>
 				<RandomSequenceContainer Name="PADialogues" ID="{16C44BC4-6D24-40AC-B54F-B7D83F28E574}" ShortID="108363638">
@@ -4051,53 +3961,11 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<Sound Name="_FlickeringLights" ID="{6398E052-D52C-4D3B-B21D-44598D192CE1}" ShortID="956272089">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{1F8415A7-B06C-40E2-83E6-C7F611F1FA82}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Min" Type="Real64" Value="-300"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-15</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="_FlickeringLights" ID="{877D2F83-D017-4B45-A494-6ED8028AEF51}">
-							<Language>SFX</Language>
-							<AudioFile>_FlickeringLights.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="555525273"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="_FlickeringLights" ID="{877D2F83-D017-4B45-A494-6ED8028AEF51}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Yapper" ID="{AC0790DA-AA86-48B7-87BE-57A03267C4F6}" ShortID="192664959">
 					<ChildrenList>
 						<Sound Name="_FootstepsYapper" ID="{213D1EAB-3C04-4C4F-905F-D12B91B97C0A}" ShortID="823409">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>350</Value>
@@ -4108,64 +3976,6 @@
 										<Value>-7</Value>
 									</ValueList>
 								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_FootstepsYapper" ID="{C69D654D-C55B-47D4-A731-51B6C87DD516}">
-									<Language>SFX</Language>
-									<AudioFile>_FootstepsYapper.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="501892365"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_FootstepsYapper" ID="{C69D654D-C55B-47D4-A731-51B6C87DD516}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_YapperIntro" ID="{572963A5-9D27-4565-B9BA-5DAC0633ABDD}" ShortID="405520646">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_YapperIntro" ID="{FD1EC5CC-39C7-4297-A997-B1BFD8DF25BB}">
-									<Language>SFX</Language>
-									<AudioFile>_YapperIntro.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="179247281"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_YapperIntro" ID="{FD1EC5CC-39C7-4297-A997-B1BFD8DF25BB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="_YapperDialogue" ID="{406E7C1F-0C10-4E40-94C9-04D72BFFF26F}" ShortID="748599113">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -4179,7 +3989,49 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="_Yapper1" ID="{346880B0-5B36-4AC4-8D6D-33B002960C7B}" ShortID="356498478">
+								<AudioFileSource Name="_FootstepsYapper" ID="{C69D654D-C55B-47D4-A731-51B6C87DD516}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.29881504379186"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.34466769706337"/>
+										<Property Name="LoopEnd" Type="Real64" Value="27.9690880989181"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>_FootstepsYapper.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="501892365"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_FootstepsYapper" ID="{C69D654D-C55B-47D4-A731-51B6C87DD516}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="_YapperDialogue" ID="{2F537DA9-C9A3-4A37-B3F2-B8650C030E48}" ShortID="818847835">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Employee Attenuation" ID="{D4567E42-4CE6-43D6-93E4-4DFA85CCBC3D}" WorkUnitID="{A314FC5A-5C51-4FE1-9C0B-7138D7203FE3}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="_Yapper1" ID="{A091EFD5-1124-4067-A4A8-3B56EC3E43B7}" ShortID="1069877311">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4189,7 +4041,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="_Yapper1_1" ID="{588C76C8-08F3-4699-A623-D32FDA6F76BD}" ShortID="387526893">
+										<Sound Name="_Yapper1_1" ID="{7D5ACE32-8C84-4BB7-AE00-B8C0D5F8BDAA}" ShortID="675961341">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4199,7 +4051,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper1_1" ID="{1AEF12DD-EBFD-4ABE-9971-5CA451EC658A}">
+												<AudioFileSource Name="_Yapper1_1" ID="{70288F05-9A2B-4D44-8E5C-1D8A13982946}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper1\_Yapper1_1.wav</AudioFile>
 													<MediaIDList>
@@ -4208,10 +4060,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper1_1" ID="{1AEF12DD-EBFD-4ABE-9971-5CA451EC658A}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper1_1" ID="{70288F05-9A2B-4D44-8E5C-1D8A13982946}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper1_2" ID="{E3F5BE90-5053-41BB-84DA-567F4D98FDBE}" ShortID="504634811">
+										<Sound Name="_Yapper1_2" ID="{22437E2E-EE96-44FC-884C-566DF92D44FB}" ShortID="419334078">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4221,7 +4073,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper1_2" ID="{0520227F-3BEE-41F7-A2B1-8A42EEEA6D32}">
+												<AudioFileSource Name="_Yapper1_2" ID="{2A6B3B44-230F-4232-AD25-4CA18C51F3CA}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper1\_Yapper1_2.wav</AudioFile>
 													<MediaIDList>
@@ -4230,10 +4082,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper1_2" ID="{0520227F-3BEE-41F7-A2B1-8A42EEEA6D32}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper1_2" ID="{2A6B3B44-230F-4232-AD25-4CA18C51F3CA}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper1_3" ID="{5F8A60D4-2CDF-435E-B5DE-71F86C5CE625}" ShortID="694943457">
+										<Sound Name="_Yapper1_3" ID="{AFB9ECA0-2E3F-4B90-880D-8C4A5F1BA26D}" ShortID="4979627">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4243,7 +4095,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper1_3" ID="{B61A9CB1-C2AF-40D8-8331-F8F400B193CC}">
+												<AudioFileSource Name="_Yapper1_3" ID="{7B5E93B3-6EBC-48D9-9CD5-244BFDD38FCB}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper1\_Yapper1_3.wav</AudioFile>
 													<MediaIDList>
@@ -4252,10 +4104,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper1_3" ID="{B61A9CB1-C2AF-40D8-8331-F8F400B193CC}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper1_3" ID="{7B5E93B3-6EBC-48D9-9CD5-244BFDD38FCB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper1_4" ID="{7CFC1AAA-D473-4CB2-8609-80DEE02E6325}" ShortID="417702916">
+										<Sound Name="_Yapper1_4" ID="{C5699CA2-D380-4A09-82CA-9FEB9DB3875D}" ShortID="846787728">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4265,7 +4117,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper1_4" ID="{2C59AED5-741E-4141-A7A4-B594AAF22726}">
+												<AudioFileSource Name="_Yapper1_4" ID="{56764947-AF1F-47DA-9D32-5D9ADBB2C99F}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper1\_Yapper1_4.wav</AudioFile>
 													<MediaIDList>
@@ -4274,12 +4126,12 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper1_4" ID="{2C59AED5-741E-4141-A7A4-B594AAF22726}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper1_4" ID="{56764947-AF1F-47DA-9D32-5D9ADBB2C99F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="_Yapper2" ID="{E60A66F4-9059-46D8-B22D-B3FB1548B634}" ShortID="515422204">
+								<RandomSequenceContainer Name="_Yapper2" ID="{42152983-DEF4-4D24-95A5-2D0FD203443C}" ShortID="1059494930">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4289,7 +4141,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="_Yapper2_1" ID="{F8F6E041-1EF7-43BC-B1C5-DF2BFD805DF2}" ShortID="532225162">
+										<Sound Name="_Yapper2_1" ID="{36B5A35A-61A7-4F52-8796-1255B0426281}" ShortID="893531148">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4299,7 +4151,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper2_1" ID="{BCFE557E-C4FC-4267-9C83-910E2F26E193}">
+												<AudioFileSource Name="_Yapper2_1" ID="{3626155A-3FD9-40CB-A24D-F49480FCF5F5}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper2\_Yapper2_1.wav</AudioFile>
 													<MediaIDList>
@@ -4308,10 +4160,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper2_1" ID="{BCFE557E-C4FC-4267-9C83-910E2F26E193}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper2_1" ID="{3626155A-3FD9-40CB-A24D-F49480FCF5F5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper2_2" ID="{1DDF9487-B1AA-46F4-8B87-590786920BF3}" ShortID="892997072">
+										<Sound Name="_Yapper2_2" ID="{4C16FAB2-3ACA-4FD8-8FC0-8527788A1FB3}" ShortID="886915625">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4321,7 +4173,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper2_2" ID="{761F076A-5034-48D8-AF36-A05DD634C64A}">
+												<AudioFileSource Name="_Yapper2_2" ID="{EEDF9D16-8B72-4497-B3BA-BBDA0DE291F8}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper2\_Yapper2_2.wav</AudioFile>
 													<MediaIDList>
@@ -4330,10 +4182,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper2_2" ID="{761F076A-5034-48D8-AF36-A05DD634C64A}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper2_2" ID="{EEDF9D16-8B72-4497-B3BA-BBDA0DE291F8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper2_3" ID="{0CE4475B-7CE9-4D86-89DF-21ABEA332F9B}" ShortID="321600471">
+										<Sound Name="_Yapper2_3" ID="{A9ECC3D1-9601-40ED-86DF-2310919970E3}" ShortID="489681975">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4343,7 +4195,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper2_3" ID="{D843FA4C-6668-4358-8005-063FAEAC52A5}">
+												<AudioFileSource Name="_Yapper2_3" ID="{D7CD200C-8080-43A7-AF60-C1955ABEB493}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper2\_Yapper2_3.wav</AudioFile>
 													<MediaIDList>
@@ -4352,10 +4204,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper2_3" ID="{D843FA4C-6668-4358-8005-063FAEAC52A5}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper2_3" ID="{D7CD200C-8080-43A7-AF60-C1955ABEB493}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper2_4" ID="{9004602A-A32C-40C9-B2A3-FB4CCB6741AC}" ShortID="72026455">
+										<Sound Name="_Yapper2_4" ID="{04B38CDF-DBA1-4F93-9564-AB3B3BAEED28}" ShortID="907097171">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4365,7 +4217,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper2_4" ID="{F80E8400-B92A-4141-9956-C9C45094C286}">
+												<AudioFileSource Name="_Yapper2_4" ID="{DEB3A43D-01E2-47A5-8C65-852609BAA8C3}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper2\_Yapper2_4.wav</AudioFile>
 													<MediaIDList>
@@ -4374,12 +4226,12 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper2_4" ID="{F80E8400-B92A-4141-9956-C9C45094C286}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper2_4" ID="{DEB3A43D-01E2-47A5-8C65-852609BAA8C3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="_Yapper3" ID="{433BD003-927F-4DC3-957F-84E9E7083614}" ShortID="663223869">
+								<RandomSequenceContainer Name="_Yapper3" ID="{3D83D972-0862-4397-A65A-4199998F73A3}" ShortID="635926149">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4389,7 +4241,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="_Yapper3_1" ID="{43F16F8D-7E5F-4CB7-AC7B-A83C02EC8832}" ShortID="702553136">
+										<Sound Name="_Yapper3_1" ID="{10A72935-1DDF-46E1-9861-A3F6B7EA416C}" ShortID="184549364">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4399,7 +4251,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper3_1" ID="{5FB42A92-E7E5-410B-8F58-2F0E06439EC4}">
+												<AudioFileSource Name="_Yapper3_1" ID="{88CC1214-B4ED-4AD5-90BD-753CA97B3572}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper3\_Yapper3_1.wav</AudioFile>
 													<MediaIDList>
@@ -4408,10 +4260,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper3_1" ID="{5FB42A92-E7E5-410B-8F58-2F0E06439EC4}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper3_1" ID="{88CC1214-B4ED-4AD5-90BD-753CA97B3572}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper3_2" ID="{DC88EE9F-C0B7-4E52-B3F7-A41A4A93A324}" ShortID="709023723">
+										<Sound Name="_Yapper3_2" ID="{BE50D68D-D203-4636-98E0-D7DEB585C463}" ShortID="654680080">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4421,7 +4273,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper3_2" ID="{7191BCEA-D10E-4F75-95F4-1774D7963937}">
+												<AudioFileSource Name="_Yapper3_2" ID="{DD355F7C-CA1B-4FF4-A0E8-5E389BE98EBC}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper3\_Yapper3_2.wav</AudioFile>
 													<MediaIDList>
@@ -4430,10 +4282,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper3_2" ID="{7191BCEA-D10E-4F75-95F4-1774D7963937}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper3_2" ID="{DD355F7C-CA1B-4FF4-A0E8-5E389BE98EBC}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper3_3" ID="{DCA695F8-BE0A-42C3-B8E9-FC254AFE9BD0}" ShortID="248497644">
+										<Sound Name="_Yapper3_3" ID="{55DF8530-F370-420C-9BF1-D5948847C1E4}" ShortID="455267181">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4443,7 +4295,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper3_3" ID="{811A93B2-E4CB-440B-908F-AD8083CE213C}">
+												<AudioFileSource Name="_Yapper3_3" ID="{06A7F995-91BE-454D-B9E7-178EDF6A4460}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper3\_Yapper3_3.wav</AudioFile>
 													<MediaIDList>
@@ -4452,10 +4304,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper3_3" ID="{811A93B2-E4CB-440B-908F-AD8083CE213C}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper3_3" ID="{06A7F995-91BE-454D-B9E7-178EDF6A4460}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper3_4" ID="{725F52C9-472A-43EC-A05F-1E4BD58B1BC3}" ShortID="1069128475">
+										<Sound Name="_Yapper3_4" ID="{644997DF-5173-42C2-949A-1FA41AF6C594}" ShortID="893554920">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4465,7 +4317,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper3_4" ID="{F4520CFF-AFDE-45CD-9502-219E155D2D04}">
+												<AudioFileSource Name="_Yapper3_4" ID="{CF335EE2-3D5A-479D-8A69-D65EE6C2DD28}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper3\_Yapper3_4.wav</AudioFile>
 													<MediaIDList>
@@ -4474,12 +4326,12 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper3_4" ID="{F4520CFF-AFDE-45CD-9502-219E155D2D04}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper3_4" ID="{CF335EE2-3D5A-479D-8A69-D65EE6C2DD28}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="_Yapper4" ID="{4076D47F-11C2-4A15-840E-D3CF572C9213}" ShortID="543852473">
+								<RandomSequenceContainer Name="_Yapper4" ID="{007B3FBA-0D98-424B-94F4-57BA82F06A8F}" ShortID="235675315">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4489,7 +4341,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="_Yapper4_1" ID="{1CED4249-2299-437B-9D3B-50195E841CC4}" ShortID="283274866">
+										<Sound Name="_Yapper4_1" ID="{D85791FB-F755-42EE-8764-4E25909BFD6D}" ShortID="91362596">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4499,7 +4351,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper4_1" ID="{DEC7A296-4B8D-4F6A-9923-EA3DEE107DC8}">
+												<AudioFileSource Name="_Yapper4_1" ID="{8F6C4C46-A7C8-4E9D-A8BF-867F7B319679}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper4\_Yapper4_1.wav</AudioFile>
 													<MediaIDList>
@@ -4508,10 +4360,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper4_1" ID="{DEC7A296-4B8D-4F6A-9923-EA3DEE107DC8}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper4_1" ID="{8F6C4C46-A7C8-4E9D-A8BF-867F7B319679}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper4_2" ID="{1F11108D-C1C2-4FEF-AA8E-AC85E8D6AD0F}" ShortID="288577425">
+										<Sound Name="_Yapper4_2" ID="{B72C82B3-E1D7-4022-BBC9-0960E40FD084}" ShortID="882906978">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4521,7 +4373,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper4_2" ID="{1A3289F1-2DEC-453F-9873-2652B1C28FE9}">
+												<AudioFileSource Name="_Yapper4_2" ID="{EF56E94D-F612-43F1-8C94-C0A1C8C42B3C}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper4\_Yapper4_2.wav</AudioFile>
 													<MediaIDList>
@@ -4530,10 +4382,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper4_2" ID="{1A3289F1-2DEC-453F-9873-2652B1C28FE9}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper4_2" ID="{EF56E94D-F612-43F1-8C94-C0A1C8C42B3C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper4_3" ID="{DA3182CE-8948-42E9-829C-1BDA530D3E8B}" ShortID="656132095">
+										<Sound Name="_Yapper4_3" ID="{3EF0C749-8D9F-4467-96E2-1B5627147509}" ShortID="417038711">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4543,7 +4395,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper4_3" ID="{4EDE1862-3AB6-4966-B64C-F51D28812086}">
+												<AudioFileSource Name="_Yapper4_3" ID="{EC6BD196-E14C-430B-AC75-51E20710698A}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper4\_Yapper4_3.wav</AudioFile>
 													<MediaIDList>
@@ -4552,10 +4404,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper4_3" ID="{4EDE1862-3AB6-4966-B64C-F51D28812086}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper4_3" ID="{EC6BD196-E14C-430B-AC75-51E20710698A}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper4_4" ID="{BEADD165-3573-4DB9-8816-35352ABC966F}" ShortID="697281946">
+										<Sound Name="_Yapper4_4" ID="{0C81E539-85A6-4A53-B3FF-866921CB21D0}" ShortID="676273068">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4565,7 +4417,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper4_4" ID="{8AD4CE43-3D1D-4D59-A676-405A77C5625A}">
+												<AudioFileSource Name="_Yapper4_4" ID="{15AA6980-9E00-45C8-8AD4-2DFD62909D1D}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper4\_Yapper4_4.wav</AudioFile>
 													<MediaIDList>
@@ -4574,12 +4426,12 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper4_4" ID="{8AD4CE43-3D1D-4D59-A676-405A77C5625A}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper4_4" ID="{15AA6980-9E00-45C8-8AD4-2DFD62909D1D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="_Yapper5" ID="{40CB009F-A1E8-4029-AC0A-CEAC81465A96}" ShortID="93050073">
+								<RandomSequenceContainer Name="_Yapper5" ID="{A0FE78A6-565D-4477-A823-6F8ED4311FD0}" ShortID="108047452">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4589,7 +4441,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="_Yapper5_1" ID="{AF985C72-FCAB-46CA-804A-0A8FDCC37A70}" ShortID="1001534839">
+										<Sound Name="_Yapper5_1" ID="{548A7446-3C8E-41AF-85E6-DC9EABF81B35}" ShortID="295274399">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4599,7 +4451,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper5_1" ID="{BA00B0CC-11E0-4449-9569-33A805C883D3}">
+												<AudioFileSource Name="_Yapper5_1" ID="{97A53604-0537-4474-AA1E-DB0E87EF381E}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper5\_Yapper5_1.wav</AudioFile>
 													<MediaIDList>
@@ -4608,10 +4460,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper5_1" ID="{BA00B0CC-11E0-4449-9569-33A805C883D3}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper5_1" ID="{97A53604-0537-4474-AA1E-DB0E87EF381E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper5_2" ID="{FABAB11A-C128-4ED3-A4BA-C1C43D0891DC}" ShortID="816931605">
+										<Sound Name="_Yapper5_2" ID="{A030B63B-72F8-4251-B148-E635B6FF3F53}" ShortID="365816990">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4621,7 +4473,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper5_2" ID="{4C77CE39-5EA3-4D54-979F-FEE0F1D82C73}">
+												<AudioFileSource Name="_Yapper5_2" ID="{810A8D09-67D0-489F-AFC5-1F978EB61D9E}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper5\_Yapper5_2.wav</AudioFile>
 													<MediaIDList>
@@ -4630,10 +4482,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper5_2" ID="{4C77CE39-5EA3-4D54-979F-FEE0F1D82C73}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper5_2" ID="{810A8D09-67D0-489F-AFC5-1F978EB61D9E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper5_3" ID="{37DB37F3-57FF-4511-9CCB-87CD7F60D643}" ShortID="6439611">
+										<Sound Name="_Yapper5_3" ID="{0566BC2C-A93A-4FD2-9B3D-E0D9CA04B6E3}" ShortID="421622961">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4643,7 +4495,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper5_3" ID="{7ACB9495-D50B-47B3-A891-4CAF58FC1143}">
+												<AudioFileSource Name="_Yapper5_3" ID="{267BE6B7-F5A7-4BFE-99B4-FA1ADC5EB609}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper5\_Yapper5_3.wav</AudioFile>
 													<MediaIDList>
@@ -4652,10 +4504,10 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper5_3" ID="{7ACB9495-D50B-47B3-A891-4CAF58FC1143}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper5_3" ID="{267BE6B7-F5A7-4BFE-99B4-FA1ADC5EB609}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="_Yapper5_4" ID="{2C7D6217-ACD4-4419-AABF-9C062C36C21A}" ShortID="721595447">
+										<Sound Name="_Yapper5_4" ID="{A7E75170-295D-45D2-B123-0ACD9839E66A}" ShortID="899271629">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
@@ -4665,7 +4517,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="_Yapper5_4" ID="{9A4AC660-3A4E-408E-A46D-862AD7DF3B3D}">
+												<AudioFileSource Name="_Yapper5_4" ID="{29A3AF5A-D401-4565-AA21-62CF2E836056}">
 													<Language>SFX</Language>
 													<AudioFile>_YapperDialogue\_Yapper5\_Yapper5_4.wav</AudioFile>
 													<MediaIDList>
@@ -4674,7 +4526,7 @@
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="_Yapper5_4" ID="{9A4AC660-3A4E-408E-A46D-862AD7DF3B3D}" Platform="Linked"/>
+												<ActiveSource Name="_Yapper5_4" ID="{29A3AF5A-D401-4565-AA21-62CF2E836056}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -4840,63 +4692,6 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="_ManualDrop" ID="{47E30850-6A1A-4433-93D3-3B9C3529E501}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="_Wind" ID="{7E9B56C1-0D28-4E9A-8D2F-A05B5636C578}" ShortID="157749106">
-							<PropertyList>
-								<Property Name="InitialDelay" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{D165A169-5FE5-4202-9B39-AB4948E2BAB6}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="50"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>500</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{C1C673DA-3CCB-4B22-902B-4D3123F13243}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="500"/>
-													<Property Name="Min" Type="Real64" Value="-500"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="WarehouseWind" ID="{3283695B-2608-47DC-AA95-12D8C2FC1DC7}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="_Wind" ID="{372BAFF3-4038-4DB0-ADE7-4DF0E6548D15}">
-									<Language>SFX</Language>
-									<AudioFile>_Wind.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="159493294"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="_Wind" ID="{372BAFF3-4038-4DB0-ADE7-4DF0E6548D15}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="_FootstepsWarehouse" ID="{6F8F5645-F28D-4287-AEB6-6A6B89CFA0E3}" ShortID="372404393">

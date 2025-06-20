@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BC162F0A-097E-46A7-9251-BE1FFB4A54D4}",
     "Language": "SFX",
-    "Hash": "{929E3EA4-4AF6-BAD2-E86E-9171CB8E1B4C}",
+    "Hash": "{01A041A9-7B8E-7E1D-9ACB-AF00AA75D03C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Menu",
     "ShortName": "Menu",
     "Path": "Menu.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_LevelComplete.wav",
-      "CachePath": "BD/{BD9E7ECE-49D1-D468-A0B3-210980B55B2C}.wem"
+      "CachePath": "BB/{BBE96CE7-4C84-C267-0753-CA75CF0A2991}.wem"
      },
      {
       "Id": "829460113",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_SelectSound.wav",
-      "CachePath": "B2/{B21A88FE-9BC3-43C8-B5A5-21F1B4E017C5}.wem"
+      "CachePath": "5B/{5BDCA384-C4C6-C955-C1F1-A2B778E45FAF}.wem"
      }
     ],
     "Events": [
@@ -64,6 +64,6 @@
     ]
    }
   ],
-  "FileHash": "{B325D94F-CFAE-CEE0-7BDF-309BDBA3A919}"
+  "FileHash": "{86D8B42F-1D2E-47E9-C8AC-EB789D1E51C1}"
  }
 }

@@ -14,7 +14,6 @@ public class EmployeeAudio : MonoBehaviour
 
     [Header("Player XR Origin")]
     [SerializeField] private GameObject playerObject;  
-    
     private uint dialoguePlayingId = 0;
 
     private void Start()
