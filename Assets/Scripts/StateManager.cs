@@ -8,7 +8,9 @@ using UnityEngine;
 public class StateManager : MonoBehaviour
 {
     public static StateManager Instance;
-    
+    public static bool allItemsCollected = false;
+    public List<PickupItemClass> Inventory {get; set;} = new List<PickupItemClass>();
+
     
     void Awake()
     {

@@ -24,12 +24,12 @@ public class TodoItem : MonoBehaviour
     
     private GameObject _pickupItemGameObject;
     private PickupItemClass _pickupItem;
-    private RoomGenerator _roomGenerator;
+    private SpawnPointManager _spawnPointManager;
 
     void Awake()
     {
-        _roomGenerator = RoomGenerator.Instance;
-        _roomGenerator.Todos.Add(this);
+        _spawnPointManager = SpawnPointManager.Instance;
+        _spawnPointManager.Todos.Add(this);
     }
     
     public void InitPickupItem(PickupItemClass prefab)

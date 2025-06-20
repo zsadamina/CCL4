@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}" SchemaVersion="123">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8A802F44-2FC8-4FA0-8076-4163D55959DF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="PlayerHeartbeat" ID="{F4940D17-0EF2-458C-95EB-0CE8AB250530}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BuildingProcess" ID="{657AF2D4-E664-4669-A233-228467A6120A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BuildingVolume" ID="{7F0284F2-ECA9-4F92-AD0A-574CB5AF1821}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{EAA0F10A-5AF7-4588-95BB-9E54B8EAFA68}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -8,14 +8,16 @@ public class YawnController : MonoBehaviour
 
     [Header("Wwise Events")]
     public AK.Wwise.Event normalYawnEvent;
-    public AK.Wwise.Event exhaustedYawnEvent;   // add in Wwise later
+    public AK.Wwise.Event exhaustedYawnEvent;  
+    public AK.Wwise.Event fallAsleepEvent;
 
     private float yawnTimer;
-    private float nextYawnInterval = 180f;      // default fallback
+    private float nextYawnInterval = 180f;    
+    private bool isAsleep = false;  
 
     void Start()
     {
-        UpdateYawnInterval();                   // set correct first interval
+        UpdateYawnInterval();                   
     }
 
     void Update()
@@ -26,7 +28,7 @@ public class YawnController : MonoBehaviour
         {
             PlayYawn();
             yawnTimer = 0f;
-            UpdateYawnInterval();               // refresh timing after each yawn
+            UpdateYawnInterval();               
         }
     }
 
@@ -35,22 +37,36 @@ public class YawnController : MonoBehaviour
         Debug.Log("Attempting to play yawn sound (health: " + currentHealth + ")");
         
         if (currentHealth > 70f)
-            nextYawnInterval = 180f;            // 3 min
+            nextYawnInterval = 180f;            
         else if (currentHealth > 50f)
-            nextYawnInterval = 90f;             // 1.5 min
+            nextYawnInterval = 90f;             
         else if (currentHealth > 30f)
-            nextYawnInterval = 60f;             // 1 min
+            nextYawnInterval = 60f;             
         else
-            nextYawnInterval = 30f;             // 1 min (exhausted sound)
+            nextYawnInterval = 30f;            
     }
 
     void PlayYawn()
+{
+    if (currentHealth <= 0f)
     {
-        if (currentHealth > 30f)
-            normalYawnEvent.Post(gameObject);
-        else
-            exhaustedYawnEvent.Post(gameObject); // switch to tired yawns
+        if (!isAsleep)
+        {
+            isAsleep = true;
+            fallAsleepEvent.Post(gameObject); 
+        }
+        return; 
     }
+
+    if (currentHealth > 30f)
+    {
+        normalYawnEvent.Post(gameObject);
+    }
+    else
+    {
+        exhaustedYawnEvent.Post(gameObject);
+    }
+}
 
     // Optional helper for other scripts
     public void SetHealth(float value)

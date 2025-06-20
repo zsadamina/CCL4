@@ -24,10 +24,10 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private GameObject hallwayPrefab;
     [SerializeField] private GameObject[] roomPrefabs;
     [SerializeField] private float[] propabilities;
-
+    
     private Maze maze;
-    public List<TodoItem> Todos {get; set;} = new List<TodoItem>();
-
+    
+    public List<GameObject> paths = new List<GameObject>();
     
     Dictionary<String, GameObject> InitializedRooms = new Dictionary<String, GameObject>();
 
@@ -64,8 +64,9 @@ public class RoomGenerator : MonoBehaviour
     {
         float x = room.Column * roomSquare * 3;
         float y = room.Row * roomSquare * -3;
-        Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity, this.gameObject.transform);
-
+        var midHallway = Instantiate(hallwayPrefab, new Vector3(x, 0, y), Quaternion.identity, this.gameObject.transform);
+        paths.Add(midHallway);
+        
         GameObject topPrefab = !room.TopWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
         GameObject bottomPrefab = !room.BottomWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
         GameObject rightPrefab = !room.RightWall ? hallwayPrefab : GetRandomRoomWithSpawnChance();
