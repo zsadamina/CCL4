@@ -1128,7 +1128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac054c1853a3439546e9d2d4cdc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clipboardFurniture: {fileID: 1543292578}
+  _clipboardItemPrefab: {fileID: 2144604358222497658, guid: d9f23462e0b8f9b47aeccf855d55723e,
+    type: 3}
   _clipboardItemSprites:
   - {fileID: 0}
   - {fileID: 21300000, guid: 3e3ea5e3bf9ac644c82de9347ebe022d, type: 3}
@@ -1138,6 +1139,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 15e5ae4fdcafa264e8086797a91a8d9f, type: 3}
   _clipBoardHealth: {fileID: 1575576358}
   _clipboardPage2: {fileID: 1575576357}
+  itemListContainer: {fileID: 964029271}
 --- !u!1 &765854599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1560,12 @@ MonoBehaviour:
   dialogueSourceObject: {fileID: 958514235}
   triggerDistance: 4
   triggerActivationDelay: 1
+--- !u!1 &964029271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2095931953853000403, guid: 8261ab41c0f96b74f9511785ba9df3b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1575576355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1151181208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,12 +1928,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5378baf5937b2194b900e4e5983bc91b, type: 3}
---- !u!1 &1543292578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 128131331965620441, guid: 8261ab41c0f96b74f9511785ba9df3b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1575576355}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575576355
 PrefabInstance:
   m_ObjectHideFlags: 0
