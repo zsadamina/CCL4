@@ -3244,6 +3244,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d218eef603e7a6440a5b446b41c6174f,
       type: 2}
+  companionAnimator: {fileID: 2072241087}
   delay: 3
 --- !u!54 &928940220
 Rigidbody:
@@ -6753,6 +6754,12 @@ PrefabInstance:
 --- !u!1 &2072241086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1043327440223473667, guid: 5378baf5937b2194b900e4e5983bc91b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1659210933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2072241087 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6039706154475294915, guid: 5378baf5937b2194b900e4e5983bc91b,
     type: 3}
   m_PrefabInstance: {fileID: 1659210933}
   m_PrefabAsset: {fileID: 0}

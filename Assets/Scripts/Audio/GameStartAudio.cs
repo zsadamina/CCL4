@@ -11,6 +11,7 @@ public class GameStartAudio : MonoBehaviour
     public AK.Wwise.Event dropEvent;
     public AK.Wwise.Event companionEvent1;
     public AK.Wwise.Event companionEvent2;
+    [SerializeField] Animator companionAnimator;
 
     [Header("Timing")]
     public float delay = 3.0f;
@@ -25,6 +26,7 @@ public class GameStartAudio : MonoBehaviour
         dropEvent.Post(dropSoundSource);
 
         yield return new WaitForSeconds(delay);
+        companionAnimator.SetBool("IsTalking", true);
 
         // ▶️ Play first companion line
         companionEvent1.Post(companionRigTransform);
@@ -34,6 +36,9 @@ public class GameStartAudio : MonoBehaviour
 
         // ▶️ Play second companion line
         companionEvent2.Post(companionRigTransform);
+
+        yield return new WaitForSeconds(20f);
+        companionAnimator.SetBool("IsTalking", false);
     }
 
 }
