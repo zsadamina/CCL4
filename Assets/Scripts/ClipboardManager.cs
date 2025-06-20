@@ -29,7 +29,6 @@ public class ClipboardManager : MonoBehaviour
             Destroy(this);
             return;
         }
-        DontDestroyOnLoad(this);
     }
 
     public void ReduceHealth()

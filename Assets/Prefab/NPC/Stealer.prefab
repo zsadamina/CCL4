@@ -74,7 +74,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -122,9 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoppingDistanceThreshold: 0.5
-  stealIntervall: 2000
-  stealRange: 1
-  target: {fileID: 0}
+  stealRange: 0.5
 --- !u!114 &7394241221928853747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +171,6 @@ MonoBehaviour:
       type: 2}
   dialogueTriggerZone: {fileID: 1484496635724797073}
   dialogueSourceObject: {fileID: 756111046646589807}
-  playerObject: {fileID: 0}
 --- !u!1 &8161077595835029302
 GameObject:
   m_ObjectHideFlags: 0
