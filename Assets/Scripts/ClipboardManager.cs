@@ -28,6 +28,7 @@ public class ClipboardManager : MonoBehaviour
             Destroy(this);
             return;
         }
+        DontDestroyOnLoad(this);
     }
 
     public void ReduceHealth()
@@ -40,7 +41,12 @@ public class ClipboardManager : MonoBehaviour
 
     public void setupClipboard(PickupItemClass item, int count, int check, bool done)
     {
+        if (!this._clipboardFurniture)
+        {
+            return;
+        }
         GameObject gameObject = Instantiate(_clipboardFurniture, this.gameObject.transform);
+        
         gameObject.transform.SetParent(this.gameObject.transform);
 
         var iconContainer = _clipboardFurniture.transform.Find("Icon");
