@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 99a71391d0e66c4199639f2d576d23da
     GuidInternal: 
-    m_lastTime: -8584512496619886283
+    m_lastTime: -8584512207138359196
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 4bbb3ed1496b924382f4be1b42928b03
     GuidInternal: 
-    m_lastTime: -8584512496610171444
+    m_lastTime: -8584512207138195962
     List:
     - name: LevelEnvironment
       guid: f2b3d8114981f64dac6a277bd4eb200c
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 02c05c88b3b2db46a7870a889691f192
     GuidInternal: 
-    m_lastTime: -8584512496620028603
+    m_lastTime: -8584512207138930595
     List:
     - name: Play__Exhausted
       guid: fc89b7518804c14ab9ea6cf4b2bc311a
@@ -125,8 +125,8 @@ MonoBehaviour:
         guid: fc89b7518804c14ab9ea6cf4b2bc311a
       Path: Events\Default Work Unit\Play__Exhausted
       maxAttenuation: 0
-      maxDuration: 489.01358
-      minDuration: 489.01358
+      maxDuration: -1
+      minDuration: -1
     - name: Play__FootstepsLevel
       guid: d6d1076af4798846936c6c66921ef1a3
       id: 1787411852
@@ -142,8 +142,8 @@ MonoBehaviour:
         guid: d6d1076af4798846936c6c66921ef1a3
       Path: Events\Default Work Unit\Play__FootstepsLevel
       maxAttenuation: 0
-      maxDuration: 0.6227134
-      minDuration: 0.38537416
+      maxDuration: -1
+      minDuration: -1
     - name: Play__FootstepsWarehouse
       guid: a1afd95b46b1c241a938fb2359fec9fc
       id: 2341641687
@@ -193,8 +193,8 @@ MonoBehaviour:
         guid: 9e68e9e002371c44a531118efad523b0
       Path: Events\Default Work Unit\Play__PlayerBump
       maxAttenuation: 0
-      maxDuration: 0.9466264
-      minDuration: 0.7091685
+      maxDuration: -1
+      minDuration: -1
     - name: Play__SoftSteps
       guid: bfea9e1f8520c04ab1fa1bf58c31ad43
       id: 2578942166
@@ -210,8 +210,8 @@ MonoBehaviour:
         guid: bfea9e1f8520c04ab1fa1bf58c31ad43
       Path: Events\Default Work Unit\Play__SoftSteps
       maxAttenuation: 0
-      maxDuration: 1.4599134
-      minDuration: 1.0696441
+      maxDuration: -1
+      minDuration: -1
     - name: Play__WakeMeUp
       guid: 05ce7b1bc3091a4eb214881ca743565c
       id: 2477745328
@@ -244,8 +244,8 @@ MonoBehaviour:
         guid: 2b936cb1e02c8041a0c2ac1c400b838e
       Path: Events\Default Work Unit\Play__Yawns
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PAMusic
       guid: 3ca8f8cf16da2646883921c33a25772c
       id: 2824242752
@@ -261,8 +261,8 @@ MonoBehaviour:
         guid: 3ca8f8cf16da2646883921c33a25772c
       Path: Events\Default Work Unit\Play_PAMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -275,7 +275,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 442f808ac82fa04f80764163d55959df
     GuidInternal: 
-    m_lastTime: -8584512496620028603
+    m_lastTime: -8584512207138920536
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
