@@ -10,6 +10,50 @@
 						</Reference>
 					</ReferenceList>
 				</Bus>
+				<Bus Name="WarehouseReverb" ID="{554DBA97-69D8-4D6F-9F7E-C59E04137D90}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{9CDA2BD6-6C59-4E90-B95D-577F1FE5A142}" WorkUnitID="{7F060809-250C-4449-B1A9-4053DF7D016A}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{037FDC53-FA76-49DC-AB8C-9162355242E0}" ShortID="943208311">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+				<Bus Name="WarehouseWind" ID="{3283695B-2608-47DC-AA95-12D8C2FC1DC7}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{9CDA2BD6-6C59-4E90-B95D-577F1FE5A142}" WorkUnitID="{7F060809-250C-4449-B1A9-4053DF7D016A}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{EFE86754-4455-4FA3-B14F-B361E8B5949B}" ShortID="889196809">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Hall_Medium_Dark" ID="{626B6E38-739B-4689-819F-F81AD3788BDE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>

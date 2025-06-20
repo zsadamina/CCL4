@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class CollectableItem : MonoBehaviour
 {
+    private StateManager _stateManager;
 
     public PickupItemClass _pickupItem { get; set; }
     
     private InventoryManager _inventoryManager;
 
+    [Header("Audio")]
+    public AK.Wwise.Event pickupSound;
+
     void Awake()
     {
+        _stateManager = StateManager.Instance;
         _inventoryManager = InventoryManager.Instance;
     }
     
@@ -19,10 +24,11 @@ public class CollectableItem : MonoBehaviour
     {
         Debug.Log("Picked up Item");
         Destroy(this.transform.parent.gameObject);
+        pickupSound.Post(gameObject);
         
         if(_pickupItem != null){
-            _inventoryManager.Inventory.Add(_pickupItem);
-            if (_inventoryManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
+            _stateManager.Inventory.Add(_pickupItem);
+             if (_stateManager.Inventory.Count >= _inventoryManager.PickupItems.Length)
             {
                 StateManager.allItemsCollected = true;
             }
@@ -30,7 +36,7 @@ public class CollectableItem : MonoBehaviour
             {
                 StateManager.allItemsCollected = false;
             }
-            Debug.Log(_inventoryManager.Inventory.Count);
+            Debug.Log(_stateManager.Inventory.Count);
         }
     }
 }

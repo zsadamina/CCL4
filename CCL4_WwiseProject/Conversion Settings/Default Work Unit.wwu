@@ -37,7 +37,7 @@
 							<ValueList>
 								<Value Platform="Android">0</Value>
 								<Value Platform="Mac">0</Value>
-								<Value Platform="Windows">1</Value>
+								<Value Platform="Windows">2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
