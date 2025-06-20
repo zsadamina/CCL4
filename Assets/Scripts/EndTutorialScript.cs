@@ -19,7 +19,7 @@ public class EndTutorialScript : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && StateManager.allItemsCollected)
         {
             SceneManager.LoadScene("Level");
         }

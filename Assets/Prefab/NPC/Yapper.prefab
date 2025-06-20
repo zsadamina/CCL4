@@ -109,8 +109,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1215734063809318894}
   - {fileID: 1922147144672984167}
@@ -132,7 +132,6 @@ MonoBehaviour:
   yappingDistance: 3
   yappingTime: 3
   target: {fileID: 0}
-  _locomotion: {fileID: 0}
 --- !u!195 &5818734241031308627
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -228,7 +227,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e59515fa85588b34087a64c7aa324c8e,
       type: 2}
-  playerObject: {fileID: 0}
   dialogueSourceObject: {fileID: 8280513677569371933}
   triggerDistance: 4
   triggerActivationDelay: 1
