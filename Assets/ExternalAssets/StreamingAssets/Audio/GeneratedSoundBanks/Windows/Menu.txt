@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1560875070	Play__SelectSound			\Default Work Unit\Menu\Play__SelectSound	
+	2785570664	Play__LevelComplete			\Default Work Unit\Menu\Play__LevelComplete	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	588562907	_LevelComplete	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\BB\{BBE96CE7-4C84-C267-0753-CA75CF0A2991}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\_LevelComplete		44382
+	829460113	_SelectSound	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\5B\{5BDCA384-C4C6-C955-C1F1-A2B778E45FAF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\_SelectSound		4526
+
