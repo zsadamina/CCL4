@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}",
     "Language": "SFX",
-    "Hash": "{4BC35800-7C3A-EDB4-F450-AD681C8A0AC1}",
+    "Hash": "{7882AF48-7B9B-0359-CC64-AA01AA0B057D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\LevelEnvironment",
     "ShortName": "LevelEnvironment",
     "Path": "LevelEnvironment.bnk",
@@ -248,14 +248,6 @@
       "CachePath": "5F/{5F1FB3DB-0D34-B6EA-7FE7-2535D5315B17}.wem"
      },
      {
-      "Id": "259952603",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "_BearDialogue\\_BearNono\\_BearLine10_1.wav",
-      "CachePath": "14/{14EB2287-6261-E698-7EF2-F1E8CFEA839D}.wem"
-     },
-     {
       "Id": "263296939",
       "Language": "SFX",
       "Streaming": "false",
@@ -350,14 +342,6 @@
       "Location": "Memory",
       "ShortName": "_WakingUp\\_WakingUp4.wav",
       "CachePath": "6C/{6C47CCED-F9B5-CAD5-1A64-B95DC2E1F10B}.wem"
-     },
-     {
-      "Id": "325841004",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "_BearDialogue\\_BearNono\\_BearLine10_2.wav",
-      "CachePath": "FA/{FA367191-6D63-1100-E9E0-CB1914279158}.wem"
      },
      {
       "Id": "326009740",
@@ -557,7 +541,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsYapper.wav",
-      "CachePath": "A2/{A298D309-6726-7E3A-50AA-2674B426EA53}.wem"
+      "CachePath": "D4/{D4CA9946-A6CA-7307-3259-CEAFAEA43BE8}.wem"
      },
      {
       "Id": "502549969",
@@ -877,7 +861,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsStealer.wav",
-      "CachePath": "A3/{A3FC6DA8-6BE7-B57A-807F-C3F5F84C5461}.wem"
+      "CachePath": "4E/{4E8D6D7B-91D8-B9E6-29A0-F6A9C996ABD5}.wem"
      },
      {
       "Id": "784623044",
@@ -942,14 +926,6 @@
       "Location": "Memory",
       "ShortName": "_StealerSounds\\_Nahuh\\_Nahuh12.wav",
       "CachePath": "ED/{EDA86647-273A-BE99-965B-17731D14CE44}.wem"
-     },
-     {
-      "Id": "841843991",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "_BearDialogue\\_BearNono\\_BearLine10_3.wav",
-      "CachePath": "EC/{EC295AEE-9C85-A8F2-6069-815FDC187950}.wem"
      },
      {
       "Id": "854040635",
@@ -1112,6 +1088,14 @@
       "CachePath": "81/{810578AE-7B69-3594-8C5A-81363C76CF3C}.wem"
      },
      {
+      "Id": "986203033",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "_StealerIntro.wav",
+      "CachePath": "20/{20602E59-4FDD-4AFC-0EA0-09D99495F334}.wem"
+     },
+     {
       "Id": "989515036",
       "Language": "SFX",
       "Streaming": "false",
@@ -1150,14 +1134,6 @@
       "Location": "Memory",
       "ShortName": "_YapperDialogue\\_Yapper5\\_Yapper5_2.wav",
       "CachePath": "D8/{D87CA166-171B-1082-E8F2-A4279C682E3C}.wem"
-     },
-     {
-      "Id": "1003717794",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "_BearDialogue\\_BearNono\\_BearLine10_4.wav",
-      "CachePath": "48/{48EC514D-1351-DD89-1F53-630FDE0028F0}.wem"
      },
      {
       "Id": "1005490303",
@@ -1201,29 +1177,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "4008653967",
-      "Name": "Play__BearNono",
-      "ObjectPath": "\\Events\\Default Work Unit\\Bear\\Play__BearNono",
-      "GUID": "{FA8126DC-F6C1-4EB1-9F9F-A10AEC30414B}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.7538776",
-      "DurationMax": "5.131111",
-      "MediaRefs": [
-       {
-        "Id": "259952603"
-       },
-       {
-        "Id": "325841004"
-       },
-       {
-        "Id": "841843991"
-       },
-       {
-        "Id": "1003717794"
-       }
-      ]
-     },
      {
       "Id": "1681451465",
       "Name": "Play__CheckOffWithPencil",
@@ -1703,6 +1656,20 @@
       ]
      },
      {
+      "Id": "2880431347",
+      "Name": "Play__Writing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play__Writing",
+      "GUID": "{CCDA7498-5A64-468F-B986-E7C0E3652C0A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.22187223",
+      "DurationMax": "0.24904315",
+      "MediaRefs": [
+       {
+        "Id": "986203033"
+       }
+      ]
+     },
+     {
       "Id": "4062939572",
       "Name": "Play__YapperDialogue",
       "ObjectPath": "\\Events\\Default Work Unit\\Yapper\\Play__YapperDialogue",
@@ -1839,6 +1806,6 @@
     ]
    }
   ],
-  "FileHash": "{64BA260C-001D-F038-8F3E-1C290AFE2CBE}"
+  "FileHash": "{33C18375-CB07-07CB-FEAA-470D123B4AC9}"
  }
 }

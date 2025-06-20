@@ -11,9 +11,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	2480831051	Play__WakingUp			\Default Work Unit\Player\Play__WakingUp	
 	2578942166	Play__SoftSteps			\Default Work Unit\Bear\Play__SoftSteps	
 	2593610629	Play__CollectPiece			\Default Work Unit\Player\Play__CollectPiece	
+	2880431347	Play__Writing			\Default Work Unit\Play__Writing	
 	2962672181	Play__RegularHeartbeat			\Default Work Unit\Player\Play__RegularHeartbeat	
 	3149174998	Play_Building			\Default Work Unit\Furniture\Play_Building	
-	4008653967	Play__BearNono			\Default Work Unit\Bear\Play__BearNono	
 	4062939572	Play__YapperDialogue			\Default Work Unit\Yapper\Play__YapperDialogue	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -51,7 +51,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	239214575	_WoodDropping	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\2D\{2D695531-308A-9B15-71DE-AE84EEC71596}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Furniture\Building\_WoodDropping		1948
 	247670171	_Yapper1_4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\04\{04829FCA-A318-A695-4DAD-2B320188CDF6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper1\_Yapper1_4		26453
 	256920633	_FastSlow12	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\5F\{5F1FB3DB-0D34-B6EA-7FE7-2535D5315B17}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_FastSlow\_FastSlow12		12722
-	259952603	_BearLine10_1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\14\{14EB2287-6261-E698-7EF2-F1E8CFEA839D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearNono\_BearLine10_1		32834
 	263296939	_Yapper3_4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\45\{45C10F4B-09FF-E589-0A80-6A6450928C26}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper3\_Yapper3_4		40967
 	266855185	_Nahuh15	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\00\{0029D9DF-665E-49E6-E83E-A96099EFA74D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh15		9020
 	271448813	_WhooshYoinkGotcha18	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\B1\{B1A75201-3381-2DBD-1615-98665C92E2C2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha18		8355
@@ -64,7 +63,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	318083483	_WakingUp2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A6\{A628FB98-2B01-CE9A-2651-A9C44916C587}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_WakingUp\_WakingUp2		13544
 	319456173	_Yapper4_2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\B6\{B6200570-F953-DE03-692A-FE9C298A640B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper4\_Yapper4_2		30589
 	324912200	_WakingUp4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\6C\{6C47CCED-F9B5-CAD5-1A64-B95DC2E1F10B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_WakingUp\_WakingUp4		14964
-	325841004	_BearLine10_2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\FA\{FA367191-6D63-1100-E9E0-CB1914279158}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearNono\_BearLine10_2		28120
 	326009740	_WhooshYoinkGotcha1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\13\{1325E67E-6654-2A8B-3A73-A086F1BFB9C3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha1		8446
 	328741482	_Yoink5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\AD\{AD5CABDA-0238-8EFF-9356-CD17F182B45D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Yoink\_Yoink5		11765
 	354984149	_Nahuh7	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A8\{A8B09767-6FD7-3ECC-1A9E-3F1B9B1F3B9F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh7		4974
@@ -89,7 +87,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	482489373	_SoftStep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\5E\{5E8B59DD-352E-1AAB-27E8-BC5C4B5ECB59}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep2		4164
 	495083163	_WhooshYoinkGotcha4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\47\{47987BEF-6737-7B10-CFF1-625E572DF374}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha4		8644
 	500000841	_SoftStep4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\BC\{BCD2EC12-AA20-ECE2-0A50-C72241E67086}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep4		3604
-	501892365	_FootstepsYapper	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A2\{A298D309-6726-7E3A-50AA-2674B426EA53}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_FootstepsYapper		115068
+	501892365	_FootstepsYapper	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D4\{D4CA9946-A6CA-7307-3259-CEAFAEA43BE8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_FootstepsYapper		115068
 	502549969	_WhooshYoinkGotcha19	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\3B\{3BD409F4-233D-CB77-F512-616D8BF7D85D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha19		8905
 	509311745	_Yapper3_3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\55\{557F3186-0F0D-202C-6143-D86EF4153B99}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper3\_Yapper3_3		39830
 	511097856	_WakingUp6	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\FB\{FB782E49-F1C5-5EDE-6EC1-AABA04E7867A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_WakingUp\_WakingUp6		12584
@@ -129,7 +127,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	773805734	_Nahuh17	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\72\{72A9C61A-F6D8-87DF-8B55-3936BEBE55D8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh17		4028
 	774343719	_FastSlow13	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\E7\{E7DAA269-2FB7-1C8C-5033-512DF2555860}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_FastSlow\_FastSlow13		6852
 	778491450	_Yapper2_4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\04\{042C5AE3-DF0B-4FDB-AC0D-BC3A482DDFCC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper2\_Yapper2_4		20122
-	781359899	_FootstepsStealer	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A3\{A3FC6DA8-6BE7-B57A-807F-C3F5F84C5461}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_FootstepsStealer		91812
+	781359899	_FootstepsStealer	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4E\{4E8D6D7B-91D8-B9E6-29A0-F6A9C996ABD5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_FootstepsStealer		91812
 	784623044	_FallingAsleep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\E6\{E66E1FDF-466C-6C41-01B2-EF1D52DC4B7A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FallingAsleep\_FallingAsleep1		59641
 	787238192	_Yapper2_1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\CE\{CE57DB0F-3D12-E180-9E9E-7270A2D50CC9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper2\_Yapper2_1		51239
 	805624367	_WakingUp7	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\DA\{DA0328F4-E83F-CCBA-9B00-50100F8AF14E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_WakingUp\_WakingUp7		10222
@@ -138,7 +136,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	830451422	_AndImGone9	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\33\{3394AA51-AA4F-12AF-6D13-F4FD9FB1E973}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_AndImGone\_AndImGone9		4068
 	840864182	_Footstep1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\CD\{CD67A6A7-4461-D75F-620E-4FBAB6A9B193}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FootstepsLevel\_Footstep1		1697
 	841364393	_Nahuh12	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\ED\{EDA86647-273A-BE99-965B-17731D14CE44}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh12		9136
-	841843991	_BearLine10_3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\EC\{EC295AEE-9C85-A8F2-6069-815FDC187950}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearNono\_BearLine10_3		23425
 	854040635	_FallingAsleep2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\BB\{BBD2FCB3-A3D8-11BF-965E-9C3AA98A89B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\_FallingAsleep\_FallingAsleep2		73422
 	859922888	_FastSlow5	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\4F\{4FE7B78C-8BDB-AA28-41DA-236EE9103786}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_FastSlow\_FastSlow5		5605
 	864333945	_WhooshYoinkGotcha15	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\58\{586E0C30-FFF6-401C-1955-6E594C3D7B27}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha15		6879
@@ -159,12 +156,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	961730041	_YouThief3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\83\{83F83A1A-3727-113D-7FBF-E114B784EC49}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_YouThief\_YouThief3		5935
 	971612423	_WhooshYoinkGotcha20	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\DD\{DD716426-E3EA-32F5-60DB-7B31ABE1D558}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha20		3085
 	975225104	_SoftStep3	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\81\{810578AE-7B69-3594-8C5A-81363C76CF3C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_SoftSteps\_SoftStep3		3623
+	986203033	_Writing	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\20\{20602E59-4FDD-4AFC-0EA0-09D99495F334}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Inventory\_Writing		1440
 	989515036	_Nahuh16	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A1\{A152EEF9-5D4C-24A4-A025-4F1622AC9F58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh16		4757
 	990143674	_WoodHammering	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\05\{05A2A029-3D8F-7C74-D1F9-800DB92BAC1E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Furniture\Building\_WoodHammering		8228
 	995917449	_FastSlow7	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\E2\{E2AE603A-56F8-6E50-C9F4-A3DC85F5235D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_FastSlow\_FastSlow7		5943
 	999694750	_Nahuh11	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\BB\{BB092E69-8022-937B-87C4-76E79FEB524B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_Nahuh\_Nahuh11		7769
 	1000746335	_Yapper5_2	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D8\{D87CA166-171B-1082-E8F2-A4279C682E3C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yapper\_YapperDialogue\_Yapper5\_Yapper5_2		58608
-	1003717794	_BearLine10_4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\48\{48EC514D-1351-DD89-1F53-630FDE0028F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bear\_BearNono\_BearLine10_4		19167
 	1005490303	_WhooshYoinkGotcha21	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\A2\{A227204A-7EBB-FAF3-F7B9-FF363679CC01}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_WhooshYoinkGotcha\_WhooshYoinkGotcha21		7537
 	1011851218	_YouThief4	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\CB\{CB6ECA0F-AACE-CD0A-07A0-672AB1AEEB9F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_YouThief\_YouThief4		9346
 	1024761072	_FastSlow1	C:\Users\julia\Documents\FH\CCL4\GitRepo\CCL4\CCL4_WwiseProject\.cache\D6\{D62F34A9-652F-4F50-7948-93F2C44C506D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stealer\_StealerSounds\_FastSlow\_FastSlow1		8600

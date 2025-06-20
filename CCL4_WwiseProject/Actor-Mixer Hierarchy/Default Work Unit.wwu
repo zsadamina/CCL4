@@ -4502,8 +4502,8 @@
 									<PropertyList>
 										<Property Name="LoopBegin" Type="Real64" Value="1.35479502847427"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.30498638772154"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.6137999058928"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.26513947511935"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.51418262438734"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>_StealerIntro.wav</AudioFile>
