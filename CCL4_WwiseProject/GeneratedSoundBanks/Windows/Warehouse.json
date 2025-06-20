@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D7A64CE1-DDA5-4CFE-80D2-272D35AAA166}",
     "Language": "SFX",
-    "Hash": "{1B0D7CA3-0497-78C7-616C-4D9D426F7F26}",
+    "Hash": "{F7D1E424-5DEE-25A3-0753-25963C27A822}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Warehouse",
     "ShortName": "Warehouse",
     "Path": "Warehouse.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep3.wav",
-      "CachePath": "51/{51AC1B5E-5C14-F2FC-D399-BF8659E8BC21}.wem"
+      "CachePath": "94/{94F12ACB-E62C-96A9-1360-1F2566641483}.wem"
      },
      {
       "Id": "81019076",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_BearDialogue\\_BearLine456.wav",
-      "CachePath": "D8/{D8F7168E-8B2B-6B4C-EA26-EECE2C4D7577}.wem"
+      "CachePath": "54/{54BB7CAF-3900-BD9A-EDE2-AB50764BCE57}.wem"
      },
      {
       "Id": "149462713",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_warehouseWind.wav",
-      "CachePath": "67/{678717F3-7897-013A-CA5F-D34EC3E8FB8D}.wem"
+      "CachePath": "24/{24636B99-3114-EE58-293D-872AA6DD4992}.wem"
      },
      {
       "Id": "225526876",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_BearLine9.wav",
-      "CachePath": "C5/{C5E09380-8CE8-B698-2E2D-771B02D67CCB}.wem"
+      "CachePath": "49/{4915FD14-5346-CF3C-9978-445FCD3E2F1A}.wem"
      },
      {
       "Id": "390948077",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_BearDialogue\\_BearLine12.wav",
-      "CachePath": "B9/{B9DA7581-C7D9-8470-A3BA-19946F097BAB}.wem"
+      "CachePath": "2D/{2D735663-D188-2E46-DF03-C0C0B04C7804}.wem"
      },
      {
       "Id": "466036366",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_CollectPiece.wav",
-      "CachePath": "F3/{F39FA870-AD03-3466-BC63-E27BD27D9AB2}.wem"
+      "CachePath": "A4/{A49C2D3D-9EE3-FFBC-2A67-DD82D143D884}.wem"
      },
      {
       "Id": "469566813",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep2.wav",
-      "CachePath": "C7/{C77228FA-2E67-9032-31CE-A8694D7CE66A}.wem"
+      "CachePath": "A2/{A2A30053-8E0E-8A56-0F32-F245BEC2CF76}.wem"
      },
      {
       "Id": "633485570",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_Whoosh.wav",
-      "CachePath": "57/{57E15EEB-A9CA-2FC2-C3F7-A39E05F7E45E}.wem"
+      "CachePath": "5C/{5C32A472-758F-B6EE-F7ED-1825A159C399}.wem"
      },
      {
       "Id": "671489997",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_BearDialogue\\_BearLine3.wav",
-      "CachePath": "1A/{1A4098B3-8FE8-D6EB-E12D-C9560B0058E9}.wem"
+      "CachePath": "41/{41FF9717-474B-DAD7-6F0D-2216EE519A4D}.wem"
      },
      {
       "Id": "742873965",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep4.wav",
-      "CachePath": "6D/{6D41FB1A-F1C5-7A17-D20B-8443D23B646A}.wem"
+      "CachePath": "14/{14B74096-ADB0-7C57-616E-CBDA82E559EF}.wem"
      },
      {
       "Id": "821945767",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_ManualDrop.wav",
-      "CachePath": "60/{6015EDD7-D551-17FD-C79C-2F5DE7308ACE}.wem"
+      "CachePath": "59/{5983BA4D-3BB0-D67E-C1A1-C09E6BD4DE9B}.wem"
      },
      {
       "Id": "840864182",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_FootstepsWarehouse\\_ConcreteFootstep1.wav",
-      "CachePath": "8E/{8E1D7FD2-50B4-AB6F-A8DE-24B56202E67F}.wem"
+      "CachePath": "CD/{CD67A6A7-4461-D75F-620E-4FBAB6A9B193}.wem"
      },
      {
       "Id": "1047921320",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "_BearLine78.wav",
-      "CachePath": "9E/{9E7D5DA7-B29A-E9CA-1B84-3D94EFF5DE05}.wem"
+      "CachePath": "8C/{8C8FB8DB-A169-9BB9-D0CC-452E44A8E3AC}.wem"
      }
     ],
     "Plugins": {
@@ -253,7 +253,7 @@
      {
       "Id": "839561668",
       "Name": "Play__WarehouseWind",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play__WarehouseWind",
+      "ObjectPath": "\\Events\\Default Work Unit\\Warehouse\\Play__WarehouseWind",
       "GUID": "{AB07A5A1-1560-445D-8BCE-CD677ED89C6E}",
       "DurationType": "OneShot",
       "DurationMin": "100.86907",
@@ -281,6 +281,6 @@
     ]
    }
   ],
-  "FileHash": "{E69DCA05-0782-E7D4-30A2-E6D7A0473916}"
+  "FileHash": "{7EA6928F-A979-0956-B120-1F2884332C9D}"
  }
 }

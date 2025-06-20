@@ -15,12 +15,12 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play__Clapping" ID="{33834542-23CF-4077-AB2F-96F4E598D30F}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__Yawns" ID="{B16C932B-2CE0-4180-A0C2-AC1C400B838E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__FlickeringLights" ID="{CE409342-3E1D-4180-8AAC-1A6D33DCB67B}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_FootstepsLevel" ID="{AA112B0C-69E6-42E4-86A5-A3AC818BE51A}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__WakingUp" ID="{85271415-2DBB-435C-A06D-2FB73A6C61DA}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__FallingAsleep" ID="{B61CBAF4-A119-43F5-A39C-E9643C322388}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__PlayerBump" ID="{E0E9689E-3702-441C-A531-118EFAD523B0}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__FootstepsStealer" ID="{90BB7B08-20DD-4A18-A616-ECA372375008}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="_YapperDialogue" ID="{2F537DA9-C9A3-4A37-B3F2-B8650C030E48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__StealerIntro" ID="{EFB942ED-E82E-4A47-80AB-1B6029914A1A}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__SoftSteps" ID="{1F9EEABF-2085-4AC0-B1FA-1BF58C31AD43}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>

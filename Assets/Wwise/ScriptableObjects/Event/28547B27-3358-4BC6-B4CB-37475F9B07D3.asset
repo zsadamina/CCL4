@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fecd4d3fce15b4fa2367d07c79197e, type: 3}
-  m_Name: 2AB4C018-9215-464C-9B99-261E0B756B5C
+  m_Name: 28547B27-3358-4BC6-B4CB-37475F9B07D3
   m_EditorClassIdentifier: 
-  objectName: Play__Wind
-  id: 3791168207
-  guid: 2AB4C018-9215-464C-9B99-261E0B756B5C
+  objectName: Play__FootstepsYapper
+  id: 1573465489
+  guid: 28547B27-3358-4BC6-B4CB-37475F9B07D3
   IsInUserDefinedSoundBank: 1

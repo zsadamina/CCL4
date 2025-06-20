@@ -803,11 +803,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 502910956}
-  - component: {fileID: 502910959}
-  - component: {fileID: 502910958}
   - component: {fileID: 502910957}
+  - component: {fileID: 502910958}
   m_Layer: 0
-  m_Name: FootstepSound
+  m_Name: YapperSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +834,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502910955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -850,49 +849,29 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &502910958
-MonoBehaviour:
+--- !u!136 &502910958
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502910955}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0ddfbaad91fcb64b8daa35a11a557ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1c157060e80e00e47872b7f6ce5ace2f,
-      type: 2}
-  stepInterval: 0.5
-  minSpeed: 0.05
---- !u!114 &502910959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502910955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe03a646f9e21741ace060c9f0007b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  usePositionOffsetData: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  scalingFactor: 1
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &564381473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1361,7 +1340,8 @@ GameObject:
   - component: {fileID: 958514240}
   - component: {fileID: 958514239}
   - component: {fileID: 958514238}
-  - component: {fileID: 958514237}
+  - component: {fileID: 958514242}
+  - component: {fileID: 958514243}
   m_Layer: 0
   m_Name: Yapper
   m_TagString: Untagged
@@ -1386,29 +1366,6 @@ Transform:
   - {fileID: 859922894}
   m_Father: {fileID: 819311742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &958514237
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958514235}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.18079361
-  m_Height: 1.094028
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.02699101, z: -0.007524729}
 --- !u!54 &958514238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1474,6 +1431,56 @@ MonoBehaviour:
   yappingDistance: 3
   yappingTime: 3
   target: {fileID: 1267973837}
+--- !u!114 &958514242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958514235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe03a646f9e21741ace060c9f0007b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &958514243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958514235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a969d934f49e5d64187aa1503d652667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepLoopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6367dda1b8748c44e9fdbb76b789d694,
+      type: 2}
+  dialogueEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e59515fa85588b34087a64c7aa324c8e,
+      type: 2}
+  playerObject: {fileID: 811897045}
+  dialogueSourceObject: {fileID: 958514235}
+  triggerDistance: 4
+  triggerActivationDelay: 1
 --- !u!1 &1151181208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,7 +1667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1352630065
 Transform:
   m_ObjectHideFlags: 0

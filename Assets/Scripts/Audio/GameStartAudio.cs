@@ -27,7 +27,7 @@ public class GameStartAudio : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         // ▶️ Play first companion line
-        companionEvent2.Post(companionRigTransform);
+        companionEvent1.Post(companionRigTransform);
 
         // ⏱ Wait for it to finish (adjust duration to match actual line)
         yield return new WaitForSeconds(61f); // change this if needed
