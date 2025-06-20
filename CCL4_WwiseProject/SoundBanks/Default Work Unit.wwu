@@ -13,7 +13,6 @@
 				</SoundBank>
 				<SoundBank Name="LevelEnvironment" ID="{11D8B3F2-8149-4DF6-AC6A-277BD4EB200C}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play__Clapping" ID="{33834542-23CF-4077-AB2F-96F4E598D30F}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__Yawns" ID="{B16C932B-2CE0-4180-A0C2-AC1C400B838E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_FootstepsLevel" ID="{AA112B0C-69E6-42E4-86A5-A3AC818BE51A}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__WakingUp" ID="{85271415-2DBB-435C-A06D-2FB73A6C61DA}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
@@ -22,17 +21,14 @@
 						<ObjectRef Name="Play__FootstepsStealer" ID="{90BB7B08-20DD-4A18-A616-ECA372375008}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_YapperDialogue" ID="{2F537DA9-C9A3-4A37-B3F2-B8650C030E48}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="_SoftSteps" ID="{3EE89F1D-0342-4A3E-B8F5-E69470E30DEC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__StealerIntro" ID="{EFB942ED-E82E-4A47-80AB-1B6029914A1A}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__SoftSteps" ID="{1F9EEABF-2085-4AC0-B1FA-1BF58C31AD43}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__Exhausted" ID="{51B789FC-0488-4AC1-B9EA-6CF4B2BC311A}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__RegularHeartbeat" ID="{DB5F1235-6851-4B5D-B85D-1BF1F4D1A9E2}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__FootstepsYapper" ID="{28547B27-3358-4BC6-B4CB-37475F9B07D3}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__CheckOffWithPencil" ID="{23CE2BBB-34A2-4C17-892D-521D511EBE24}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__YapperIntro" ID="{868F9F69-AB81-4CE1-AF86-E68CDCE0644E}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__CollectPiece" ID="{4798F44A-C028-4E93-8E84-629573DD26A5}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__BearNono" ID="{FA8126DC-F6C1-4EB1-9F9F-A10AEC30414B}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Building" ID="{44385D06-42AC-4F4B-B8C1-78BFBAE422BB}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play__KeyChain" ID="{3A96D669-D42C-4F56-9ADC-F901B0CE33C8}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="_Writing" ID="{BD21D16A-8F86-4F95-96D2-D7D6B6052527}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__StealerSounds" ID="{CCE7EE4F-D027-4FA0-961F-27BB7C53CA63}" WorkUnitID="{885CC002-B2B3-46DB-A787-0A889691F192}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

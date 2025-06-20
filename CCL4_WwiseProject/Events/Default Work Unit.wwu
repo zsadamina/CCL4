@@ -134,17 +134,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play__BearNono" ID="{FA8126DC-F6C1-4EB1-9F9F-A10AEC30414B}">
-							<ChildrenList>
-								<Action Name="" ID="{09872DFC-F8E5-4B75-8431-5C8478909A68}" ShortID="1049486594">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="_BearNono" ID="{BD2AE098-5288-4EEB-8CF4-3BD776C6CBCC}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play__BearDialogue2" ID="{3CBAED37-1013-4ECB-A64F-05B6446CC62E}">
 							<ChildrenList>
 								<Action Name="" ID="{11233E7A-AD22-45E0-B508-DF3AA2C62335}" ShortID="985418628">
@@ -336,6 +325,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play__Writing" ID="{CCDA7498-5A64-468F-B986-E7C0E3652C0A}">
+					<ChildrenList>
+						<Action Name="" ID="{69B7BEC4-E4C9-473D-9EB5-DCD6937266AD}" ShortID="10739873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="_Writing" ID="{BD21D16A-8F86-4F95-96D2-D7D6B6052527}" WorkUnitID="{AA70355E-B96A-423D-9923-22B33F448464}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

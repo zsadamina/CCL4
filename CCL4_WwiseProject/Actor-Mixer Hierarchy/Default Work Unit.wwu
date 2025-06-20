@@ -390,110 +390,6 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="_BearNono" ID="{BD2AE098-5288-4EEB-8CF4-3BD776C6CBCC}" ShortID="1064978411">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="_BearLine10_1" ID="{CE45B150-758A-409F-BCC5-7C93E3B864E9}" ShortID="717659298">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="_BearLine10_1" ID="{24FABB94-CF82-436F-A29F-07C113E6F28A}">
-											<Language>SFX</Language>
-											<AudioFile>_BearDialogue\_BearNono\_BearLine10_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="259952603"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="_BearLine10_1" ID="{24FABB94-CF82-436F-A29F-07C113E6F28A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="_BearLine10_2" ID="{076477CC-8687-4A25-8F95-9ED2583EBC4A}" ShortID="876850604">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="_BearLine10_2" ID="{05F8B9FF-4224-41CD-A1B2-967EBDA7D7EC}">
-											<Language>SFX</Language>
-											<AudioFile>_BearDialogue\_BearNono\_BearLine10_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="325841004"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="_BearLine10_2" ID="{05F8B9FF-4224-41CD-A1B2-967EBDA7D7EC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="_BearLine10_3" ID="{397F30EE-57AA-4594-9D21-EACDA0C25FC7}" ShortID="485087255">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="_BearLine10_3" ID="{2310C243-AA47-4DD3-AEB1-3F18FA2EBA7D}">
-											<Language>SFX</Language>
-											<AudioFile>_BearDialogue\_BearNono\_BearLine10_3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="841843991"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="_BearLine10_3" ID="{2310C243-AA47-4DD3-AEB1-3F18FA2EBA7D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="_BearLine10_4" ID="{4B879B5C-2282-48B8-8943-09E91384EE01}" ShortID="285899872">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="_BearLine10_4" ID="{50BDE3C3-8694-45CE-AAAB-8A38E0797258}">
-											<Language>SFX</Language>
-											<AudioFile>_BearDialogue\_BearNono\_BearLine10_4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1003717794"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="_BearLine10_4" ID="{50BDE3C3-8694-45CE-AAAB-8A38E0797258}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="_BearDialogue2" ID="{6812007C-8B3A-4C13-BC72-BD6C461F0032}" ShortID="746188199">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -4578,6 +4474,48 @@
 								<ActiveSource Name="_CheckOffWithPencil" ID="{20457CF7-BFE8-4B85-816C-9874127E6E81}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="_Writing" ID="{BD21D16A-8F86-4F95-96D2-D7D6B6052527}" ShortID="665763786">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2390BA6A-03EC-4F23-81B8-1051997D86EC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EAAFAB66-5C8A-456B-ACAC-B4B9762FDBB9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9113A799-E6D0-416C-9963-9F2D576D23DA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="_StealerIntro" ID="{E42F8EB8-2E67-4232-8A38-4A911D6518E1}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="1.35479502847427"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.26513947511935"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.51418262438734"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>_StealerIntro.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="986203033"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="_StealerIntro" ID="{E42F8EB8-2E67-4232-8A38-4A911D6518E1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Menu" ID="{87C00B34-7DB9-46A4-B923-A99B745548D7}" ShortID="269334074">
@@ -4622,10 +4560,15 @@
 									<ValueList>
 										<Value>-400</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{61401C32-155D-4FBA-B370-169E630A7F10}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

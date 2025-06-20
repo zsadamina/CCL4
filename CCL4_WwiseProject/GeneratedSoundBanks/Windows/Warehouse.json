@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{D7A64CE1-DDA5-4CFE-80D2-272D35AAA166}",
     "Language": "SFX",
-    "Hash": "{F7D1E424-5DEE-25A3-0753-25963C27A822}",
+    "Hash": "{8EAB6569-0850-C768-D401-A8997FE399C6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Warehouse",
     "ShortName": "Warehouse",
     "Path": "Warehouse.bnk",
@@ -281,6 +281,6 @@
     ]
    }
   ],
-  "FileHash": "{7EA6928F-A979-0956-B120-1F2884332C9D}"
+  "FileHash": "{4A477DDC-43B2-2BAF-C5F1-8C23138C2F1B}"
  }
 }

@@ -23,6 +23,7 @@ public class GameStartAudio : MonoBehaviour
 
     private IEnumerator PlayIntroSequence()
     {
+        yield return new WaitForSeconds(0.5f); 
         dropEvent.Post(dropSoundSource);
 
         yield return new WaitForSeconds(delay);

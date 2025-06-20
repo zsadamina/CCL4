@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAY__BEARDIALOGUE1 = 1532893638U;
         static const AkUniqueID PLAY__BEARDIALOGUE2 = 1532893637U;
-        static const AkUniqueID PLAY__BEARNONO = 4008653967U;
         static const AkUniqueID PLAY__CHECKOFFWITHPENCIL = 1681451465U;
         static const AkUniqueID PLAY__COLLECTPIECE = 2593610629U;
         static const AkUniqueID PLAY__EXHAUSTED = 2278865038U;
@@ -34,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY__WAKINGUP = 2480831051U;
         static const AkUniqueID PLAY__WAREHOUSEWIND = 839561668U;
         static const AkUniqueID PLAY__WHOOSH = 2483767443U;
+        static const AkUniqueID PLAY__WRITING = 2880431347U;
         static const AkUniqueID PLAY__YAPPERDIALOGUE = 4062939572U;
         static const AkUniqueID PLAY__YAWNS = 1579610859U;
         static const AkUniqueID PLAY_BUILDING = 3149174998U;
