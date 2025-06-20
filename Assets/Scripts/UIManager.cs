@@ -13,10 +13,10 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     public bool Tutorial;
-    
+
     void Awake()
     {
-        
+
         if (Instance == null)
         {
             Instance = this;
@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
             Destroy(this);
             return;
         }
-        
+
         _clipboardManager = ClipboardManager.Instance;
         _inventoryManager = InventoryManager.Instance;
         _stateManager = StateManager.Instance;
@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
     {
         UpdateUI();
     }
-    
+
     public void AddItem(PickupItemClass item)
     {
         _stateManager.Inventory.Add(item);
@@ -49,21 +49,20 @@ public class UIManager : MonoBehaviour
         _stateManager.Inventory.Remove(item);
         UpdateUI();
     }
-    
+
     // Start is called before the first frame update
     void UpdateUI()
     {
         var Inventory = _stateManager.Inventory;
-        foreach (Transform child in _clipboardManager.transform)
+        foreach (Transform child in _clipboardManager.itemListContainer.transform)
         {
-            Destroy(child.gameObject);
+            GameObject.Destroy(child.gameObject);
         }
 
         Dictionary<string, List<PickupItemClass>> pickUpItems = _inventoryManager.PickupItems
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());
-
-        // Store the count of each item per group in inventoryList
+            
         Dictionary<string, List<PickupItemClass>> inventoryList = Inventory
             .GroupBy(item => item.Name)
             .ToDictionary(group => group.Key, group => group.ToList());
