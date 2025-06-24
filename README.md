@@ -11,7 +11,7 @@
 <h3 align="center">INTE</h3>
 
   <p align="center">
-    A VR Game by a group of students doing this for the first time
+    A VR Game Demo by a group of students doing this for the first time and within a 2 week period ᓚᘏᗢ
     <br />
     <a href="https://zsadamina.github.io/CCL4/"><strong>Git Page »</strong></a>
   </p>
@@ -34,10 +34,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#contact">Contact</a>
   </ol>
 </details>
 
@@ -71,9 +68,6 @@ Once you’re ready, connect your VR-Headset to the computer and run the executa
 
 Alternatively, you can clone the repository or download the folder to open in unity itself. 
 There you can change things to fit your needs or build the game with desired configurations.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
