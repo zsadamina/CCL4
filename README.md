@@ -62,51 +62,24 @@ Short description of what this is...
 To get a local copy up and running, follow these steps:
 
 ### Prerequisites
-you need a VR headset
+you need a VR headset to run this game
+Meta Quest Link software to connect VR headset to computer
 
-alsdjfkjadsf
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+#### Installation
+In the GitHub Repository, you can find the CCL4.exe to download, which is situated in the main folder (CCL4). 
+Once you’re ready, connect your VR-Headset to the computer and run the executable.
 
-### Installation
+Alternatively, you can clone the repository or download the folder to open in unity itself. 
+There you can change things to fit your needs or build the game with desired configurations.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/zsadamina/CCL4.git
-   ```
-2. 
-3. 
-4. 
-5. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
 
 ## Contact
 
 cc231070@fhstp.ac.at
 
-Project Link: [https://github.com/zsadamina/CCL4](https://github.com/zsadamina/CCL4)
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: (https://github.com/zsadamina/CCL4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
